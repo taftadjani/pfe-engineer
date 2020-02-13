@@ -1,0 +1,840 @@
+[0] 28/1/2020
+> Etude de l'existant
+  > Jumia.ma
+    > Description
+      Jumia est un site d’achats en ligne qui est disponible au Maroc et fondé en 2012.
+      La plateforme de Jumia est une « marketplace » ou place de marché, qui met en relation des vendeurs et des acheteurs, en mettant à leur disposition un service logistique, permettant l’expédition et la livraison des colis en plus d’un service de paiement.
+      L’entreprise est présente dans 14 pays africains dont l’Algérie, le Maroc, la Tunisie, le Kenya, l’Égypte, l’Ouganda, le Cameroun, le Sénégal, le Ghana, le Rwanda, l’Afrique du Sud, la Tanzanie et la Côte d’Ivoire.
+    > avantages
+      > Systeme de paiement
+        > Paiement a la livraison
+      > Garantie de delais de livraison
+        > Les delais de livraison sont respectés
+      > Satisfaction client(Service client)
+        > Appel de confirmation de commande
+        > Systeme de retour en cas de produit non conforme
+
+    > inconvenients
+      > Compliquer de se creer un boutique
+      > Pas de protection du vendeur
+      > Juste ici au Maroc : visibilités de ta boutique
+      > Les tonnes de commissions
+      > Le vendeur est en quelque sorte invisible : la priorité est donnée aux client, ensuite à la plateforme et enfin à au vendeur
+
+  > Ali express
+    > Description
+      AliExpress est un site e-commerce de vente au détail en ligne basé en Chine et appartenant au groupe Alibaba.
+      AliExpress a débuté en tant que portail d’achat et de vente entre entreprises. Puis, il a été élargi aux consommateurs.
+      Aliexpress met directement les producteurs chinois en relation avec les particuliers, plutôt que de passer par des intermédiaires, et juge les différents revendeurs en fonction des retours des clients.
+    > avantages
+
+    > inconvenients
+      > Il est fait pour des fournisseurs chinois.
+      > Fait pour des entreprises pas pour les particuliers
+      > Tres grandes concurrence
+      > Faible qualité des produits
+      > Illegal d'acheter des produits Aliexpress
+
+  > Amazon
+    > Description
+      Amazon a débuté en tant que librairie en ligne qui s’est par la suite diversifiée pour inclure des produits tels que les médias, l’électronique, les vêtements, les meubles, la nourriture, les jouets et les bijoux.
+      Après s’être étendu à de nombreux pays, Amazon est devenu le leader mondial incontesté du commerce électronique.
+    > avantages
+      > Plus de 240 millions de clients Amazon dans le monde
+        Amazon est l'un des sites Web les plus visités au monde, il compte des millions d'utilisateurs quotidiens. Rien qu'en y apparaissant,  votre audience potentielle sera multipliée de façon exponentielle.
+        Peu importe si vous vous êtes enregistré dans un pays spécifique (.es, .com, etc.) - vous aurez une portée mondiale et vous saurez si vous êtes en mesure de faire des ventes sur les marchés internationaux.
+      > De nombreux acheteurs potentiels recherchent des produits uniquement sur Amazon
+      > Un peu de "trafic" dès la première minute sans avoir à payer de publicité supplémentaire
+      > Vous n'avez pas besoin de votre propre logiciel de boutique
+      > En utilisant l'option «Expédition via Amazon» (FBA), vous externalisez l'intégralité de votre logistique d'expédition et bénéficiez de faibles coûts d'expédition
+      > Programme de partenariat Amazon bien établi pour les affiliés
+      > Amazon a beaucoup de produits disponibles à des prix raisonnables, qui peuvent être livrés à votre porte, même du jour au lendemain si vous êtes prêt à payer les frais.
+      > La confiance
+        Même si acheter sur Internet devient une chose normale à faire, vendre sur Amazon rendra le client plus sûr en  raison de la garantie de la grande entreprise.
+        En achetant de cette façon, le client a la garantie qu'en cas de problème, il sera résolu immédiatement.
+        Par ailleurs,  c'est Amazon lui-même qui s'occupera de ce service client  , ce qui signifie économiser du temps et de l'argent pour vous.
+        Cette confiance est plus grande si l'article a le «rempli par Amazon», ce qui ne se produit que lorsque vous êtes un fournisseur. Parmi les autres options que nous avons vues, FBA est la meilleure, car il y a beaucoup de gens qui font confiance à Amazon pour expédier plus que tout autre tiers.
+      > Ils peuvent également avoir des produits difficiles à trouver dans les magasins physiques ou des produits non disponibles dans la zone d'une personne.
+      > Amazon se concentre sur l'experience d'achat
+      > Amazon Prime pour les clients reguliers d'Amazon
+      > Amazon Prime avantages
+        > Livraison gratuite
+        > Amazon Drive : telechargement illimité des photos
+        > Amazon Prime Video : Acces a un service de streaming
+        > Ventes Flash : 30 min d'accés avant tous les autres clients
+        > Twitch Prime : pas de publicité, emojis personnalisable, ....
+        > Amazon Famille : des reductions
+        > Amazon Prime Day
+        > Prime Music
+        > Prime Reading : Kindle
+        > Amazon Prime Now
+
+    > inconvenients
+      > Les expeditions des produits Amazon pour l'Afrique sont absente.
+      > Frais de vente Amazon - selon la catégorie de produit entre 7% et 20%
+        Malheureusement,  si vous travaillez avec des produits à faible profit, il peut ne pas être rentable pour vous de vendre sur Amazon.
+        Vous avez deux options:
+          > Vendeur individuel:  0,99 € pour chaque produit vendu. Vous ne payez que lorsque vous vendez un produit. Il est limité à 40 articles par mois.
+          > Vendeur professionnel:  il n'y a pas de limites et les honoraires sont inférieurs à ceux des vendeurs individuels, bien qu'il y ait un forfait de 39 € plus taxes.
+          En plus de cela, FBA vous facture la gestion du stockage et des expéditions.
+      > Avec l'option Expédition via Amazon, les frais de livraison doivent être inclus dans le prix de vente
+      > Plusieurs fournisseurs du même produit peuvent entraîner une bataille de prix
+      > Possibilités potentiellement limitées d'influencer directement l'affichage d'un produit
+      > Limitation sur les expeditions : Enormement de produit ne sont pas expediable en Afrique -> Amazon est en quelques sorte limité en Afrique.
+      > Les retours peuvent être effectués mais ne sont pas aussi faciles que d'aller dans un magasin local
+      > Vous ne pouvez pas examiner physiquement les produits. Vous ne pouvez pas essayer des vêtements, ni voir à quel point quelque chose est lourd, ni voir à quoi ressemble un tissu.
+      > Il est difficile de fidéliser
+        Tout d'abord,  Amazon recherche son propre avantage  avant celui de ses vendeurs. La plate-forme est conçue pour mettre en valeur les produits, pas les vendeurs derrière eux. Oubliez l'idée de personnaliser votre profil; votre interface et l'organisation de vos produits seront contrôlées.
+        Tous ces détails font qu'il est difficile pour les clients de vous identifier et de créer une relation à long terme avec vous.
+      > Ils vous espionnent
+        Outre l'énorme inconvénient d'avoir à faire face au grand nombre de concurrents qui vendent le même produit que vous, vous devez également rivaliser avec Amazon lui-même.
+        En vendant sur Amazon, vous fournissez toutes vos informations de vente .
+        La plateforme a accès à vos données et sait exactement quels produits sont les plus performants. Ce n'est un secret pour personne qu'Amazon utilise ces connaissances pour ajouter ses propres produits dans les niches de marché dans lesquelles ils peuvent réaliser des bénéfices.
+        Lorsque vous vous enregistrez en tant que vendeur, outre toutes vos données, vous devez leur dire qui sont vos fournisseurs. Si votre produit connaît un réel succès, il leur suffit de les contacter directement et de sauter l'intermédiaire, c'est vous
+      > Ils paient après 90 jours
+        Les gens disent que c'est le vrai business d'Amazon. Ils facturent les clients immédiatement et vous expédiez les produits immédiatement, mais vous ne recevez l'argent que trois mois plus tard.
+        En outre, si vous envoyez vos produits en tant que fournisseur et qu'il y a un concurrent qui diminue le prix du produit pendant ces 90 jours, l'algorithme définira la nouvelle quantité que vous allez obtenir - une quantité inférieure, bien sûr.
+      > Ils offrent un service exquis aux clients à vos frais
+        Les acheteurs aiment Amazon, entre autres, en raison de la facilité avec laquelle il est possible de retourner des produits. Ils proposent un système de retour `` sans poser de questions '' car c'est le vendeur qui paie les frais, pas Amazon.
+        Ils jouent avec votre argent et, en plus, s'ils déterminent que vous avez trop de retours, quelle que soit la raison, ils peuvent fermer votre compte pendant 90 jours pendant que vous déposez une plainte.
+      > Inconvénient contre les vendeurs étrangers
+        Si vous vendez depuis l'Espagne, vous devez payer la TVA de 21%.
+        Les vendeurs d'autres pays qui expédient en dehors de l'Espagne n'ont pas à payer ces frais. La concurrence avec le prix, la clé de la vente sur Amazon, devient encore plus difficile.
+      > Non protection des vendeurs sur Amazon
+      > Amazon prefere perdre un vendeur qu'un client
+
+  > Facebook marketplace
+    > Description
+      Facebook Marketplace est une section d'annonces classées du réseau social spécialisée dans l'aide aux particuliers et aux entreprises pour vendre des articles localement.
+      Facebook Marketplace est un marché numérique où les utilisateurs peuvent acheter, vendre et échanger des articles avec d'autres personnes dans leur région.
+      Toutes les transactions ont lieu en dehors de l'application et ne sont pas considérées au sens juridique comme relevant de la responsabilité de Facebook.
+      Facebook tire parti de la Marketplace via son réseau social. Les utilisateurs de Facebook ont ​​souvent déjà un compte et il n'est pas nécessaire de télécharger une autre application .
+    > avantages
+      > L'un des plus grands avantages de l'utilisation de cette place de marché est qu'elle est gratuite
+          Facebook Marketplace ne vous facturera pas pour acheter ou vendre, en utilisant leur plateforme.
+          Même si nous attendons avec impatience que cela change, c'est une grande fonctionnalité dans le moment présent.
+      > Ensuite, toute personne dans un rayon de 100 miles verra vos articles.
+          Il existe la possibilité d'étendre ou de réduire ces paramètres. Mais depuis le début, vous avez une bonne base pour commencer à vendre vos affaires.
+      > Partager le produit avec des groupes Facebook.
+      > La place de marché Facebook dispose également d'un bon système de filtrage.
+        Cela vous permet d'être très précis sur ce que vous voulez. Par exemple, vous pouvez affiner le prix, l'emplacement et le type d'article que vous recherchez sur le site.
+    > inconvenients
+      > Préparez-vous à voir votre nom d'utilisateur et votre profil Facebook exposés lorsque vous vendez ou achetez un article sur la place de marché. Il n'y a aucun moyen de créer un alias pour ce faire.
+      > La protection de l'acheteur n'est pas disponible sur Facebook Marketplace.
+      > Pas de système d'enchères très apprécié que vous pourriez être habitué à eBay.
+      > Il n'y a pas de section pour vous faire part de vos commentaires.
+      > En general, facebook n'est pas vraiment un site de vente
+
+  > Ebay
+    > Description
+      Pionnier du commerce électronique, eBay est un marché en ligne qui permet aux particuliers et aux entreprises de vendre directement via sa plateforme d’enchères en ligne.
+      Fondé en 1995, eBay s’est étendu à plus de 20 pays et organise la vente de produits allant des voitures et véhicules à l’électronique et à la mode, en passant par la maison et le jardin, le sport et les jouets, et même les produits commerciaux et industriels.
+    > avantages
+      > Ebay met en avant les marques pour vendre des produits particuliers
+
+    > Vendre sur Ebay
+      > Cher
+      > Moins flexible
+      > Restrictions sur ce que vous pouvez vendre
+      > Prejugé contre la plateforme
+      > Difficile de vendre des articles qui n'ont pas acces aux mots clés
+      > Pas besoin de commercialiser l'article(pas besoin de faire de la publicité, le site est assez connu )
+      > Le systemes des encheres
+      > La renommé d'Ebay => La confiance
+      > Probleme du dropshipping
+        > Multiplication des prix
+    > inconvenients
+
+  > Avito.ma
+    > Description
+      Avito n’est pas vraiment un site e-commerce. C’est un site web marocain spécialisé dans les petites annonces.
+      Cela dit, la plupart des internautes qui le consultent ont bien l’intention d’acheter des biens, des équipements ou matériaux.
+      Certains l’utilisent aussi pour vendre des objectifs ou publier des annonces pour louer ou vendre leurs biens immobiliers.
+    > avantages
+
+    > inconvenients
+
+> Avantages et inconvenients patterns
+  > Systeme de Livraison
+    > Livraison gratuite pour la plupart des produits
+    > Respect des delais de livraison
+  > Systemes de paiement
+    > Securité du systeme de paiement
+  > Satisfaction client
+    > Systeme de communication
+    > Systeme permettant de s'assurer de la fiabilité des vendeurs, de la qualité des produits
+    > Retour lors des non conformités
+    > Intermediaire entre client et le vendeur
+    > Systeme de suivi des commandes
+    > Les offres de reductions
+    > Les langues de communication avec les vendeurs
+    > Trouver tous ce qu'on cherche en local
+    > Modes de paiement
+  > Variete de produit
+  > La confiance
+    > La peur de se faire arnaquer
+    > Gagner la confiance des industriels afin d'avoir des produits de qualités sur le site(Amazon)(partenariat)
+  > Le dropshipping
+    > Les rapports qualités prix des produits
+  > Protection client
+    > Sécurité au niveaux des informations privées(compte bancaires)
+    > Les systemes de remboursement
+  > Protection vendeur
+    > Ils peuvent se retourner contre les vendeurs en vendant des produits à succes
+    > Client malhonnete
+  > Les zones geographiques couvertes par le site
+  > Satisfaction vendeur
+    > Systeme de gestion de stock
+    > Les publicités
+    > Hausse des ventes
+    > Acquisition des clients(le fideliser)
+    > Frais et commission associé à la place du marché
+  > Systeme de TVA
+
+> Project structure
+  > Project structure
+    > app
+    > assets
+    > config
+    > docs
+    > exemples
+    > files
+    > node_modules
+    > public
+      > css
+      > js
+      > img
+        > content
+        > layout
+    > resources
+    > src
+      > Controllers
+      > Model
+      > Utils
+    > templates
+    > tests
+    > themes
+    > tmp
+    > translations
+    > vendor
+    > composer.json
+
+  > Project structure
+    > app
+    > assets    : Uncompiled/raw CSS, LESS, Sass, JavaScript, images
+    > database
+    > config    : Application configuration (config, etc, app/config)
+    > language
+    > node_modules :
+    > public    : Publicly accessible files (pub, web, public_html)
+      > css : All your css files.
+      > js : All your javascript files.
+      > img :  All your image files. I decided to split content images from layout images.
+        > content
+        > layout
+    > resources
+      > view
+    > routes
+    > src       : PHP source code files
+      > Controller : Classes for managing request and response by displaying
+                     templates with logic from services and or data from DB
+      > Model : classes for holding values from the database
+      > Utils : Application services - business logic
+    > templates : Template files
+    > tests :
+    > translations : Translation files
+    > vendor : 3rd party packages and components with Composer
+      > librairies
+    > composer.json :
+
+> Cahier de charge
+  > Cahier de charges V1
+    un cahier des charges a pour fonction de formaliser un besoin afin que ce dernier soit compris par l'ensemble des acteurs impliqués dans le projet .
+    > Contexte et définition du problème
+      exposer le fondement de la demande
+    > Objectif du projet
+      Suite à l'explicitation du contexte, exprimez le niveau de vos attentes et les résultats attendus. Les objectifs seront quantifiés.
+    > Périmètre
+      Tous les clients sont-ils concernés ? Cela implique-t-il tous les collaborateurs ?
+    > Description fonctionnelle des besoins
+      Décrivez votre besoin en terme de fonctionnalités. En quelques lignes, expliquez ce que doit faire votre application.
+    > Enveloppe budgétaire
+      Précisez les ressources que vous comptez mobiliser.
+    > Delais
+
+  > Cahier de charges V2
+    > Présentation du projet
+      > Contexte
+        PFE.
+        > Contexte de l'application.
+          > Enormement de boutique autour de nous, nous est inconnu.
+          > Savoir les boutiques autour de nous.
+          > Voir les produits qu'on peut acheter autours de nous.
+          > Savoir les horaires d'ouverture d'une boutique.
+          > Savoir si une boutique est ouverte ou non.
+      > Objectifs
+        Site e-commerce pour les boutiques.
+        Connaitre les boutiques aux alentours.
+        Voir les produits avant d'aller sur place.
+      > Description de l'existant
+        > Jumia
+        > Ali express
+        > Amazon
+        > Facebook marketplace
+        > Ebay
+      > Critères d'acceptabilité du produit
+        > Many features
+    > Expression des besoins
+      > Besoins fonctionnels
+        > Stock
+          > Modifier les propriétés d’un produit.
+          > Lister les produits pour le vendeur (tous les produits).
+          > Supprimer le produit (on ne le vend plus)
+          > Affichage de produit dans la boutique pour le client
+        > Communication
+          > Communication entre Client – vendeur.
+          > Communication entre Client – entreprise.
+          > Communication entre Fournisseur – vendeur.
+          > Communication entre Client – Client.
+          > Communication entre Client – Admin.
+
+          > Les commentaires
+          > Les messages privés
+            > Seul un follower peut envoyer de message privé à un utilisateur
+          > Les publications des boutiques pour essayer de promouvoirs leur boutique, les reductions, ...
+          > Les fidelisations
+            > Pour les vendeurs
+            > Envoi des messages juste à ses clients fideles(liste des clients) pour informer des periodes d'offres, ...
+        > Panier
+        > Entreprise
+          > Peut avoir plusieurs boutiques.
+        > Users
+          > Options
+          > Types d'utilisateurs
+            > Client
+              > un client peut avoir plusieurs adresses
+            > Vendeur
+            > Admin
+            > Paiement
+            > Entreprise
+        > Localisation
+          Limiter cette fonctionnalité sur un cercle d’un rayon x ou pas. La localisation peut être désactivée sur le site pour ne pas apparaitre.
+        > Boutique
+          > Ajouter des produits dans la boutique.
+          > Supprimer des produits de la boutique.
+          > Tous produits ayant une quantité égale à zéro ne sera pas mis sur la boutique ou sera enlever de la boutique automatiquement.
+          > Lister les produits pour le client (juste ceux disponibles sur la boutique)
+          > Position sur la MAP
+          > Peut appartenir à une entreprise global
+          > Peut appartenir à une personne
+          > Peut vendre différents types de produits
+        > Filtre
+          > Par rapport aux  vendeurs
+          > Par rapport aux types de produits
+          > Par rapport aux prix
+          > Par rapport à la localisation des boutiques
+          > Par rapport aux options de livraison
+          > Par rapport aux remises/reductions
+          > Par rapport aux marques
+          > Par rapport à la categorie
+        > recherche
+          > Recherche fonctionne sur les produits, boutiques, entreprises, vendeurs, clients.
+          > Fonction de recherche precis
+          > La recherche doit aussi montrer les produits par rapport à la distance pour donner des avantages aux vendeurs locaux et pour que les clients puissent pouvoir avoir le choix d'aller voir l'objet en vrai.
+        > Details des produits
+        > La livraison
+        > Les retours en cas de non conformités
+        > Les paiements
+        > Media sociaux
+          > Partage des produits sur les reseaux sociaux
+        > Systeme d'encheres ou negociation
+        > Voir sa boutique en tant que client pour un vendeur
+        > Systeme de TVA
+        > Systeme permettant de s'assurer de la fiabilité des vendeurs, de la qualité des produits
+          > Systeme de notes
+          > Systemes de commentaires sur la boutique, les produits.
+          > Systemes d'etoiles
+        > Systeme de suivi des commandes
+        > Les offres de reductions
+        > Les systemes de remboursement
+        > Systemes de commission
+          > annuel ou mensuel
+          > par pourcentage
+        > Systeme d'avantages pour client reguliers
+        > Systeme de ranking pour les vendeurs et de primes
+        > Systeme de fidelisation pour le vendeur
+          > Sending mails
+          > Following/abonnement
+          > Abonnez à la newsletter d'une boutique
+        > Systeme de comparaison des produits
+        > Systeme de penalité pour les clients et les vendeurs
+        > Systeme de garantie
+        > Extensibilité de notre site
+      > Besoins non fonctionnels
+        > Ergonomie
+          > Un design simple(clean)
+        > Facilité d'utilisation
+          > Simple navigation
+          > Experience utilisateur
+        > Securité
+        > Performance
+        > Responsive
+          > Bootstrap 4
+          > Mobile et web pour le vendeur
+          > Mobile et web pour le client
+          > Web pour l'admin
+        > Creer un systeme de micro service
+    > Contraintes
+      > Coûts
+      > Délais
+        > 6 mois (28/1/2020 à 28/7/2020)
+      > Autres contraintes
+    > Déroulement du projet
+      > Planification
+      > Plan d'assurance qualité
+      > Documentation
+      > Responsabilités
+        > Maîtrise d'ouvrage
+        > Maîtrise d'oeuvre
+
+> E-commerce feature
+  > Images de bonne qualité
+  > Marketing
+  > Paiement en detail
+  > Produit generic : pour faciliter la saisie de produit
+
+> Types de e-commerce
+  > B2C
+  > B2B
+
+> Les pages possibles
+  > La page principale(d'acceuil, )
+    > Produits par rapport à un algorithme
+      > Produit à succes
+      > Good vendeur
+      > Positions des boutiques
+  > La page de chaque produit
+  > La page de chaque boutique
+  > La page d'ajout/modification de produit
+  > La page de resultat de recherche
+  > La page d'admin globale
+  > La page d'admin du vendeur
+  > La page de login
+  > La page de creation de compte
+  > La page de changement de mot de passe
+  > Entrer un nouveau produit par un vendeur
+  > La page d'insertion des fournisseurs
+  >
+
+> Pied des pages (footer)
+  > Contact information
+  > Privacy policy
+  > Social media icons
+  > Terms of service
+  > Copyright information
+  > SiteMap and related documents
+  > Langue/anglais par defaut
+
+> Navigation
+  > Boutiques
+  > Sign in/sign out
+  > Panier/car
+  > Search field
+    > Categories de recherche
+
+[1] 7/2/2020
+> UML
+  > User
+    [Attr]:
+      > firstName
+      > lastName
+      > Pseudo
+      > adresse mail
+      > mot de passe
+      > telephone
+      > Genre
+        > Homme
+        > Femme
+      > Code postal
+      > date de naissance
+      > Langue de communication
+    [Meth] :
+      > Log in
+      > Log out
+      > Recuperer son mot de passe
+      > Supprimer son compte
+      > Modifier les informations sur son compte
+        > Modifier son Pseudo
+        > Modifier son nom
+        > Modifier son prenom
+        > Modifier son mail
+        > Modifier son mot de passe
+        > Modifier son telephone
+      > Verifier mon compte
+      > Ajouter un utilisateur
+      > getters
+      > setters
+      > updaters
+      > deleters
+  > Client : User
+    [Meth]:
+      > Supprimer un produit du Panier
+      > Vider le Panier
+      > Commander(Valider le panier)
+      > Ajouter une adresse
+      > Modifier une adresse
+      > Modifier un compte client
+      > Consulter les informations d'une adresse
+      > Ajouter une carte bancaire
+      > Modifier les informations d'une carte bancaire
+      > Consulter les informations d'une carte bancaire
+      > Consulter les commandes
+      > Demander une facture pour une commande
+      > Virifier si un pseudo existe
+      > Activer/desactiver son propre compte
+  > Vendeur : User
+    > Profil du vendeur
+    > Sa ou ses boutiques
+    > Evaluation du vendeur
+      > Etoiles
+      > Pourcentages
+      > Commentaires faits par les utilisateurs
+      > Date où il est devenu vendeur
+      > Nombre de ventes
+      > Pays d'origine
+      > Serieux du vendeur
+      > Disponibilité
+        > Disponible à (pays où se trouve sa boutique ou business)
+      > Expedition(respect des delais de livraison)
+      > Qualité de produit
+      >
+  > Admin : User
+    [Meth] :
+      > Activer un compte
+      > Desactiver un compte
+      > Supprimer un compte
+      > Changer le pourcentage de TVA
+      > Supprimer un produit
+      > Modifier un produit
+      > Ajouter un produit
+      > Ajouter une promotion
+      > Supprimer une promotion
+      > Ajouter un mode de livraison
+      > Supprimer un mode de livraison
+      > Envoyer des mails
+      > Ajouter un Utilisateurs(Vendeur, Client, Admin)
+      > Accorder des privileges à un user
+      > Diminuer les privileges
+      > Lister les utilisateurs (admins, vendeurs, clients)
+  > Privilege
+    > Nom de la privilege
+    > Descripton de la privilege
+  > Produits
+    [Attr] :
+      > Couleur (plusieurs couleurs possible)
+      > Titre
+      > Localisation du produit
+        > Par defaut, celui de la boutique
+        > Ou à definir
+      > Model
+      > Sous titre
+      > Taxe de vente
+        > Par pays(Juste pour le Maroc now)
+      > Photos
+        > Photos principale
+        > Les autres
+        > Systeme pour les classer
+      > prix
+        > Prix reel
+        > Prix promotionnel
+        > Reduction
+          > Reduction pour client fidele
+          > Reduction pendant une durée
+          > Reduction par code coupon si la boutique accepte
+        > Prix donnée par un utilisateur/vendeur lors des negociations
+      > Categories( Un produit peut appartenir à plusieurs categories)
+      > Marque
+      > designation
+      > SKU
+      > Poids
+      > dimension
+        > taille en x
+        > taille en y
+        > taille en z
+      > Description
+        > Mise en forme du texte
+      > Options de livraison
+      > Personne qui ont achetés le produit
+      > Garantie
+        > Durée de garantie
+      > Condition du produit
+        > Neuf
+        > Remis à neuf
+        > Occasion
+      > Quantité en stock
+      > Quantité de vente minimum
+      > Satisfaction client
+        > Pourcentage
+      > Nombre de jour avant livraison
+      > Format de vente du produit
+        > Prix fixe
+        > Prix variable
+      > Durée de disponibilité du produit dans la boutique
+      > Options de retour
+        > Pas de retour si acheté direct à la boutique
+        > Retour sous x durée
+      > Options de paiements
+      > Date de publication deu produit dans la boutique
+        > Directement apres l'enregistrement
+        > Apres une date x
+        > Produit avec une quantité nulle ne sera pas visible sur la boutique
+      > Nombre de personne qui ont consulter le produit
+      > Nombre de personne qui ont acheté le produit
+    [Meth] :
+      > Ajouter un produit
+      > Modifier un produit
+      > Consulter un produit
+      > Supprimer un produit
+      > Liste des produits
+        > Par categorie
+        > Par marque
+      > Recherche de produit
+        > Suivant un pattern (mot clé)
+        > Avec un id
+        > Avec Categorie
+      > Ajouter une categorie au produit
+      > Supprimer une categorie
+      > Changer la categorie
+      > Liste desproduits d'un fournisseur
+  > Boutique
+    > Le vendeur ou les vendeurs
+    [Attr] :
+      > Nom de la boutique
+      > Proprietaire
+      > Garantie sur les produits
+      > Adresse de la boutique
+      > Telephone de la boutique
+        > Peut etre le numero d'un des vendeurs
+      > Mail de la boutique
+      > Fax de la boutique
+      > Description de la boutique
+  > Entreprise
+    > Zero ou plusieurs boutiques> Panier
+  > Categories (Famille, Section)
+    > Plusieurs sous categories
+    [Attr] :
+      > Nom de la categorie (libelle de la categorie)
+    [Meth] :
+      > Ajouter une categorie
+      > Modifier une categorie
+      > Supprimer une categorie
+      > Liste des categories
+  > Sous categorie
+    [Attr] :
+      > Nom de la sous categorie (libelle de la categorie)
+    [Meth] :
+      > Ajouter une sous categorie
+      > Modifier une sous categorie
+      > Supprimer une sous categorie
+      > Liste des sous categories
+  > Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
+    > Client sur un produit
+    > Client sur une boutique
+    > Client sur un vendeur
+    > Client sur une entreprise
+    > Vendeur repond à un client
+    > admin repond à un vendeur
+    > admin repond à un client
+    > Client repond à un admin
+
+    > Emetteur (Client, vendeur, admin)
+    > Recepteur (Client, vendeur, admin, boutique, entreprise)
+    > comment
+    > où le comment a-t-il été ecrit?
+      > Sur un produit
+      > Sur une boutique
+      > Sur un vendeur
+      > Sur une entreprise
+    > Date du comment
+    > Id du comment
+  > Garantie
+    > durée de la garantie
+    > Garantie sur le produit
+    > Garantie accordé par :
+      > la boutique
+      > le vendeur
+      > l'entreprise
+      > le site
+      > admin
+  > Messages privés
+    > Emetteur (Client, vendeur, admin)
+    > Recepteur (Client, vendeur, admin)
+    > Message
+    >
+  > Fournisseur
+    > Un fournisseur peut etre une personne ou une entreprise
+    [Attr] :
+      > Nom
+      > Mail
+      > Telephone
+      > Adresse
+      > Descripton
+    [Meth] :
+      > Ajouter un fournisseur
+      > Supprimer un fournisseur
+      > Modifier un fournisseur
+      > Consulter un fournisseur
+  > Adresse
+    > Pour le client
+    > Pour le vendeur
+    > Pour la boutique
+    > Pour l'entreprise
+    > Ville
+  > Panier
+    [Attr] :
+      > Devise
+    [Meth] :
+      > Ajouter un produit dans le panier
+      > Supprimer un produit du panier
+      > Liste des produits dans mon panier
+      > Vider mon panier
+      > Ajouter une liste de produits dans mon panier
+      > Creer un panier
+      > Supprimer un panier
+      > Changer de devise du panier
+      > Consulter produit d'un panier
+      > Consulter un panier
+  > Envies
+    > Comme le panier mais avec un affichage different
+  > Commandes
+    [Attr] :
+      > Date de commande
+      > Description de la commande
+      > Etat de la commande
+      > Montant de la commande(donnée calculée)
+      > Date livraison estimée
+      > Lieu de livraison
+      > Mode de livraison
+      > Prix total payé
+      > Mode de paiement
+    [Meth] :
+      > Passer une commander(Passer la commande)
+      > Modifier l'etat de la commande
+      > Liste des commandes
+      > Consulter les informations de la commande
+      > Consulter les commandes dejà effectuées
+        > Filtrer
+          > Par etat de la commande
+          > Par date
+  > Etat de la commande (Commande livré, encours, )
+    > Nom de l'etat
+  > Factures
+    [Attr] :
+      > Date de facture
+      > tva
+      > Remise
+      > total hors taxe
+      > tout taxe compris
+    [Meh] :
+      > etablir une facture
+      > Envoyer une facture
+      > Afficher une facture
+      > Imprimer une facture
+  > Reglement
+    > Mode de reglement d'une facture
+      > Details ou complet
+  > Marque
+    [Attr] :
+      > Nom de la marque
+    [Meth] :
+      > Ajouter une marque
+      > Modifier une marque
+      > Supprimer une marque
+      > Consulter une marque
+      > Liste les marque
+  > Livraison
+    > Date de livraison
+    > Description de la livraison
+  > Mode de livraison
+    > Description
+    > Mode de livraison
+      > Achat à la boutique
+      > Livraison par le vendeur
+      > Livraison par notre site
+      > Livraison par une tierce personne
+      > Prix de livraison par rapport à chaque type
+  > Ville
+    > Nom de la ville
+  > Pays
+    > Nom du pays
+    > Prefixe
+      > +212 pour le Maroc
+  > TVA
+    > Pourcentage
+  > Promotion
+  > Etoiles
+    > Les personnes qui ont notés ses etoiles
+      > Le nombres de personnes qui ont notés
+      > On peut noter un vendeur, un produit
+      > Un commentaires
+    > 5 etoiles
+    > 4 etoiles
+    > 3 etoiles
+    > 2 etoiles
+    > 1 etoile
+  > Devise
+  > Commission
+    [Attr] :
+      > Date transaction
+      > Pourcentage
+      > Montant de la commission (donnée calculée)
+
+
+
+> Fonctionnalités detaillées
+  > Create
+    > Creer un compte(client, vendeur, admin)
+      > Devenir vendeur avec un compte client
+      [>] Devenir admin avec un compte client ou vendeur
+    > Creer/inserer/ajouter un produit
+    > Creer une boutique
+    > Creer une entreprise
+    > Creer/ajouter/inserer une categorie de produit[par un admin]
+    > Creer/ajouter/inserer les informations d'un fournisseur
+  > Delete
+    > Supprimer/delete son compte
+    > Supprimer/delete un utilisateur[par un admin]
+    > Supprimer/delete un produit
+  > Update
+    > Modifier/update un produit
+    > Modifier/update un compte
+      > Client devient vendeur
+      > Client devient Admin
+      > Modifier le mot de passe
+    > Ajouter dans le panier
+    > Modifier la quantité d'un produit dans le stock
+  > Get
+    > Get un produit specifique grace à son id (Consulter les informations des produits)
+    > Liste des clients
+    > Liste des admins
+    > Liste des vendeurs
+    > Liste des produits
+      > Liste des produits d'un vendeur/boutique/entreprise
+      > Liste des produits disponibles en stock(independant des vendeurs)
+      > Liste des categories des produits
+    > Liste des commandes
+      > Commandes achetées
+    > Liste des fournisseurs
+  > Login/log out
+  > Acheter
+  > Web services
+  > Changer la langue
+  > Modifier/retrouver le mot de passe
+  > Gerer quantite de produit
+  > Gerer son panier
+  > Contacter l'admin
+  > Rechercher un produit
+  > Acceder à la galerie de produit
+  > Confirmer une commande
+  > S'abonner à une newsletter
+  > Ajouter un commentaire
