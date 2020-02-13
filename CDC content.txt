@@ -838,3 +838,16 @@
   > Confirmer une commande
   > S'abonner à une newsletter
   > Ajouter un commentaire
+
+
+
+> Rapport de stage 
+  > dedicace
+  > remerciement
+  > Sommaire/table de matiere
+  > Resume / Contexte 
+  > Liste des figures
+  > Introduction generale
+  > conclusion generale
+  > Bibliographie
+  > Reference
