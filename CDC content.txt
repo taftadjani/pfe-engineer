@@ -384,15 +384,41 @@
           > Mobile et web pour le client
           > Web pour l'admin
         > Creer un systeme de micro service
+        > Fiabilité
     > Contraintes
-      > Coûts
+      > Coûts / Enveloppe budgetaire
+        > Besoins logicielles
+        > Besoins materielles
+        > Besoins en resource humaines
+        > Formation
       > Délais
         > 6 mois (28/1/2020 à 28/7/2020)
       > Autres contraintes
+      > Contraintes de developpement
     > Déroulement du projet
       > Planification
-      > Plan d'assurance qualité
-      > Documentation
+        > Techniques d’estimation des charges
+        > Charges prévisionnelles
+        > Planning prévisionnel
+        > Suivi de projet
+          > Suivi des adaptations du projet
+          > Audit
+          > Bilan de projet
+          > Proposition d’amélioration
+      > Demarche de developpement
+        > Cycle de developpement
+        > Processus de developpement
+          > La phase de conception
+          > La phase de réalisation
+          > La phase de validation
+      > Descripton des activités
+        > Gestion de la documentation
+        > Gestion de configuration
+        > Gestion des tests
+        > Gestion des anomalies
+      > Element graphique
+        > Diagramme uml
+        > Diagramme textuelle
       > Responsabilités
         > Maîtrise d'ouvrage
         > Maîtrise d'oeuvre
@@ -558,9 +584,6 @@
       > SKU
       > Poids
       > dimension
-        > taille en x
-        > taille en y
-        > taille en z
       > Description
         > Mise en forme du texte
       > Options de livraison
@@ -689,7 +712,7 @@
     > Pour le vendeur
     > Pour la boutique
     > Pour l'entreprise
-    > Ville
+    > Pour le fournisseur
   > Panier
     [Attr] :
       > Devise
@@ -765,6 +788,7 @@
       > Prix de livraison par rapport à chaque type
   > Ville
     > Nom de la ville
+    >
   > Pays
     > Nom du pays
     > Prefixe
@@ -772,6 +796,7 @@
   > TVA
     > Pourcentage
   > Promotion
+    > Pourcentage
   > Etoiles
     > Les personnes qui ont notés ses etoiles
       > Le nombres de personnes qui ont notés
@@ -783,13 +808,13 @@
     > 2 etoiles
     > 1 etoile
   > Devise
+    > MAD (DH)
+    > Euro
   > Commission
     [Attr] :
       > Date transaction
       > Pourcentage
       > Montant de la commission (donnée calculée)
-
-
 
 > Fonctionnalités detaillées
   > Create
@@ -839,15 +864,43 @@
   > S'abonner à une newsletter
   > Ajouter un commentaire
 
-
-
-> Rapport de stage 
+> Rapport de stage
   > dedicace
   > remerciement
   > Sommaire/table de matiere
-  > Resume / Contexte 
+  > Resume / Contexte
+  > Gloassaire(Liste des abbreviations)/Terminologie
   > Liste des figures
   > Introduction generale
+  > Présentation du projet
+    > Contexte
+      PFE.
+      > Contexte de l'application.
+        > Enormement de boutique autour de nous, nous est inconnu.
+        > Savoir les boutiques autour de nous.
+        > Voir les produits qu'on peut acheter autours de nous.
+        > Savoir les horaires d'ouverture d'une boutique.
+        > Savoir si une boutique est ouverte ou non.
+    > Objectifs
+      Site e-commerce pour les boutiques.
+      Connaitre les boutiques aux alentours.
+      Voir les produits avant d'aller sur place.
+    > Description du projet et de l'existant
+      > Jumia
+      > Ali express
+      > Amazon
+      > Facebook marketplace
+      > Ebay
+    > Critères d'acceptabilité du produit
+      > Many features
+    > Perimetre du projet
+    > Organigramme fonctionnel et technique	
   > conclusion generale
   > Bibliographie
-  > Reference
+  > Reference/document de reference
+
+> PAQ
+  >
+
+> Description textuelle des fonctionnalités
+  >
