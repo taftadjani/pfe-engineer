@@ -580,15 +580,14 @@
       > Mail de la boutique
       > Description de la boutique
     [Meth]
-  > Entreprise
+  [v]> Entreprise
     [Attr ] :
       > Nom
       > localisation
       > ville
       > pays
     > Zero ou plusieurs boutiques
-  > Categories (Famille, Section)
-    > Plusieurs sous categories
+  [v]> Categories (Famille, Section)
     [Attr] :
       > Nom de la categorie (libelle de la categorie)
     [Meth] :
@@ -596,7 +595,7 @@
       > Modifier une categorie
       > Supprimer une categorie
       > Liste des categories
-  > Sous categorie
+  [v]> Sous categorie
     [Attr] :
       > Nom de la sous categorie (libelle de la categorie)
     [Meth] :
@@ -604,41 +603,35 @@
       > Modifier une sous categorie
       > Supprimer une sous categorie
       > Liste des sous categories
-  > Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
-    > Client sur un produit
-    > Client sur une boutique
-    > Client sur un vendeur
-    > Client sur une entreprise
-    > Vendeur repond à un client
-    > admin repond à un vendeur
-    > admin repond à un client
-    > Client repond à un admin
-
-    > Emetteur (Client, vendeur, admin)
-    > Recepteur (Client, vendeur, admin, boutique, entreprise)
-    > comment
-    > où le comment a-t-il été ecrit?
-      > Sur un produit
-      > Sur une boutique
-      > Sur un vendeur
-      > Sur une entreprise
-    > Date du comment
-    > Id du comment
-  > Garantie
+  [v]> Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
+    [Attr] :
+      > Emetteur (Client, vendeur, admin)
+      > Recepteur (boutique, Produit, Vendeur)
+      > comment
+      > Recepeteur_id
+      > Recepteur_type (Produit, Client, Vendeur, Post)
+      > où le comment a-t-il été ecrit?
+        > Sur un produit
+        > Sur une boutique
+        > Sur un vendeur
+        > Sur un post
+      > Date du comment
+  [v]> Sous Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
+    [Attr] :
+      > Emetteur (Client, vendeur, admin)
+      > Recepteur (Commentaire)
+      > comment
+      > Date du comment
+  [v]> Garantie
+    > description
+    > Titre
     > durée de la garantie
-    > Garantie sur le produit
-    > Garantie accordé par :
-      > la boutique
-      > le vendeur
-      > l'entreprise
-      > le site
-      > admin
-  > Messages privés
+  [v]> Messages privés
     > Emetteur (Client, vendeur, admin)
     > Recepteur (Client, vendeur, admin)
     > Message
-    >
-  > Fournisseur
+    > Date de creation
+  [v]> Fournisseur
     > Un fournisseur peut etre une personne ou une entreprise
     [Attr] :
       > Nom
@@ -658,10 +651,13 @@
     > Pour l'entreprise
     > Pour le fournisseur
     > Pour le produit
-    [Meth] :
-      > Ajouter une adresse
-      > Modifier une adresse
-      > Consulter les informations d'une adresse
+    [Attr] :
+      > Region/quartier
+      > ville
+      > Pays
+      > description
+      > latitude
+      > longitude
   [v]> Panier
     [Attr] :
       > name
@@ -792,8 +788,12 @@
     > Description
   > Phone
   > Mail
-  >
-
+  > Posts
+    > Faits par tous les types de users selon leur besoins
+    > Vendeur pour attirer des clients sur leur produit
+    > Client pour reagir au produit qu'ils ont acheté(retour)
+  > Receiver type
+  > Quartier/Region
 
 [+] from product
   [Attr] :
@@ -869,6 +869,30 @@
     > Une entreprise (BIM)
     > Un groupe de vendeur(personnes)
   > Fournisseurs
+[+] from categorie
+  > Plusieurs sous categories
+[+] from Commentaires
+  > Client sur un produit
+  > Client sur une boutique
+  > Client sur un vendeur
+  > Client sur une entreprise
+  > Vendeur repond à un client
+  > admin repond à un vendeur
+  > admin repond à un client
+  > Client repond à un admin
+[+] from Garanties
+  > Garantie sur le produit
+  > Garantie accordé par :
+    > la boutique
+    > le vendeur
+    > l'entreprise
+    > le site
+    > admin
+[+] from addresses
+                     [Meth] :
+  > Ajouter une adresse
+  > Modifier une adresse
+
 
 
 > Fonctionnalités detaillées
