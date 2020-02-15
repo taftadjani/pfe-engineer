@@ -470,7 +470,7 @@
 
 [1] 7/2/2020
 > UML
-  > User
+  [v]> User
     [Attr]:
       > firstName
       > lastName
@@ -484,6 +484,9 @@
       > Code postal
       > date de naissance
       > Langue de communication
+      > ville
+      > pays
+      > nationalité
     [Meth] :
       > Log in
       > Log out
@@ -502,62 +505,29 @@
       > setters
       > updaters
       > deleters
-  > Client : User
+  [v]> Client : User
     [Meth]:
-      > Supprimer un produit du Panier
-      > Vider le Panier
-      > Commander(Valider le panier)
-      > Ajouter une adresse
-      > Modifier une adresse
+      > Commander(Valider le panier) (ordering)
       > Modifier un compte client
-      > Consulter les informations d'une adresse
-      > Ajouter une carte bancaire
-      > Modifier les informations d'une carte bancaire
-      > Consulter les informations d'une carte bancaire
-      > Consulter les commandes
-      > Demander une facture pour une commande
-      > Virifier si un pseudo existe
       > Activer/desactiver son propre compte
-  > Vendeur : User
-    > Profil du vendeur
-    > Sa ou ses boutiques
-    > Evaluation du vendeur
-      > Etoiles
-      > Pourcentages
-      > Commentaires faits par les utilisateurs
-      > Date où il est devenu vendeur
-      > Nombre de ventes
-      > Pays d'origine
-      > Serieux du vendeur
-      > Disponibilité
-        > Disponible à (pays où se trouve sa boutique ou business)
-      > Expedition(respect des delais de livraison)
-      > Qualité de produit
-      >
-  > Admin : User
+  [v]> Vendeur (Sellers): User
+    > Date où il est devenu vendeur
+  [v]> Admin : User
     [Meth] :
       > Activer un compte
       > Desactiver un compte
       > Supprimer un compte
-      > Changer le pourcentage de TVA
-      > Supprimer un produit
-      > Modifier un produit
-      > Ajouter un produit
-      > Ajouter une promotion
-      > Supprimer une promotion
-      > Ajouter un mode de livraison
-      > Supprimer un mode de livraison
       > Envoyer des mails
-      > Ajouter un Utilisateurs(Vendeur, Client, Admin)
-      > Accorder des privileges à un user
-      > Diminuer les privileges
+      > Ajouter un Admin
+      > modifier les privileges d'un user
+        > Ajouter les privileges
+        > Diminuer les privileges
       > Lister les utilisateurs (admins, vendeurs, clients)
-  > Privilege
+  [v]> Privilege
     > Nom de la privilege
     > Descripton de la privilege
-  > Produits
+  [v]> Produits
     [Attr] :
-      > Couleur (plusieurs couleurs possible)
       > Titre
       > Localisation du produit
         > Par defaut, celui de la boutique
@@ -566,10 +536,6 @@
       > Sous titre
       > Taxe de vente
         > Par pays(Juste pour le Maroc now)
-      > Photos
-        > Photos principale
-        > Les autres
-        > Systeme pour les classer
       > prix
         > Prix reel
         > Prix promotionnel
@@ -578,41 +544,20 @@
           > Reduction pendant une durée
           > Reduction par code coupon si la boutique accepte
         > Prix donnée par un utilisateur/vendeur lors des negociations
-      > Categories( Un produit peut appartenir à plusieurs categories)
-      > Marque
+      > Marque(brand)
       > designation
       > SKU
-      > Poids
+      > Poids(weight)
       > dimension
       > Description
         > Mise en forme du texte
-      > Options de livraison
-      > Personne qui ont achetés le produit
-      > Garantie
+      > Garantie(warranty)
         > Durée de garantie
       > Condition du produit
         > Neuf
         > Remis à neuf
         > Occasion
-      > Quantité en stock
-      > Quantité de vente minimum
-      > Satisfaction client
-        > Pourcentage
-      > Nombre de jour avant livraison
-      > Format de vente du produit
-        > Prix fixe
-        > Prix variable
-      > Durée de disponibilité du produit dans la boutique
-      > Options de retour
-        > Pas de retour si acheté direct à la boutique
-        > Retour sous x durée
-      > Options de paiements
-      > Date de publication deu produit dans la boutique
-        > Directement apres l'enregistrement
-        > Apres une date x
-        > Produit avec une quantité nulle ne sera pas visible sur la boutique
-      > Nombre de personne qui ont consulter le produit
-      > Nombre de personne qui ont acheté le produit
+
     [Meth] :
       > Ajouter un produit
       > Modifier un produit
@@ -625,24 +570,23 @@
         > Suivant un pattern (mot clé)
         > Avec un id
         > Avec Categorie
-      > Ajouter une categorie au produit
-      > Supprimer une categorie
-      > Changer la categorie
-      > Liste desproduits d'un fournisseur
-  > Boutique
-    > Le vendeur ou les vendeurs
+  [v]> Boutique
     [Attr] :
       > Nom de la boutique
-      > Proprietaire
-      > Garantie sur les produits
+      > Garantie par defaut sur les produits
       > Adresse de la boutique
       > Telephone de la boutique
         > Peut etre le numero d'un des vendeurs
       > Mail de la boutique
-      > Fax de la boutique
       > Description de la boutique
+    [Meth]
   > Entreprise
-    > Zero ou plusieurs boutiques> Panier
+    [Attr ] :
+      > Nom
+      > localisation
+      > ville
+      > pays
+    > Zero ou plusieurs boutiques
   > Categories (Famille, Section)
     > Plusieurs sous categories
     [Attr] :
@@ -707,26 +651,34 @@
       > Supprimer un fournisseur
       > Modifier un fournisseur
       > Consulter un fournisseur
-  > Adresse
+  > Adresse/location
     > Pour le client
     > Pour le vendeur
     > Pour la boutique
     > Pour l'entreprise
     > Pour le fournisseur
-  > Panier
+    > Pour le produit
+    [Meth] :
+      > Ajouter une adresse
+      > Modifier une adresse
+      > Consulter les informations d'une adresse
+  [v]> Panier
     [Attr] :
-      > Devise
+      > name
+      > devise (currency)
     [Meth] :
       > Ajouter un produit dans le panier
       > Supprimer un produit du panier
       > Liste des produits dans mon panier
+      > Supprimer devise
       > Vider mon panier
       > Ajouter une liste de produits dans mon panier
       > Creer un panier
       > Supprimer un panier
       > Changer de devise du panier
-      > Consulter produit d'un panier
       > Consulter un panier
+      > Modifier la devise
+      > Modifier le nom
   > Envies
     > Comme le panier mais avec un affichage different
   > Commandes
@@ -742,6 +694,7 @@
       > Mode de paiement
     [Meth] :
       > Passer une commander(Passer la commande)
+      > Demander une facture pour une commande
       > Modifier l'etat de la commande
       > Liste des commandes
       > Consulter les informations de la commande
@@ -775,6 +728,7 @@
       > Supprimer une marque
       > Consulter une marque
       > Liste les marque
+  > Model (model du produit)
   > Livraison
     > Date de livraison
     > Description de la livraison
@@ -793,7 +747,7 @@
     > Nom du pays
     > Prefixe
       > +212 pour le Maroc
-  > TVA
+  > Taxe sur Valeur Ajouté
     > Pourcentage
   > Promotion
     > Pourcentage
@@ -807,14 +761,115 @@
     > 3 etoiles
     > 2 etoiles
     > 1 etoile
-  > Devise
+  [v]> Devise
     > MAD (DH)
     > Euro
+    [Attr] :
+      > abbreviations ($)
+      > title (Dollar)
+      > Description
   > Commission
     [Attr] :
       > Date transaction
       > Pourcentage
       > Montant de la commission (donnée calculée)
+  [v]> Condition (condition du produit)
+    > new
+    > used
+    > open box
+    > Not working or partially
+    [Attr] :
+      > titre
+  > Price
+    > prix
+  > Color (Product color)
+  > Paiement
+    > Ajouter une carte bancaire
+    > Modifier les informations d'une carte bancaire
+    > Consulter les informations d'une carte bancaire
+  [v]> Prix description
+    > titre(prix min, prix max, prix de reduction, prix lors des negociations,...)
+    > Description
+  > Phone
+  > Mail
+  >
+
+
+[+] from product
+  [Attr] :
+  > Photos
+    > Photos principale
+    > Les autres
+    > Systeme pour les classer
+  > prix
+    > Prix reel
+    > Prix promotionnel
+    > Reduction
+      > Reduction pour client fidele
+      > Reduction pendant une durée
+      > Reduction par code coupon si la boutique accepte
+    > Prix donnée par un utilisateur/vendeur lors des negociations
+  > Categories( Un produit peut appartenir à plusieurs categories)
+  > Options de livraison
+  > Personne qui ont achetés le produit
+  > Quantité en stock
+  > Quantité de vente minimum
+  > Satisfaction client
+    > Pourcentage
+  > Nombre de jour avant livraison
+  > Couleur (plusieurs couleurs possible)
+  > Format de vente du produit
+    > Prix fixe
+    > Prix variable
+  > Durée de disponibilité du produit dans la boutique
+  > Options de retour
+    > Pas de retour si acheté direct à la boutique
+    > Retour sous x durée
+  > Options de paiements
+  > Date de publication deu produit dans la boutique
+    > Directement apres l'enregistrement
+    > Apres une date x
+    > Produit avec une quantité nulle ne sera pas visible sur la boutique
+  > Nombre de personne qui ont consulter le produit
+  > Nombre de personne qui ont acheté le produit
+  [Metjh] :
+    > Ajouter une categorie à un produit
+    > Supprimer une categorie d'un produit
+    > Changer la categorie d'un produit
+    > Liste des produits d'un fournisseur donné
+[+] from Clients
+  > Supprimer un produit du Panier
+  > Vider le Panier
+[+] from vendeurs
+  > Sa ou ses boutiques
+  > Evaluation du vendeur
+    > Etoiles
+    > Pourcentages
+    > Commentaires faits par les utilisateurs
+    > Nombre de ventes
+    > Serieux du vendeur
+    > Disponibilité
+      > Disponible à (pays où se trouve sa boutique ou business)
+    > Expedition(respect des delais de livraison)
+    > Qualité de produit
+    >
+[+] from admin
+  > Changer le pourcentage de TVA
+  > Supprimer un produit
+  > Modifier un produit
+  > Ajouter un produit
+  > Ajouter une promotion
+  > Supprimer une promotion
+  > Ajouter un mode de livraison
+  > Supprimer un mode de livraison
+[+] from boutique
+  > Le vendeur ou les vendeurs
+  > Proprietaire
+    > Peut etre un Vendeur
+    > Une entreprise (BIM)
+    > Un groupe de vendeur(personnes)
+  > Fournisseurs
+
 
 > Fonctionnalités detaillées
   > Create
@@ -867,10 +922,22 @@
 > Rapport de stage
   > dedicace
   > remerciement
+  > Gloassaire(Liste des abbreviations)/Terminologie
+  > Liste des figures (figure numero x - Nom de la figure - numero de la page)
+    > Diagramme de Gantt
+    > Duagramme de classe
+    > Diagramme de cas d'utilisation
+    > Diagramme de sequence
+    > Diagramme d'activités
+    > Modele Conceptuel de Données
+    > Logo de PHP/MySQL/Apache
+    > MVC
+    > Figures de la maquette des pages
+  > Liste des tableaux (tableau numero x - Nom du tableau - numero de la page)
+    > Tableaux des exigences
+    > Tableaux desdescriptions textuelles de toutes les fonctionnalités
   > Sommaire/table de matiere
   > Resume / Contexte
-  > Gloassaire(Liste des abbreviations)/Terminologie
-  > Liste des figures
   > Introduction generale
   > Présentation du projet
     > Contexte
@@ -894,7 +961,154 @@
     > Critères d'acceptabilité du produit
       > Many features
     > Perimetre du projet
-    > Organigramme fonctionnel et technique	
+    > Organigramme fonctionnel et technique
+  > Expression des besoins
+    > Besoins fonctionnels
+      > Stock
+        > Modifier les propriétés d’un produit.
+        > Lister les produits pour le vendeur (tous les produits).
+        > Supprimer le produit (on ne le vend plus)
+        > Affichage de produit dans la boutique pour le client
+      > Communication
+        > Communication entre Client – vendeur.
+        > Communication entre Client – entreprise.
+        > Communication entre Fournisseur – vendeur.
+        > Communication entre Client – Client.
+        > Communication entre Client – Admin.
+
+        > Les commentaires
+        > Les messages privés
+          > Seul un follower peut envoyer de message privé à un utilisateur
+        > Les publications des boutiques pour essayer de promouvoirs leur boutique, les reductions, ...
+        > Les fidelisations
+          > Pour les vendeurs
+          > Envoi des messages juste à ses clients fideles(liste des clients) pour informer des periodes d'offres, ...
+      > Panier
+      > Entreprise
+        > Peut avoir plusieurs boutiques.
+      > Users
+        > Options
+        > Types d'utilisateurs
+          > Client
+            > un client peut avoir plusieurs adresses
+          > Vendeur
+          > Admin
+          > Paiement
+          > Entreprise
+      > Localisation
+        Limiter cette fonctionnalité sur un cercle d’un rayon x ou pas. La localisation peut être désactivée sur le site pour ne pas apparaitre.
+      > Boutique
+        > Ajouter des produits dans la boutique.
+        > Supprimer des produits de la boutique.
+        > Tous produits ayant une quantité égale à zéro ne sera pas mis sur la boutique ou sera enlever de la boutique automatiquement.
+        > Lister les produits pour le client (juste ceux disponibles sur la boutique)
+        > Position sur la MAP
+        > Peut appartenir à une entreprise global
+        > Peut appartenir à une personne
+        > Peut vendre différents types de produits
+      > Filtre
+        > Par rapport aux  vendeurs
+        > Par rapport aux types de produits
+        > Par rapport aux prix
+        > Par rapport à la localisation des boutiques
+        > Par rapport aux options de livraison
+        > Par rapport aux remises/reductions
+        > Par rapport aux marques
+        > Par rapport à la categorie
+      > recherche
+        > Recherche fonctionne sur les produits, boutiques, entreprises, vendeurs, clients.
+        > Fonction de recherche precis
+        > La recherche doit aussi montrer les produits par rapport à la distance pour donner des avantages aux vendeurs locaux et pour que les clients puissent pouvoir avoir le choix d'aller voir l'objet en vrai.
+      > Details des produits
+      > La livraison
+      > Les retours en cas de non conformités
+      > Les paiements
+      > Media sociaux
+        > Partage des produits sur les reseaux sociaux
+      > Systeme d'encheres ou negociation
+      > Voir sa boutique en tant que client pour un vendeur
+      > Systeme de TVA
+      > Systeme permettant de s'assurer de la fiabilité des vendeurs, de la qualité des produits
+        > Systeme de notes
+        > Systemes de commentaires sur la boutique, les produits.
+        > Systemes d'etoiles
+      > Systeme de suivi des commandes
+      > Les offres de reductions
+      > Les systemes de remboursement
+      > Systemes de commission
+        > annuel ou mensuel
+        > par pourcentage
+      > Systeme d'avantages pour client reguliers
+      > Systeme de ranking pour les vendeurs et de primes
+      > Systeme de fidelisation pour le vendeur
+        > Sending mails
+        > Following/abonnement
+        > Abonnez à la newsletter d'une boutique
+      > Systeme de comparaison des produits
+      > Systeme de penalité pour les clients et les vendeurs
+      > Systeme de garantie
+      > Extensibilité de notre site
+    > Besoins non fonctionnels
+      > Ergonomie
+        > Un design simple(clean)
+      > Facilité d'utilisation
+        > Simple navigation
+        > Experience utilisateur
+      > Securité
+      > Performance
+      > Responsive
+        > Bootstrap 4
+        > Mobile et web pour le vendeur
+        > Mobile et web pour le client
+        > Web pour l'admin
+      > Creer un systeme de micro service
+      > Fiabilité
+  > Contraintes
+    > Coûts / Enveloppe budgetaire
+      > Besoins logicielles
+      > Besoins materielles
+      > Besoins en resource humaines
+      > Formation
+    > Délais (diagramme de gantt)
+      > 6 mois (28/1/2020 à 28/7/2020)
+    > Contraintes de developpement
+  > Déroulement du projet
+    > Planification
+      > Techniques d’estimation des charges
+      > Charges prévisionnelles
+      > Planning prévisionnel(Diagramme de Gantt)
+      > Suivi de projet
+        > Suivi des adaptations du projet
+        > Audit
+        > Bilan de projet
+        > Proposition d’amélioration
+    > Demarche de developpement
+      > Cycle de developpement
+      > Langage et methodologie
+      > Processus de developpement
+        > La phase de conception
+          > UML
+          > Diagramme de cas d'utilisation
+          > Diagramme textuelles
+          > Diagramme d'activités
+          >
+        > La phase de réalisation
+          > Choix de la plateforme
+          > Choix de la
+        > Le resultat
+          > Les interfaces graphiques
+        > La phase de validation
+    > Descripton des activités
+      > Gestion de la documentation
+      > Gestion de configuration
+      > Gestion des tests
+      > Gestion des anomalies
+    > Element graphique
+      > Diagramme uml
+      > Diagramme textuelle
+    > Responsabilités
+      > Maîtrise d'ouvrage
+      > Maîtrise d'oeuvre
   > conclusion generale
   > Bibliographie
   > Reference/document de reference
