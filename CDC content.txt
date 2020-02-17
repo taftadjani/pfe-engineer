@@ -644,13 +644,7 @@
       > Supprimer un fournisseur
       > Modifier un fournisseur
       > Consulter un fournisseur
-  > Adresse/location
-    > Pour le client
-    > Pour le vendeur
-    > Pour la boutique
-    > Pour l'entreprise
-    > Pour le fournisseur
-    > Pour le produit
+  [v]> Adresse/location
     [Attr] :
       > Region/quartier
       > ville
@@ -675,88 +669,20 @@
       > Consulter un panier
       > Modifier la devise
       > Modifier le nom
-  > Envies
-    > Comme le panier mais avec un affichage different
-  > Commandes
+  [v]> Commandes
     [Attr] :
       > Date de commande
       > Description de la commande
       > Etat de la commande
-      > Montant de la commande(donnée calculée)
       > Date livraison estimée
       > Lieu de livraison
       > Mode de livraison
-      > Prix total payé
       > Mode de paiement
-    [Meth] :
-      > Passer une commander(Passer la commande)
-      > Demander une facture pour une commande
-      > Modifier l'etat de la commande
-      > Liste des commandes
-      > Consulter les informations de la commande
-      > Consulter les commandes dejà effectuées
-        > Filtrer
-          > Par etat de la commande
-          > Par date
-  > Etat de la commande (Commande livré, encours, )
+  [v]> Etat de la commande (Commande livré, encours, )
     > Nom de l'etat
-  > Factures
+  [v]> Factures
     [Attr] :
       > Date de facture
-      > tva
-      > Remise
-      > total hors taxe
-      > tout taxe compris
-    [Meh] :
-      > etablir une facture
-      > Envoyer une facture
-      > Afficher une facture
-      > Imprimer une facture
-  > Reglement
-    > Mode de reglement d'une facture
-      > Details ou complet
-  > Marque
-    [Attr] :
-      > Nom de la marque
-    [Meth] :
-      > Ajouter une marque
-      > Modifier une marque
-      > Supprimer une marque
-      > Consulter une marque
-      > Liste les marque
-  > Model (model du produit)
-  > Livraison
-    > Date de livraison
-    > Description de la livraison
-  > Mode de livraison
-    > Description
-    > Mode de livraison
-      > Achat à la boutique
-      > Livraison par le vendeur
-      > Livraison par notre site
-      > Livraison par une tierce personne
-      > Prix de livraison par rapport à chaque type
-  > Ville
-    > Nom de la ville
-    >
-  > Pays
-    > Nom du pays
-    > Prefixe
-      > +212 pour le Maroc
-  > Taxe sur Valeur Ajouté
-    > Pourcentage
-  > Promotion
-    > Pourcentage
-  > Etoiles
-    > Les personnes qui ont notés ses etoiles
-      > Le nombres de personnes qui ont notés
-      > On peut noter un vendeur, un produit
-      > Un commentaires
-    > 5 etoiles
-    > 4 etoiles
-    > 3 etoiles
-    > 2 etoiles
-    > 1 etoile
   [v]> Devise
     > MAD (DH)
     > Euro
@@ -764,11 +690,6 @@
       > abbreviations ($)
       > title (Dollar)
       > Description
-  > Commission
-    [Attr] :
-      > Date transaction
-      > Pourcentage
-      > Montant de la commission (donnée calculée)
   [v]> Condition (condition du produit)
     > new
     > used
@@ -776,25 +697,91 @@
     > Not working or partially
     [Attr] :
       > titre
-  > Price
-    > prix
-  > Color (Product color)
-  > Paiement
-    > Ajouter une carte bancaire
-    > Modifier les informations d'une carte bancaire
-    > Consulter les informations d'une carte bancaire
   [v]> Prix description
     > titre(prix min, prix max, prix de reduction, prix lors des negociations,...)
     > Description
-  > Phone
-  > Mail
-  > Posts
+  [v]> Marque
+    [Attr] :
+      > Nom de la marque
+  [v]> Model (model du produit)
+    > Nom du model
+  [v]> Pays
+    > Nom du pays
+    > Prefixe (indicateur telephonique)
+      > +212 pour le Maroc
+  [v]> Ville
+    > Nom de la ville
+  [v]> Livraison
+    > Date de livraison
+    > Description de la livraison
+  [v]> Mode de livraison
+    > Description
+    > titre
+      > Mode de livraison
+        > Achat à la boutique
+        > Livraison par le vendeur
+        > Livraison par notre site
+        > Livraison par une tierce personne
+        > Prix de livraison par rapport à chaque type
+  [v]> Price
+    > prix
+  [v]> Color (Product color)
+    > nom
+    > valeur
+  [v]> Phone
+    > valeur
+  [v]> Mail
+  [v]> Receiver type 
+  [v]> Taxe sur Valeur Ajouté
+    > Pourcentage
+  [v]> Etoiles
+    [Attr] :
+      > value
+    > 5 etoiles
+    > 4 etoiles
+    > 3 etoiles
+    > 2 etoiles
+    > 1 etoile
+  [v]> Promotion
+    > Pourcentage
+  [v]> Quartier/Region
+  [v]> Posts
     > Faits par tous les types de users selon leur besoins
     > Vendeur pour attirer des clients sur leur produit
     > Client pour reagir au produit qu'ils ont acheté(retour)
-  > Receiver type
-  > Quartier/Region
+  [v]> Reglement
+    > Mode de reglement d'une commande
+      > Details ou complet 
+  [v]> Paiement
+    > Ajouter une carte bancaire
+    > Modifier les informations d'une carte bancaire
+    > Consulter les informations d'une carte bancaire
+  [v]> Commission
+    [Attr] :
+      > Date transaction
+      > Pourcentage
+      > Montant de la commission (donnée calculée)
+  [v]> Langue
+    > langue
 
+
+
+
+
+ 
+
+[+] from etoiles
+  > Les personnes qui ont notés ses etoiles
+    > Le nombres de personnes qui ont notés
+    > On peut noter un vendeur, un produit
+    > Un commentaires
+[+] from marque
+  [Meth] :
+    > Ajouter une marque
+    > Modifier une marque
+    > Supprimer une marque
+    > Consulter une marque
+    > Liste les marque
 [+] from product
   [Attr] :
   > Photos
@@ -889,9 +876,57 @@
     > le site
     > admin
 [+] from addresses
-                     [Meth] :
+  [Meth] :
   > Ajouter une adresse
   > Modifier une adresse
+  > Pour le client
+  > Pour le vendeur
+  > Pour la boutique
+  > Pour l'entreprise
+  > Pour le fournisseur
+  > Pour le produit
+[+] from commandes
+  > Montant de la commande(donnée calculée)
+  [Meth] :
+    > Passer une commander(Passer la commande)
+    > Demander une facture pour une commande
+    > Modifier l'etat de la commande
+    > Liste des commandes
+    > Consulter les informations de la commande
+    > Consulter les commandes dejà effectuées
+      > Filtrer
+        > Par etat de la commande
+        > Par date
+[+] from facture
+  [Attr] :
+    > tva
+    > Remise
+    > total hors taxe
+    > tout taxe compris
+  [Meh] :
+    > etablir une facture
+    > Envoyer une facture
+    > Afficher une facture
+    > Imprimer une facture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
