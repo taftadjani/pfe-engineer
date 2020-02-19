@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="67984861-a9f6-4682-94d4-ada3ffbb29e1" name="UMLUseCaseDiagram1" linkedPackageId="77205f8b-e3ab-4801-b271-d055f43f8a06" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="d7ab6277-d60d-4286-8fbb-01d55b2586e7" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="eafa1e9e-c9c0-4177-a428-d5be9fdb19d1" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a34553f8-82cb-4ba6-a033-5e652a6f6af6">
+          <propertyInstance Id="747d712f-7287-4d0f-ab8e-5818db2a94c7" name="BaseName">
+            <elementDefinition Id="bfed53a1-2594-4f8a-acd7-2aed08ca9e39" />
+          </propertyInstance>
+          <elementDefinition Id="40d71203-a1f7-49c4-b664-4b9a845ea967" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0cb70510-d98d-4625-8da7-7627e82dee6d">
+          <propertyInstance Id="6d25b553-bfe0-45f0-bc9e-ee55a6592b57" name="ClrAttributes">
+            <elementDefinition Id="bd4aaf3d-2810-4274-b76a-c328359d511c" />
+          </propertyInstance>
+          <elementDefinition Id="c91b5166-912b-4cc5-aade-e70b51c44ec3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2de8b0d6-dbb4-4fa3-8789-b127d7ae10e1">
+          <propertyInstance Id="53b3e728-1069-4bdc-9915-108b695bb6e6" name="Usings">
+            <elementDefinition Id="609214c3-d164-4eca-a7c1-281db2f57341" />
+          </propertyInstance>
+          <elementDefinition Id="38780c18-ac6f-42c3-85d3-20b30ce30b03" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="6c29e006-5cb5-4b80-8240-c31a0de29767" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="1db5e577-4efb-4059-b981-729eeee1ffd0" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fcd3dbbe-9380-4dc3-8b50-9c52f03215cb">
+          <propertyInstance Id="af6a5029-d5af-4bf0-8f22-88ebf4b917dc" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8fd9c584-0fd4-429f-b7e2-1794f91289c8" />
+          </propertyInstance>
+          <elementDefinition Id="b56c16b9-a744-4890-83b1-0600077d5e83" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5cfd43ab-c95c-486d-b96d-fa3db03552e8">
+          <propertyInstance Id="2d079dd7-b12b-44a9-8c10-93333eda1986" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="7e7ecceb-133a-4c43-98fd-221acb7bc014" />
+          </propertyInstance>
+          <elementDefinition Id="6bf0a9df-9430-4343-956e-562fd86df9f0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7992f039-44b6-4cbd-bab9-1b6fb264d249">
+          <propertyInstance Id="41ef1744-120a-4beb-9ef5-afd743d915f3" name="ProjectPath" value="ClassTemplate=..\Mon diagramme uml pour le PFELib\Mon diagramme uml pour le PFELib.csproj|EnumTemplate=..\Mon diagramme uml pour le PFELib\Mon diagramme uml pour le PFELib.csproj|InterfaceTemplate=..\Mon diagramme uml pour le PFELib\Mon diagramme uml pour le PFELib.csproj|StructTemplate=..\Mon diagramme uml pour le PFELib\Mon diagramme uml pour le PFELib.csproj">
+            <elementDefinition Id="ca002518-beb7-486f-8d2d-b900bc50fc34" />
+          </propertyInstance>
+          <elementDefinition Id="29a24085-a5f6-44e4-9305-773a3382ae2f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="07701658-a749-494e-8223-7fa001f16390">
+          <propertyInstance Id="d42b702b-9908-4711-965e-b820230c7e87" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="9b5457ef-0e22-486f-9635-5a8da8c1a0c3" />
+          </propertyInstance>
+          <elementDefinition Id="4fb53ec3-398c-44c8-b0f0-936ef4f54f05" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="20d8bc8b-553c-4f18-949a-62e9f51bad88">
+          <propertyInstance Id="69103e22-bdb3-4cd1-8f26-d1499121ef1c" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="1be240d6-2a85-4ac0-a67e-d2895d98b4cc" />
+          </propertyInstance>
+          <elementDefinition Id="04c899a8-aa05-40fc-9c6f-0e8045a17a6e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c1ad9838-11b0-402f-91b6-7b71eeb3c5d4">
+          <propertyInstance Id="8c940385-261c-40c9-94e5-4fde607f701c" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="474d3afd-319e-472c-a337-8054303ff45d" />
+          </propertyInstance>
+          <elementDefinition Id="b64dbc32-5f12-4afd-a11c-de56a9003f55" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e21b990b-9b56-48e4-a38b-16ea18a43ddf">
+          <propertyInstance Id="36d24b56-8feb-483a-8546-e6273813ab0d" name="Parameters">
+            <elementDefinition Id="7a33c70c-056f-46d5-b8aa-474aa85b8e98" />
+          </propertyInstance>
+          <elementDefinition Id="302fa528-7821-4779-ba99-e2d7eeb14d70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ff6952dd-7393-454f-8124-f28dedb2159a">
+      <profileInstance Id="8548037a-387c-44ed-9653-0963b3b55a38" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a574d308-db7d-444a-8495-3abc078bc788">
+      <profileInstance Id="eea57c38-84dc-402c-8735-713a18faec34" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e7435eba-3c97-4438-8d94-e52834c7d21c">
+      <profileInstance Id="05a0cae9-03d2-4ac5-b62b-b9982f5065a2" name="TextTemplateBindings">
+        <elementDefinition Id="1081d6e2-05f7-4eda-a569-277487718266" />
+      </profileInstance>
+      <elementDefinition Id="ae3102bb-033b-4631-9f73-3df526469530" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="72d658bc-46f4-4938-8340-2b409da8431d">
+      <profileInstance Id="192647b3-40db-40b1-815f-5b52be0b8c25" name="CSharpProfile">
+        <elementDefinition Id="2f97e8c0-c136-4633-9890-4b75d747f58b" />
+      </profileInstance>
+      <elementDefinition Id="06a25993-4610-4aeb-950f-baaecc5960c3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8e96b45c-c5ae-4d25-a1aa-e0f8b379f109" name="User not  Connected" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="662878f2-8044-456c-8967-3dc9b4d39524" />
+        <targetEnds>
+          <association Id="586f93de-b435-4328-b700-09528451cf53" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="log in" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3c80d5b8-ec09-41e3-8372-8213f8000c2e" LastKnownName="log in" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54f6bfee-baf6-44bd-a100-b12a525f3d0d" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e23b845a-1620-47d3-ad1a-fb1e9f5ae344" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="229dc51e-7dd4-4677-934a-8331613de090" name="log in" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="135e194b-9f1e-4045-9eef-6c4b414e8564" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc9b5474-c09b-454b-abe9-fb8137b17c5c" />
+          </association>
+          <association Id="9f77cb6e-9fbe-40f4-bf2e-efebe282e1f8" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="subscribe to a newsletter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b593d5e-b6e8-4bbe-86ba-685490b59f3e" LastKnownName="subscribe to a newsletter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fffa30d-e1cf-4180-8be9-6b8a270230ef" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7d759bb-2e2d-41eb-bcd3-0f16f52ab2ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a130a18-331a-496b-8e64-bad4fd832b26" name="subscribe to a newsletter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2af08e23-0e3c-4d9b-b01c-e1802c6798c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc59e114-338e-4438-9e54-862d422bab2d" />
+          </association>
+          <association Id="8b6f2927-a91b-4006-9870-591036d29008" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" LastKnownName="Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14aaa97f-a006-49b7-ae5e-2ff431f434ff" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8320f68a-2069-4031-8a9f-c9d34b96b8e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eedb3ef8-7e43-4648-8898-c8fab3ec44b6" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9172041d-8982-4b70-92c1-889f60103140" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="09b4c7b0-1122-4075-9b5f-29580cd26565" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7e01631c-25b9-479e-921f-0a11e0cf6f34" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec6615c7-0d29-41c2-a0df-b44a1522fcdb" />
+        <targetEnds>
+          <association Id="36bba720-2340-4de6-b02b-4558d6a3713e" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="log out" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f95691-fb0e-41af-b680-ae9bdb11c32c" LastKnownName="log out" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="329f0804-dd87-48e0-9326-a695742d3787" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="12fc72c2-2336-497d-aa26-604a0a07615a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4f3a758-7732-4bf8-84cb-d195dd0b3150" name="log out" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e414b760-4c3a-46d9-b994-ad5da74f0319" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0823f87-aeed-4ef1-980d-20c686e4e8a9" />
+          </association>
+          <association Id="34dde8a6-5465-4dc1-98b6-2681a82aab34" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="subscribe to a newsletter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b593d5e-b6e8-4bbe-86ba-685490b59f3e" LastKnownName="subscribe to a newsletter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d292b9fb-2dd0-4c2f-9ab0-39ffef68d74c" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65f46ec5-9e43-4d36-a810-de1cbfb3e8b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="399efed3-782a-48d2-96cd-d2c2f550e9d7" name="subscribe to a newsletter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba8742fe-aa2c-46fe-a095-33b136cbdd5b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1de95312-06b3-4286-ba6a-c3fe6a965c0d" />
+          </association>
+          <association Id="1d0f0992-a5d4-4d73-8ede-7d020b409c9c" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" LastKnownName="Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4da28bf4-288c-48a7-9abe-aa37691cfa4d" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e716201a-84f9-4c0c-8c1a-04ee87534bb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57d870f7-19f4-4536-9d46-6e7a52d6625b" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ce51a0df-3fdd-40a9-9c5c-e5424518c125" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="59c96407-81f5-4fc8-8ee1-265a2eb54a1a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f1be0ca0-9ecd-4ac5-93aa-71894687eb63" name="Seller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd93ce12-e874-4d56-9194-fbb42f57534e" />
+        <targetEnds>
+          <association Id="654b4e3a-ab34-4f6b-9655-6739842cb367" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="log out" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f95691-fb0e-41af-b680-ae9bdb11c32c" LastKnownName="log out" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2a15957-db06-47ec-a5f7-8f435b0d637f" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d5871aef-39fc-4b43-857c-c0a6fce32f65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa61937e-9406-4c09-bda4-6784d6d8c85e" name="log out" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d49f099c-4ce7-4f5b-95bd-b10546e229d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86554f75-d2f4-4877-9430-44d515a418da" />
+          </association>
+          <association Id="1b4220b6-751d-44fd-8d2c-845cad8bf6be" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="subscribe to a newsletter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b593d5e-b6e8-4bbe-86ba-685490b59f3e" LastKnownName="subscribe to a newsletter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebba25ad-43d0-4638-a1cf-48b03845227c" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2721b957-c7a3-47f1-99ad-35ecf0a3a7c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="993f6f44-8a4e-4765-8ac2-5099535f7a14" name="subscribe to a newsletter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba26a188-9a43-4e00-ac75-b365508d0275" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee8dd11f-04a5-4165-8c7d-52b50e3e687e" />
+          </association>
+          <association Id="3dff0ea4-530d-44c2-990b-286bb6ca519e" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" LastKnownName="Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d7e0501-ee85-488d-b4c7-15e263bc0177" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44dc3eba-4234-4d69-bce3-d223c7313d37" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="981dc19c-9388-466e-8450-cfb8e156823f" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8bdd098c-54a5-4376-b13c-803b3bc65592" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1dec7b5-a1f1-4c0f-8ac6-43ad57b1fe89" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="90436db2-9f79-44f1-bce6-efe4c41d20d5" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="028fa51a-488b-4c40-8392-089cdf4e6343" />
+        <targetEnds>
+          <association Id="7efff154-913a-45c9-9ce9-7c6ded41559d" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="log out" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85f95691-fb0e-41af-b680-ae9bdb11c32c" LastKnownName="log out" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ed6b634-99c0-441c-a601-4c7aa93a91bb" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fdd29b1a-935d-4f9a-852f-9008040412b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b2a3209-7da4-4b17-a41d-51dfe6c31fe1" name="log out" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="672ab3da-51df-4c67-9a84-1569641efab1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd801b89-96ec-4b4d-89e4-fc60f27a4804" />
+          </association>
+          <association Id="3155bc98-d313-45d4-82b8-60e479b722f5" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="subscribe to a newsletter" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b593d5e-b6e8-4bbe-86ba-685490b59f3e" LastKnownName="subscribe to a newsletter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b1d9d3c-5702-4d5e-b6b5-9c18ed757d0a" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d871b15-1602-448f-8bc4-7d078058f921" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="279df1b0-090d-4147-aba8-e8576331ccee" name="subscribe to a newsletter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a6683766-bd44-4fda-a5a5-c783029fcbd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="21e10b28-2028-42ad-8a79-8411cbed67c2" />
+          </association>
+          <association Id="5cdedd63-f942-446d-89c7-1c09cdc0909a" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" LastKnownName="Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc240c4f-6860-499e-9e2a-4f3349fb359d" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0440e857-02a6-4280-963f-23aba5d872a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5eb8007-ccf5-498d-b239-b369824699cf" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44141347-7bfb-4603-b394-a3c72012011c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="29b8820d-3b41-4389-aca9-07a35da309cc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6dc8243b-3c37-436d-89e4-aba252680215" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="3c80d5b8-ec09-41e3-8372-8213f8000c2e" name="log in" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73c5323d-008c-4bc9-a1a9-a81662e63280" />
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="85f95691-fb0e-41af-b680-ae9bdb11c32c" name="log out" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54db3a84-0955-4c04-9907-99fe2927e504" />
+        <additions>
+          <include Id="ea79736f-75c6-4c99-8bbb-30707494e878">
+            <useCaseMoniker Id="3c80d5b8-ec09-41e3-8372-8213f8000c2e" LastKnownName="log in" />
+            <elementDefinition Id="e6a0104c-8ea8-4f04-a4e9-760c7c23b0d6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0b593d5e-b6e8-4bbe-86ba-685490b59f3e" name="subscribe to a newsletter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8de2e4f7-42f6-44a0-bd73-8f352bc85b50" />
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" name="Search" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c16d85d-cdb0-4af4-8310-8acce9702acf" />
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="77205f8b-e3ab-4801-b271-d055f43f8a06" name="Mon diagramme uml pour le PFE">
+    <elementDefinition Id="0824559c-5ede-4f47-8284-9e39551eadd2" />
+  </package>
+</useCaseModelRoot>
