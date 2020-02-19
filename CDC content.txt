@@ -387,6 +387,7 @@
           > Web pour l'admin
         > Creer un systeme de micro service
         > Fiabilité
+        > Web services
     > Contraintes
       > Coûts / Enveloppe budgetaire
         > Besoins logicielles
@@ -723,416 +724,151 @@
       > Montant de la commission (donnée calculée)
   [v]> Langue
     > langue
-  > Genre
-    > Homme
-    > Femme
-
-// TODO: UML Links
-> Explain
-  > Aggregation -- : le contient mais peut exister sans lui
-  > Composition ++ : le contient et ne peu exister sans lui
-  > Association ** : Il interagisse mais pas de relation de contenance
-  > Dependance -> :
-  > Heritage
-> UML Links
-  > User
-    > -- Adresses
-    > ++ Privilege
-    > ** Product
-    > ** Shop
-    > ** Entreprise
-    > ** Comment
-    > ** Sub Comment
-    > ** Message
-    > ** Order
-    > ** Bill
-    > ** Price
-    > ** Brand
-    > ** Model
-    > ** Country
-    > ** City
-    > ** District
-    > -- Phone
-    > -- Mail
-    > ** Post
-    > ** Payment
-    > ++ language
-  > Client
-    > -> User
-  > Seller
-    > -> Client
-  > Admin
-    > -> Seller
-  > Privilege
-  > Product
-  > Shop
-  > Entreprise
-  > Category
-  > Sub Category
-  > Comment
-  > Sub Comment
-  > Warranty
-  > Message
-  > Provider
-  > Adresses
-  > Cart
-  > Order
-  > Order state
-  > Bill
-  > Devise
-  > Product condition
-  > Price
-  > Price description
-  > Brand
-  > Model
-  > Country
-  > City
-  > Delivery
-  > Delivery method
-  > Color
-  > Phone
-  > Mail
-  > Receiver type
-  > Tax
-  > Star
-  > Promotion
-  > District
-  > Post
-  > Payment
-  > Paiement method
-  > Commission
-  > language
-
-
-
-
-// TODO:Les plus
-> Les plus
-  [+] from etoiles
-    > Les personnes qui ont notés ses etoiles
-      > Le nombres de personnes qui ont notés
-      > On peut noter un vendeur, un produit
-      > Un commentaires
-  [+] from marque
-    [Meth] :
-      > Ajouter une marque
-      > Modifier une marque
-      > Supprimer une marque
-      > Consulter une marque
-      > Liste les marque
-  [+] from product
-    [Attr] :
-    > Photos
-      > Photos principale
-      > Les autres
-      > Systeme pour les classer
-    > prix
-      > Prix reel
-      > Prix promotionnel
-      > Reduction
-        > Reduction pour client fidele
-        > Reduction pendant une durée
-        > Reduction par code coupon si la boutique accepte
-      > Prix donnée par un utilisateur/vendeur lors des negociations
-    > Categories( Un produit peut appartenir à plusieurs categories)
-    > Options de livraison
-    > Personne qui ont achetés le produit
-    > Quantité en stock
-    > Quantité de vente minimum
-    > Satisfaction client
-      > Pourcentage
-    > Nombre de jour avant livraison
-    > Couleur (plusieurs couleurs possible)
-    > Format de vente du produit
-      > Prix fixe
-      > Prix variable
-    > Durée de disponibilité du produit dans la boutique
-    > Options de retour
-      > Pas de retour si acheté direct à la boutique
-      > Retour sous x durée
-    > Options de paiements
-    > Date de publication deu produit dans la boutique
-      > Directement apres l'enregistrement
-      > Apres une date x
-      > Produit avec une quantité nulle ne sera pas visible sur la boutique
-    > Nombre de personne qui ont consulter le produit
-    > Nombre de personne qui ont acheté le produit
-    [Metjh] :
-      > Ajouter une categorie à un produit
-      > Supprimer une categorie d'un produit
-      > Changer la categorie d'un produit
-      > Liste des produits d'un fournisseur donné
-  [+] from Clients
-    > Supprimer un produit du Panier
-    > Vider le Panier
-  [+] from vendeurs
-    > Sa ou ses boutiques
-    > Evaluation du vendeur
-      > Etoiles
-      > Pourcentages
-      > Commentaires faits par les utilisateurs
-      > Nombre de ventes
-      > Serieux du vendeur
-      > Disponibilité
-        > Disponible à (pays où se trouve sa boutique ou business)
-      > Expedition(respect des delais de livraison)
-      > Qualité de produit
-      >
-  [+] from admin
-    > Changer le pourcentage de TVA
-    > Supprimer un produit
-    > Modifier un produit
-    > Ajouter un produit
-    > Ajouter une promotion
-    > Supprimer une promotion
-    > Ajouter un mode de livraison
-    > Supprimer un mode de livraison
-  [+] from boutique
-    > Le vendeur ou les vendeurs
-    > Proprietaire
-      > Peut etre un Vendeur
-      > Une entreprise (BIM)
-      > Un groupe de vendeur(personnes)
-    > Fournisseurs
-  [+] from categorie
-    > Plusieurs sous categories
-  [+] from Commentaires
-    > Client sur un produit
-    > Client sur une boutique
-    > Client sur un vendeur
-    > Client sur une entreprise
-    > Vendeur repond à un client
-    > admin repond à un vendeur
-    > admin repond à un client
-    > Client repond à un admin
-  [+] from Garanties
-    > Garantie sur le produit
-    > Garantie accordé par :
-      > la boutique
-      > le vendeur
-      > l'entreprise
-      > le site
-      > admin
-  [+] from addresses
-    [Meth] :
-    > Ajouter une adresse
-    > Modifier une adresse
-    > Pour le client
-    > Pour le vendeur
-    > Pour la boutique
-    > Pour l'entreprise
-    > Pour le fournisseur
-    > Pour le produit
-  [+] from commandes
-    > Montant de la commande(donnée calculée)
-    [Meth] :
-      > Passer une commander(Passer la commande)
-      > Demander une facture pour une commande
-      > Modifier l'etat de la commande
-      > Liste des commandes
-      > Consulter les informations de la commande
-      > Consulter les commandes dejà effectuées
-        > Filtrer
-          > Par etat de la commande
-          > Par date
-  [+] from facture
-    [Attr] :
-      > tva
-      > Remise
-      > total hors taxe
-      > tout taxe compris
-    [Meh] :
-      > etablir une facture
-      > Envoyer une facture
-      > Afficher une facture
-      > Imprimer une facture
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  > Password
 
 // TODO:Fonctionnalités detaillées
 > Fonctionnalités detaillées
-  > Create
-    > Creer un compte(client, vendeur, admin)
-      > Devenir vendeur avec un compte client
-      [>] Devenir admin avec un compte client ou vendeur
-    > Creer/inserer/ajouter un produit
-    > Creer une boutique
-    > Creer une entreprise
-    > Creer/ajouter/inserer une categorie de produit[par un admin]
-    > Creer/ajouter/inserer les informations d'un fournisseur
-  > Delete
-    > Supprimer/delete son compte
-    > Supprimer/delete un utilisateur[par un admin]
-    > Supprimer/delete un produit
-  > Update
-    > Modifier/update un produit
-    > Modifier/update un compte
-      > Client devient vendeur
-      > Client devient Admin
-      > Modifier le mot de passe
-    > Ajouter dans le panier
-    > Modifier la quantité d'un produit dans le stock
-  > Get
-    > Get un produit specifique grace à son id (Consulter les informations des produits)
-    > Liste des clients
-    > Liste des admins
-    > Liste des vendeurs
+  > Not connected user
+    > Login/log out
+    > S'abonner à une newsletter
+    > Acceder à la galerie de produit
+    > Recherche
+      > Chercher un produit grace à un mot ou plusieurs mot clés
+    > Filtre
+      > Par categorie
+      > Par marque
+    > Creer un compte : Customer
+    > Ajouter dans le panier principal
     > Liste des produits
       > Liste des produits d'un vendeur/boutique/entreprise
-      > Liste des produits disponibles en stock(independant des vendeurs)
       > Liste des categories des produits
-    > Liste des commandes
-      > Commandes achetées
-    > Liste des fournisseurs
-  > Login/log out
-  > Acheter
-  > Web services
-  > Changer la langue
-  > Modifier/retrouver le mot de passe
-  > Gerer quantite de produit
-  > Gerer son panier
-  > Contacter l'admin
-  > Rechercher un produit
-  > Acceder à la galerie de produit
-  > Confirmer une commande
-  > S'abonner à une newsletter
-  > Ajouter un commentaire
-
-> Fonctionnalités detaillées v2
-  > User
-    > Creer un User
-    > Supprimer un user
-    > Modifier les informations du comptes
+    > Changer la langue
+    > retrouver le mot de passe
+    > Gerer son panier
+      > Ajouter un produit dans le Panier
+      > Modifier la quantité d'un produit dans le Panier
+      > Supprimer un produit du Panier
+    > Consulter le contenu d'un Panier
+    > Modifier le contenu d'un Panier
+      > Ajouter un produit
+      > Supprimer un produit
+      > Modifier la Quantité de chaque produit dans le panier
+  > Customer
+    > Afficher une facture
+    > Imprimer une facture
+    > Demander une facture pour une commande
+    > Filtre
+      > Par date
+      > Par etat de la commande
+    > Devenir vendeur avec un compte Customer
+    > Supprimer son compte
+    > Supprimer un Panier
+    > Ajouter un commentaire
+    > Supprimer un commentaire
+    > Modifier un commentaire
+    > Supprimer un message
+    > Modifier son compte
       > Modifier son nom
       > Modifier son prenom
       > Modifier son Pseudo
       > Modifier son mail
       > Modifier son mot de passe
       > Modifier son telephone
-    > Consulter les informations du comptes
-
-    > Se connecter
-    > Se deconnecter
-    > Recuperer son mot de passe
-    > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
-
-    > Recherche de produit
-      > Suivant un pattern (mot clé)
-      > Avec Categorie
-      > Par marque
-  > Client
-    > Creer un Panier(Un client a par defaut un panier non supprimable)
-    > Supprimer un Panier
-    > Consulter le contenu d'un Panier
-    > Modifier le contenu d'un Panier
-      > Ajouter un produit
-      > Supprimer un produit
-      > Modifier la Quantité de chaque produit dans le panier
       > Ajouter une adresse
-      > Consulter une adresse
       > Modifier une adresse
       > Supprimer une adresse
-
-    > Commander(Valider le panier) (ordering)
-    > Modifier un compte client
-    > Donner un prix à un produit
-
-    > Consulter une boutique
-    > Consulter une Entreprise
+    > Modifier un message
+    > Ajouter un message
+    > Client devient vendeur
     > Consulter un produit
-    > Consulter un produit dans la boutique
+    > Liste des produits
+    > Donner un prix à un produit
+    > Liste des commandes
+      > Commandes achetées
+      > Commandes Livrées
+      > Commandes Retournées
+    > Confirmer une commande : Acheter
+    > Consulter les informations de la commande
+    > Gerer son panier
+      > Proposer un autre prix au vendeur
+      > Vider le Panier
+    > Contacter un admin
+    > Noter
+      > Un Seller
+      > Un produit
+      > Une Boutique
+    > Creer un Panier(Un client a par defaut un panier non supprimable)
+    > Consulter les informations du compte
+      > Consulter une adresse
+    > Consulter une boutique
+    > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
   > Seller
-    > Ajouter une boutique
-    > Modifier une boutique
-    > Supprimer une boutique
-
-    > Ajouter une Entreprise
-    > Modifier une Entreprise
-    > Supprimer une Entreprise
-
-    > Ajouter une boutique à une entreprise
-    > Supprimer une boutique d'une entreprise
-
+    > Modifier l'etat de la commande
+    > Recherche
+      > Consulter un produit specifique grace à sa reference
+    > Filtre
     > Ajouter un produit
-
     > Ajouter un produit dans la boutique
-    > Supprimer un produit dans la boutique
-    > Modifier un produit dans la boutique
-
-    > Modifier la quantité de produit disponible
-    > Envoyer des mails
-    >
+    > Ajouter une boutique
+    > Ajouter une entreprise
+    > Ajouter d'un fournisseur
+    > Ajouter une Entreprise
+    > Ajouter mon boutique à mon entreprise
+    > Ajouter une categorie à un produit
+    > Ajouter une promotion
+    > Ajouter une promotion à un produit
+    > Modifier son Entreprise
+    > Modifier un produit qu'il a insereé
+    > Modifier un produit qu'il a ajouté dans la boutique
+    > Modifier la quantité d'un produit dans le stock
+    > Modifier sa boutique
+    > Liste des produits
+      > Liste des produits disponibles en stock sur la boutique
+      > Liste des produits disponibles en stock mais pas sur la boutique
+      > Par categorie
+    > Liste des fournisseurs
+    > Supprimer une promotion sur un produit
+    > Supprimer une categorie d'un produit
+    > Supprimer sa boutique
+    > Supprimer son Entreprise
+    > Supprimer un produit de ma boutique
+    > Modifier un produit dans ma boutique
+    > Supprimer ma boutique de mon entreprise
+    > Envoyer des mails à ses followers
+    > Envoyer une facture
   > Admin
+    > Creer un compte : Customer, Seller, Admin
+    > Ajouter une categorie de produit
+    > Ajouter un produit dans un panier
+    > Ajouter une boutique à une entreprise
+    > Ajouter une marque
+    > Supprimer une marque
+    > Ajouter un mode de livraison
+    > Supprimer un mode de livraison
+    > Supprimer une boutique d'une entreprise
+    > Supprimer un compte quelconque
+    > Supprimer un produit
+    > Supprimer une boutique
+    > Supprimer une Entreprise
+    > Modifier un compte
+    > Modifier une marque
+    > Modifier un boutique
+    > Modifier un Entreprise
+    > modifier les privileges d'un user
+      > Ajouter les privileges : Customer to Seller
+      > Diminuer les privileges : Seller to Customer
+    > Rendre un customer vendeur
+    > Recherche
+      > Consulter un produit specifique grace à son id
+    > Filtre
+    > Lister
+      > Liste des clients
+      > Liste des admins
+      > Liste des vendeurs
+    > Envoyer des mails
     > Activer un compte
     > Desactiver un compte
     > Avertissement(avec un degre de gravité)
-    > Supprimer un compte
-    > Ajouter un Admin
-    > modifier les privileges d'un user
-      > Ajouter les privileges
-      > Diminuer les privileges
-    > Lister les utilisateurs (admins, vendeurs, clients)
-
-    > Supprimer un produit
-    > Modifier un produit
-  > Privilege
-  > Product
-  > Shop
-  > Entreprise
-  > Category
-  > Sub Category
-  > Comment
-  > Sub Comment
-  > Warranty
-  > Message
-  > Provider
-  > Adresses
-  > Cart
-  > Order
-  > Order state
-  > Bill
-  > Devise
-  > Product condition
-  > Price
-  > Price description
-  > Brand
-  > Model
-  > Country
-  > City
-  > Delivery
-  > Delivery method
-  > Color
-  > Phone
-  > Mail
-  > Receiver type
-  > Tax
-  > Star
-  > Promotion
-  > District
-  > Post
-  > Payment
-  > Paiement method
-  > Commission
-  > language
-
 
 // TODO:Rapport de stage
 > Rapport de stage
