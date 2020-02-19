@@ -32,6 +32,13 @@
     <Content Include="ModelDefinition\Package_0838.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Mon diagramme uml pour le PFE.uml">
       <SubType>Content</SubType>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="0824559c-5ede-4f47-8284-9e39551eadd2"
   name="Mon diagramme uml pour le PFE" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -225,11 +225,38 @@ TITLE
 -- SELLER
 -- STORE
 -- Company
--- WEBSITE</body>
+-- WEBSITE
+-- ADMIN
+-- MANUFACTURER</body>
       <annotatedElements>
         <classMoniker
           Id="3840c3c8-ae88-4ace-9933-9b0518cf7903"
           LastKnownName="Warranty"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="73e427b3-d5e6-4b87-ae01-74c8b8bfa981">
+      <body>DESCRIPTION
+-- WORK
+-- NO WORK
+-- EFFECTIVE OPENING
+-- EFFECTIVE CLOSING</body>
+      <annotatedElements>
+        <classMoniker
+          Id="8ee75231-e6b8-4a98-9ae4-43128fa5172f"
+          LastKnownName="Time"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="baed0603-46d7-434b-8956-2fded6d20b07">
+      <body>DAY
+-- 19-2-2020</body>
+      <annotatedElements>
+        <classMoniker
+          Id="364fd9b1-6a37-4ee0-a108-32b83dd3930a"
+          LastKnownName="Day"
           LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
       </annotatedElements>
     </comment>
@@ -1139,6 +1166,17 @@ TITLE
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="3ec890ab-ad95-4af5-9344-fcc32eb14cc0"
+            name="#password_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1602,6 +1640,45 @@ TITLE
                 <memberEnd
                   Id="6fce51c4-d8d7-4fa6-9773-043d1fab047d"
                   name="Advertissment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b92e15b3-59b2-45c7-be1d-5643c76bdd4a"
+            isDerived="false"
+            sourceEndRoleName="Seller"
+            targetEndRoleName="Store"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="616047b9-6ebe-42ea-85a8-9dd5e41b1874"
+              LastKnownName="Store"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c2a0615-dcec-4020-b110-4b5223804880"
+                  name="Seller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f9e8408-44c0-4371-a482-460d3d52908a"
+                  name="Store"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -6076,6 +6153,17 @@ TITLE
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="e9584908-8921-4c24-a2f9-b13f123493f4"
+            name="have_warranty"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -6568,6 +6656,28 @@ TITLE
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="77f780e6-b654-4bd7-833e-de3488cf8f8a"
+            name="inserted_at"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="856f4289-4fe3-4057-a1c0-3676634dc66d"
+            name="#inserted_by"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -6806,6 +6916,17 @@ TITLE
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="96e1796c-bf16-4223-8908-9eaf4d9f78f5"
+            name="returned_at"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -6961,6 +7082,45 @@ TITLE
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="fb6173c4-5a8d-4e27-85b6-6dac94cade64"
+            isDerived="false"
+            sourceEndRoleName="View"
+            targetEndRoleName="Store"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="616047b9-6ebe-42ea-85a8-9dd5e41b1874"
+              LastKnownName="Store"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7854434a-61dd-4d0c-8e6d-7d6ba9c6f2d1"
+                  name="View"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a45c2268-f3a4-4cc7-aff0-01ec1d3a273a"
+                  name="Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -6987,7 +7147,7 @@ TITLE
             isComposite="false" />
           <property
             Id="94412b8d-d4a1-4d16-8c6c-c9cbb893d788"
-            name="#store_product_id"
+            name="#viewed_id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -6999,6 +7159,17 @@ TITLE
           <property
             Id="dc2c913d-6bbe-4162-bd3c-71ee686b4a0d"
             name="inserted_at"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a20368f4-1f5b-4e5a-b5f8-0d5a9a594a17"
+            name="viewed_type"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -7082,6 +7253,17 @@ TITLE
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="037f0faf-176b-448b-a26a-004d96dbe0c2"
+            name="enabled"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -7140,6 +7322,291 @@ TITLE
           <property
             Id="0f6eddc9-cbd8-40d9-82d1-55c2cd02148f"
             name="title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="364fd9b1-6a37-4ee0-a108-32b83dd3930a"
+        name="Day"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="40170d17-e681-466d-ac83-89fbb425bc77"
+            name="day_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8d824e24-bbb0-424e-8069-007118ddfe08"
+            name="day"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8ee75231-e6b8-4a98-9ae4-43128fa5172f"
+        name="Time"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e68ca604-2760-4858-ba25-d67f0710680c"
+            isDerived="false"
+            sourceEndRoleName="Time"
+            targetEndRoleName="Store"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="616047b9-6ebe-42ea-85a8-9dd5e41b1874"
+              LastKnownName="Store"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dd6e5e2-b2e5-47f9-bd53-63b6b7759850"
+                  name="Time"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d488b8f8-b2c9-4de5-8527-fda219b51808"
+                  name="Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e875af82-db5d-4b78-869d-73058e85952b"
+            isDerived="false"
+            sourceEndRoleName="Time"
+            targetEndRoleName="Day"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="364fd9b1-6a37-4ee0-a108-32b83dd3930a"
+              LastKnownName="Day"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a0fcbc5-9797-4d6b-b5a5-a681072a45e3"
+                  name="Time"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b4d4077-dce3-4561-8834-6435c2a5af13"
+                  name="Day"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="bb76a53f-6830-4cd3-8676-8a3c7970a647"
+            name="time_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2bc876da-881c-4879-ad21-07d535b3e313"
+            name="start_time"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b9db1a05-179d-4b9c-b3d2-3bee54d6f23f"
+            name="end_time"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6983cd13-ba11-45cd-a876-4400ec02bf79"
+            name="#day_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2fff95e4-1e73-4ccb-9967-cb812b869edc"
+            name="description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="1acb5ec2-b93e-48cb-ac01-920944253a26"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b4660fe1-9dbc-49da-904c-69bd20cc1fa3"
+        name="Password"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="54821e4b-293c-41ec-ad2d-93706d005843"
+            isDerived="false"
+            sourceEndRoleName="Password"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="388ebd8e-6bbe-41c3-a33c-42bd08a1846c"
+              LastKnownName="User"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2bc400b-daa7-4e19-a97d-ebcc96fc1c92"
+                  name="Password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a213fb80-12dd-4835-abec-7f257ff31d66"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1469bf80-5d96-4ce6-981b-94577940694e"
+            name="#user_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c3d44506-4271-49e8-b237-33424c8ad729"
+            name="password_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="128b1e1e-12b5-46e2-8265-fe6ef547a3b3"
+            name="password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="39faca48-cdbc-487d-bcd7-caa05a5c72b4"
+            name="inserted_at"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
