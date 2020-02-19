@@ -1,3 +1,4 @@
+// TODO:Etude de l'existant
 [0] 28/1/2020
 > Etude de l'existant
   > Jumia.ma
@@ -154,6 +155,7 @@
 
     > inconvenients
 
+// TODO:Avantages et inconvenients patterns
 > Avantages et inconvenients patterns
   > Systeme de Livraison
     > Livraison gratuite pour la plupart des produits
@@ -191,6 +193,7 @@
     > Frais et commission associé à la place du marché
   > Systeme de TVA
 
+// TODO:Project structure
 > Project structure
   > Project structure
     > app
@@ -247,6 +250,7 @@
       > librairies
     > composer.json :
 
+// TODO:Cahier de charge
 > Cahier de charge
   > Cahier de charges V1
     un cahier des charges a pour fonction de formaliser un besoin afin que ce dernier soit compris par l'ensemble des acteurs impliqués dans le projet .
@@ -300,7 +304,6 @@
 
           > Les commentaires
           > Les messages privés
-            > Seul un follower peut envoyer de message privé à un utilisateur
           > Les publications des boutiques pour essayer de promouvoirs leur boutique, les reductions, ...
           > Les fidelisations
             > Pour les vendeurs
@@ -351,7 +354,6 @@
         > Voir sa boutique en tant que client pour un vendeur
         > Systeme de TVA
         > Systeme permettant de s'assurer de la fiabilité des vendeurs, de la qualité des produits
-          > Systeme de notes
           > Systemes de commentaires sur la boutique, les produits.
           > Systemes d'etoiles
         > Systeme de suivi des commandes
@@ -423,16 +425,19 @@
         > Maîtrise d'ouvrage
         > Maîtrise d'oeuvre
 
+// TODO:E-commerce feature
 > E-commerce feature
   > Images de bonne qualité
   > Marketing
   > Paiement en detail
   > Produit generic : pour faciliter la saisie de produit
 
+// TODO:Types de e-commerce
 > Types de e-commerce
   > B2C
   > B2B
 
+// TODO:Les pages possibles
 > Les pages possibles
   > La page principale(d'acceuil, )
     > Produits par rapport à un algorithme
@@ -452,6 +457,7 @@
   > La page d'insertion des fournisseurs
   >
 
+// TODO:Pied des pages
 > Pied des pages (footer)
   > Contact information
   > Privacy policy
@@ -461,6 +467,7 @@
   > SiteMap and related documents
   > Langue/anglais par defaut
 
+// TODO:Navigation
 > Navigation
   > Boutiques
   > Sign in/sign out
@@ -468,6 +475,7 @@
   > Search field
     > Categories de recherche
 
+// TODO: UML
 [1] 7/2/2020
 > UML
   [v]> User
@@ -479,50 +487,16 @@
       > mot de passe
       > telephone
       > Genre
-        > Homme
-        > Femme
-      > Code postal
+      > Adresse
       > date de naissance
       > Langue de communication
       > ville
       > pays
       > nationalité
-    [Meth] :
-      > Log in
-      > Log out
-      > Recuperer son mot de passe
-      > Supprimer son compte
-      > Modifier les informations sur son compte
-        > Modifier son Pseudo
-        > Modifier son nom
-        > Modifier son prenom
-        > Modifier son mail
-        > Modifier son mot de passe
-        > Modifier son telephone
-      > Verifier mon compte
-      > Ajouter un utilisateur
-      > getters
-      > setters
-      > updaters
-      > deleters
   [v]> Client : User
-    [Meth]:
-      > Commander(Valider le panier) (ordering)
-      > Modifier un compte client
-      > Activer/desactiver son propre compte
-  [v]> Vendeur (Sellers): User
+  [v]> Vendeur (Seller): User
     > Date où il est devenu vendeur
   [v]> Admin : User
-    [Meth] :
-      > Activer un compte
-      > Desactiver un compte
-      > Supprimer un compte
-      > Envoyer des mails
-      > Ajouter un Admin
-      > modifier les privileges d'un user
-        > Ajouter les privileges
-        > Diminuer les privileges
-      > Lister les utilisateurs (admins, vendeurs, clients)
   [v]> Privilege
     > Nom de la privilege
     > Descripton de la privilege
@@ -557,19 +531,6 @@
         > Neuf
         > Remis à neuf
         > Occasion
-
-    [Meth] :
-      > Ajouter un produit
-      > Modifier un produit
-      > Consulter un produit
-      > Supprimer un produit
-      > Liste des produits
-        > Par categorie
-        > Par marque
-      > Recherche de produit
-        > Suivant un pattern (mot clé)
-        > Avec un id
-        > Avec Categorie
   [v]> Boutique
     [Attr] :
       > Nom de la boutique
@@ -579,14 +540,13 @@
         > Peut etre le numero d'un des vendeurs
       > Mail de la boutique
       > Description de la boutique
-    [Meth]
   [v]> Entreprise
     [Attr ] :
       > Nom
       > localisation
       > ville
       > pays
-    > Zero ou plusieurs boutiques
+      > Zero ou plusieurs boutiques
   [v]> Categories (Famille, Section)
     [Attr] :
       > Nom de la categorie (libelle de la categorie)
@@ -731,7 +691,7 @@
   [v]> Phone
     > valeur
   [v]> Mail
-  [v]> Receiver type 
+  [v]> Receiver type
   [v]> Taxe sur Valeur Ajouté
     > Pourcentage
   [v]> Etoiles
@@ -751,7 +711,7 @@
     > Client pour reagir au produit qu'ils ont acheté(retour)
   [v]> Reglement
     > Mode de reglement d'une commande
-      > Details ou complet 
+      > Details ou complet
   [v]> Paiement
     > Ajouter une carte bancaire
     > Modifier les informations d'une carte bancaire
@@ -763,151 +723,234 @@
       > Montant de la commission (donnée calculée)
   [v]> Langue
     > langue
+  > Genre
+    > Homme
+    > Femme
+
+// TODO: UML Links
+> Explain
+  > Aggregation -- : le contient mais peut exister sans lui
+  > Composition ++ : le contient et ne peu exister sans lui
+  > Association ** : Il interagisse mais pas de relation de contenance
+  > Dependance -> :
+  > Heritage
+> UML Links
+  > User
+    > -- Adresses
+    > ++ Privilege
+    > ** Product
+    > ** Shop
+    > ** Entreprise
+    > ** Comment
+    > ** Sub Comment
+    > ** Message
+    > ** Order
+    > ** Bill
+    > ** Price
+    > ** Brand
+    > ** Model
+    > ** Country
+    > ** City
+    > ** District
+    > -- Phone
+    > -- Mail
+    > ** Post
+    > ** Payment
+    > ++ language
+  > Client
+    > -> User
+  > Seller
+    > -> Client
+  > Admin
+    > -> Seller
+  > Privilege
+  > Product
+  > Shop
+  > Entreprise
+  > Category
+  > Sub Category
+  > Comment
+  > Sub Comment
+  > Warranty
+  > Message
+  > Provider
+  > Adresses
+  > Cart
+  > Order
+  > Order state
+  > Bill
+  > Devise
+  > Product condition
+  > Price
+  > Price description
+  > Brand
+  > Model
+  > Country
+  > City
+  > Delivery
+  > Delivery method
+  > Color
+  > Phone
+  > Mail
+  > Receiver type
+  > Tax
+  > Star
+  > Promotion
+  > District
+  > Post
+  > Payment
+  > Paiement method
+  > Commission
+  > language
+
+
+
+
+// TODO:Les plus
+> Les plus
+  [+] from etoiles
+    > Les personnes qui ont notés ses etoiles
+      > Le nombres de personnes qui ont notés
+      > On peut noter un vendeur, un produit
+      > Un commentaires
+  [+] from marque
+    [Meth] :
+      > Ajouter une marque
+      > Modifier une marque
+      > Supprimer une marque
+      > Consulter une marque
+      > Liste les marque
+  [+] from product
+    [Attr] :
+    > Photos
+      > Photos principale
+      > Les autres
+      > Systeme pour les classer
+    > prix
+      > Prix reel
+      > Prix promotionnel
+      > Reduction
+        > Reduction pour client fidele
+        > Reduction pendant une durée
+        > Reduction par code coupon si la boutique accepte
+      > Prix donnée par un utilisateur/vendeur lors des negociations
+    > Categories( Un produit peut appartenir à plusieurs categories)
+    > Options de livraison
+    > Personne qui ont achetés le produit
+    > Quantité en stock
+    > Quantité de vente minimum
+    > Satisfaction client
+      > Pourcentage
+    > Nombre de jour avant livraison
+    > Couleur (plusieurs couleurs possible)
+    > Format de vente du produit
+      > Prix fixe
+      > Prix variable
+    > Durée de disponibilité du produit dans la boutique
+    > Options de retour
+      > Pas de retour si acheté direct à la boutique
+      > Retour sous x durée
+    > Options de paiements
+    > Date de publication deu produit dans la boutique
+      > Directement apres l'enregistrement
+      > Apres une date x
+      > Produit avec une quantité nulle ne sera pas visible sur la boutique
+    > Nombre de personne qui ont consulter le produit
+    > Nombre de personne qui ont acheté le produit
+    [Metjh] :
+      > Ajouter une categorie à un produit
+      > Supprimer une categorie d'un produit
+      > Changer la categorie d'un produit
+      > Liste des produits d'un fournisseur donné
+  [+] from Clients
+    > Supprimer un produit du Panier
+    > Vider le Panier
+  [+] from vendeurs
+    > Sa ou ses boutiques
+    > Evaluation du vendeur
+      > Etoiles
+      > Pourcentages
+      > Commentaires faits par les utilisateurs
+      > Nombre de ventes
+      > Serieux du vendeur
+      > Disponibilité
+        > Disponible à (pays où se trouve sa boutique ou business)
+      > Expedition(respect des delais de livraison)
+      > Qualité de produit
+      >
+  [+] from admin
+    > Changer le pourcentage de TVA
+    > Supprimer un produit
+    > Modifier un produit
+    > Ajouter un produit
+    > Ajouter une promotion
+    > Supprimer une promotion
+    > Ajouter un mode de livraison
+    > Supprimer un mode de livraison
+  [+] from boutique
+    > Le vendeur ou les vendeurs
+    > Proprietaire
+      > Peut etre un Vendeur
+      > Une entreprise (BIM)
+      > Un groupe de vendeur(personnes)
+    > Fournisseurs
+  [+] from categorie
+    > Plusieurs sous categories
+  [+] from Commentaires
+    > Client sur un produit
+    > Client sur une boutique
+    > Client sur un vendeur
+    > Client sur une entreprise
+    > Vendeur repond à un client
+    > admin repond à un vendeur
+    > admin repond à un client
+    > Client repond à un admin
+  [+] from Garanties
+    > Garantie sur le produit
+    > Garantie accordé par :
+      > la boutique
+      > le vendeur
+      > l'entreprise
+      > le site
+      > admin
+  [+] from addresses
+    [Meth] :
+    > Ajouter une adresse
+    > Modifier une adresse
+    > Pour le client
+    > Pour le vendeur
+    > Pour la boutique
+    > Pour l'entreprise
+    > Pour le fournisseur
+    > Pour le produit
+  [+] from commandes
+    > Montant de la commande(donnée calculée)
+    [Meth] :
+      > Passer une commander(Passer la commande)
+      > Demander une facture pour une commande
+      > Modifier l'etat de la commande
+      > Liste des commandes
+      > Consulter les informations de la commande
+      > Consulter les commandes dejà effectuées
+        > Filtrer
+          > Par etat de la commande
+          > Par date
+  [+] from facture
+    [Attr] :
+      > tva
+      > Remise
+      > total hors taxe
+      > tout taxe compris
+    [Meh] :
+      > etablir une facture
+      > Envoyer une facture
+      > Afficher une facture
+      > Imprimer une facture
 
 
 
 
 
- 
-
-[+] from etoiles
-  > Les personnes qui ont notés ses etoiles
-    > Le nombres de personnes qui ont notés
-    > On peut noter un vendeur, un produit
-    > Un commentaires
-[+] from marque
-  [Meth] :
-    > Ajouter une marque
-    > Modifier une marque
-    > Supprimer une marque
-    > Consulter une marque
-    > Liste les marque
-[+] from product
-  [Attr] :
-  > Photos
-    > Photos principale
-    > Les autres
-    > Systeme pour les classer
-  > prix
-    > Prix reel
-    > Prix promotionnel
-    > Reduction
-      > Reduction pour client fidele
-      > Reduction pendant une durée
-      > Reduction par code coupon si la boutique accepte
-    > Prix donnée par un utilisateur/vendeur lors des negociations
-  > Categories( Un produit peut appartenir à plusieurs categories)
-  > Options de livraison
-  > Personne qui ont achetés le produit
-  > Quantité en stock
-  > Quantité de vente minimum
-  > Satisfaction client
-    > Pourcentage
-  > Nombre de jour avant livraison
-  > Couleur (plusieurs couleurs possible)
-  > Format de vente du produit
-    > Prix fixe
-    > Prix variable
-  > Durée de disponibilité du produit dans la boutique
-  > Options de retour
-    > Pas de retour si acheté direct à la boutique
-    > Retour sous x durée
-  > Options de paiements
-  > Date de publication deu produit dans la boutique
-    > Directement apres l'enregistrement
-    > Apres une date x
-    > Produit avec une quantité nulle ne sera pas visible sur la boutique
-  > Nombre de personne qui ont consulter le produit
-  > Nombre de personne qui ont acheté le produit
-  [Metjh] :
-    > Ajouter une categorie à un produit
-    > Supprimer une categorie d'un produit
-    > Changer la categorie d'un produit
-    > Liste des produits d'un fournisseur donné
-[+] from Clients
-  > Supprimer un produit du Panier
-  > Vider le Panier
-[+] from vendeurs
-  > Sa ou ses boutiques
-  > Evaluation du vendeur
-    > Etoiles
-    > Pourcentages
-    > Commentaires faits par les utilisateurs
-    > Nombre de ventes
-    > Serieux du vendeur
-    > Disponibilité
-      > Disponible à (pays où se trouve sa boutique ou business)
-    > Expedition(respect des delais de livraison)
-    > Qualité de produit
-    >
-[+] from admin
-  > Changer le pourcentage de TVA
-  > Supprimer un produit
-  > Modifier un produit
-  > Ajouter un produit
-  > Ajouter une promotion
-  > Supprimer une promotion
-  > Ajouter un mode de livraison
-  > Supprimer un mode de livraison
-[+] from boutique
-  > Le vendeur ou les vendeurs
-  > Proprietaire
-    > Peut etre un Vendeur
-    > Une entreprise (BIM)
-    > Un groupe de vendeur(personnes)
-  > Fournisseurs
-[+] from categorie
-  > Plusieurs sous categories
-[+] from Commentaires
-  > Client sur un produit
-  > Client sur une boutique
-  > Client sur un vendeur
-  > Client sur une entreprise
-  > Vendeur repond à un client
-  > admin repond à un vendeur
-  > admin repond à un client
-  > Client repond à un admin
-[+] from Garanties
-  > Garantie sur le produit
-  > Garantie accordé par :
-    > la boutique
-    > le vendeur
-    > l'entreprise
-    > le site
-    > admin
-[+] from addresses
-  [Meth] :
-  > Ajouter une adresse
-  > Modifier une adresse
-  > Pour le client
-  > Pour le vendeur
-  > Pour la boutique
-  > Pour l'entreprise
-  > Pour le fournisseur
-  > Pour le produit
-[+] from commandes
-  > Montant de la commande(donnée calculée)
-  [Meth] :
-    > Passer une commander(Passer la commande)
-    > Demander une facture pour une commande
-    > Modifier l'etat de la commande
-    > Liste des commandes
-    > Consulter les informations de la commande
-    > Consulter les commandes dejà effectuées
-      > Filtrer
-        > Par etat de la commande
-        > Par date
-[+] from facture
-  [Attr] :
-    > tva
-    > Remise
-    > total hors taxe
-    > tout taxe compris
-  [Meh] :
-    > etablir une facture
-    > Envoyer une facture
-    > Afficher une facture
-    > Imprimer une facture
 
 
 
@@ -924,12 +967,7 @@
 
 
 
-
-
-
-
-
-
+// TODO:Fonctionnalités detaillées
 > Fonctionnalités detaillées
   > Create
     > Creer un compte(client, vendeur, admin)
@@ -978,6 +1016,125 @@
   > S'abonner à une newsletter
   > Ajouter un commentaire
 
+> Fonctionnalités detaillées v2
+  > User
+    > Creer un User
+    > Supprimer un user
+    > Modifier les informations du comptes
+      > Modifier son nom
+      > Modifier son prenom
+      > Modifier son Pseudo
+      > Modifier son mail
+      > Modifier son mot de passe
+      > Modifier son telephone
+    > Consulter les informations du comptes
+
+    > Se connecter
+    > Se deconnecter
+    > Recuperer son mot de passe
+    > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
+
+    > Recherche de produit
+      > Suivant un pattern (mot clé)
+      > Avec Categorie
+      > Par marque
+  > Client
+    > Creer un Panier(Un client a par defaut un panier non supprimable)
+    > Supprimer un Panier
+    > Consulter le contenu d'un Panier
+    > Modifier le contenu d'un Panier
+      > Ajouter un produit
+      > Supprimer un produit
+      > Modifier la Quantité de chaque produit dans le panier
+      > Ajouter une adresse
+      > Consulter une adresse
+      > Modifier une adresse
+      > Supprimer une adresse
+
+    > Commander(Valider le panier) (ordering)
+    > Modifier un compte client
+    > Donner un prix à un produit
+
+    > Consulter une boutique
+    > Consulter une Entreprise
+    > Consulter un produit
+    > Consulter un produit dans la boutique
+  > Seller
+    > Ajouter une boutique
+    > Modifier une boutique
+    > Supprimer une boutique
+
+    > Ajouter une Entreprise
+    > Modifier une Entreprise
+    > Supprimer une Entreprise
+
+    > Ajouter une boutique à une entreprise
+    > Supprimer une boutique d'une entreprise
+
+    > Ajouter un produit
+
+    > Ajouter un produit dans la boutique
+    > Supprimer un produit dans la boutique
+    > Modifier un produit dans la boutique
+
+    > Modifier la quantité de produit disponible
+    > Envoyer des mails
+    >
+  > Admin
+    > Activer un compte
+    > Desactiver un compte
+    > Avertissement(avec un degre de gravité)
+    > Supprimer un compte
+    > Ajouter un Admin
+    > modifier les privileges d'un user
+      > Ajouter les privileges
+      > Diminuer les privileges
+    > Lister les utilisateurs (admins, vendeurs, clients)
+
+    > Supprimer un produit
+    > Modifier un produit
+  > Privilege
+  > Product
+  > Shop
+  > Entreprise
+  > Category
+  > Sub Category
+  > Comment
+  > Sub Comment
+  > Warranty
+  > Message
+  > Provider
+  > Adresses
+  > Cart
+  > Order
+  > Order state
+  > Bill
+  > Devise
+  > Product condition
+  > Price
+  > Price description
+  > Brand
+  > Model
+  > Country
+  > City
+  > Delivery
+  > Delivery method
+  > Color
+  > Phone
+  > Mail
+  > Receiver type
+  > Tax
+  > Star
+  > Promotion
+  > District
+  > Post
+  > Payment
+  > Paiement method
+  > Commission
+  > language
+
+
+// TODO:Rapport de stage
 > Rapport de stage
   > dedicace
   > remerciement
@@ -1172,8 +1329,10 @@
   > Bibliographie
   > Reference/document de reference
 
+// TODO:PAQ
 > PAQ
   >
 
+// TODO:Description textuelle des fonctionnalités
 > Description textuelle des fonctionnalités
   >
