@@ -439,7 +439,7 @@
 
 // TODO:Les pages possibles
 > Les pages possibles
-  > La page principale(d'acceuil, )
+  > La page principale
     > Produits par rapport à un algorithme
       > Produit à succes
       > Good vendeur
