@@ -445,6 +445,10 @@
       > Produit à succes
       > Good vendeur
       > Positions des boutiques
+    > Les jours de reductions
+    > Popular shop
+    > Popular product
+    >
   > La page de chaque produit
   > La page de chaque boutique
   > La page d'ajout/modification de produit
@@ -458,6 +462,20 @@
   > La page d'insertion des fournisseurs
   >
 
+> Tete de page
+  > Panier icone
+  > log in
+  > Sign in
+  > Notification icon
+  > Search Button
+  > Logo du site
+  > Logo compte
+  > Logo de menu
+
+> Side bar
+  > Filtre
+  >
+
 // TODO:Pied des pages
 > Pied des pages (footer)
   > Contact information
@@ -467,6 +485,7 @@
   > Copyright information
   > SiteMap and related documents
   > Langue/anglais par defaut
+  > newsletter
 
 // TODO:Navigation
 > Navigation
