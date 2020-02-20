@@ -879,7 +879,7 @@
   > Gloassaire(Liste des abbreviations)/Terminologie
   > Liste des figures (figure numero x - Nom de la figure - numero de la page)
     > Diagramme de Gantt
-    > Duagramme de classe
+    > Diagramme de classe
     > Diagramme de cas d'utilisation
     > Diagramme de sequence
     > Diagramme d'activités
@@ -1046,10 +1046,8 @@
           > Diagramme de cas d'utilisation
           > Diagramme textuelles
           > Diagramme d'activités
-          >
         > La phase de réalisation
           > Choix de la plateforme
-          > Choix de la
         > Le resultat
           > Les interfaces graphiques
         > La phase de validation
@@ -1061,6 +1059,7 @@
     > Element graphique
       > Diagramme uml
       > Diagramme textuelle
+      > Les maquettes
     > Responsabilités
       > Maîtrise d'ouvrage
       > Maîtrise d'oeuvre
@@ -1082,243 +1081,385 @@
   > Scénario nominal
   > Exception
 
-  [1]
-    > Se connecter
-    > Utilisateur non connecté
-  [2]
-    > Se deconnecter
+  > Se connecter
+  > Utilisateur non connecté
+
+  > Se deconnecter
+  > Client, Vendeur, Admin
+
+  > S'abonner à une newsletter
+  > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > Recherche
+    > Chercher un produit grace à un mot ou plusieurs mot clés
+    > Consulter un produit specifique grace à sa reference
+    > Consulter un produit specifique grace à son id
+  > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > Filtre
+    > Par categorie
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Par marque
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Par date d'insertion
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Par etat de la commande
     > Client, Vendeur, Admin
-  [3]
-    > S'abonner à une newsletter
-  [4]
->>    > Acceder à la galerie de produit
-  [5]
-    > Recherche
-      > Chercher un produit grace à un mot ou plusieurs mot clés
-  [6]
-    > Filtre
-      > Par categorie
-      > Par marque
-  [7]
-    > Creer un compte : Customer
-  [8]
-    > Ajouter dans le panier principal
-  [9]
-    > Liste des produits
-      > Liste des produits d'un vendeur/boutique/entreprise
-      > Liste des categories des produits
-  [10]
-    > Changer la langue
-  [11]
-    > retrouver le mot de passe
-  [12]
-    > Gerer son panier
-      > Ajouter un produit dans le Panier
-      > Modifier la quantité d'un produit dans le Panier
-      > Supprimer un produit du Panier
-  [13]
+
+  > Creer un compte : Customer
+  > Utilisateur non connecté
+
+  > Creer un compte : Customer, Seller, Admin
+  > Admin
+
+  > Gerer son panier
+    > Ajouter un produit dans le Panier
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Modifier la quantité d'un produit dans le Panier
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Supprimer un produit du Panier
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Vider le Panier
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Proposer un autre prix au vendeur
+    > Client, Vendeur, Admin
+
     > Consulter le contenu d'un Panier
-  [14]
-    > Modifier le contenu d'un Panier
-      > Ajouter un produit
-      > Supprimer un produit
-      > Modifier la Quantité de chaque produit dans le panier
-  [15]
-    > Afficher une facture
-  [16]
-    > Imprimer une facture
-  [17]
-    > Demander une facture pour une commande
-  [18]
-    > Filtre
-      > Par date
-      > Par etat de la commande
-  [19]
-    > Devenir vendeur avec un compte Customer
-  [20]
-    > Supprimer son compte
-  [21]
-    > Supprimer un Panier
-  [22]
-    > Ajouter un commentaire
-  [23]
-    > Supprimer un commentaire
-  [24]
-    > Modifier un commentaire
-  [25]
-    > Supprimer un message
-  [26]
-    > Modifier son compte
-      > Modifier son nom
-      > Modifier son prenom
-      > Modifier son Pseudo
-      > Modifier son mail
-      > Modifier son mot de passe
-      > Modifier son telephone
-      > Ajouter une adresse
-      > Modifier une adresse
-      > Supprimer une adresse
-  [27]
-    > Modifier un message
-  [28]
-    > Ajouter un message
-  [29]
-    > Client devient vendeur
-  [30]
-    > Consulter un produit
-  [31]
-    > Liste des produits
-  [32]
-    > Donner un prix à un produit
-  [33]
-    > Liste des commandes
-      > Commandes achetées
-      > Commandes Livrées
-      > Commandes Retournées
-  [34]
-    > Confirmer une commande : Acheter
-  [35]
-    > Consulter les informations de la commande
-  [36]
-    > Gerer son panier
-      > Proposer un autre prix au vendeur
-      > Vider le Panier
-  [37]
-    > Contacter un admin
-  [38]
-    > Noter
-      > Un Seller
-      > Un produit
-      > Une Boutique
-  [39]
-    > Creer un Panier(Un client a par defaut un panier non supprimable)
-  [40]
-    > Consulter les informations du compte
-      > Consulter une adresse
-  [41]
-    > Consulter une boutique
-  [42]
-    > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
-  [43]
-    > Modifier l'etat de la commande
-  [44]
-    > Recherche
-      > Consulter un produit specifique grace à sa reference
-  [45]
-    > Filtre
-  [46]
-    > Ajouter un produit
-  [47]
-    > Ajouter un produit dans la boutique
-  [48]
-    > Ajouter une boutique
-  [49]
-    > Ajouter une entreprise
-  [50]
-    > Ajouter d'un fournisseur
-  [51]
-    > Ajouter une Entreprise
-  [52]
-    > Ajouter mon boutique à mon entreprise
-  [53]
-    > Ajouter une categorie à un produit
-  [54]
-    > Ajouter une promotion
-  [55]
-    > Ajouter une promotion à un produit
-  [56]
-    > Modifier son Entreprise
-  [57]
-    > Modifier un produit qu'il a insereé
-  [58]
-    > Modifier un produit qu'il a ajouté dans la boutique
-  [59]
-    > Modifier la quantité d'un produit dans le stock
-  [60]
-    > Modifier sa boutique
-  [61]
-    > Liste des produits
-      > Liste des produits disponibles en stock sur la boutique
-      > Liste des produits disponibles en stock mais pas sur la boutique
-      > Par categorie
-  [62]
-    > Liste des fournisseurs
-  [63]
-    > Supprimer une promotion sur un produit
-  [64]
-    > Supprimer une categorie d'un produit
-  [65]
-    > Supprimer sa boutique
-  [66]
-    > Supprimer son Entreprise
-  [67]
-    > Supprimer un produit de ma boutique
-  [68]
-    > Modifier un produit dans ma boutique
-  [69]
-    > Supprimer ma boutique de mon entreprise
-  [70]
-    > Envoyer des mails à ses followers
-  [71]
-    > Envoyer une facture
-  [72]
-    > Creer un compte : Customer, Seller, Admin
-  [73]
-    > Deconnecter un utilisateur
-  [74]
-    > Ajouter une categorie de produit
-  [75]
-    > Ajouter un produit dans un panier
-  [76]
-    > Ajouter une boutique à une entreprise
-  [77]
-    > Ajouter une marque
-  [78]
-    > Supprimer une marque
-  [79]
-    > Ajouter un mode de livraison
-  [80]
-    > Supprimer un mode de livraison
-  [81]
-    > Supprimer une boutique d'une entreprise
-  [82]
-    > Supprimer un compte quelconque
-  [83]
-    > Supprimer un produit
-  [84]
-    > Supprimer une boutique
-  [85]
-    > Supprimer une Entreprise
-  [86]
-    > Modifier un compte
-  [87]
-    > Modifier une marque
-  [88]
-    > Modifier un boutique
-  [89]
-    > Modifier un Entreprise
-  [90]
-    > modifier les privileges d'un user
-      > Ajouter les privileges : Customer to Seller
-      > Diminuer les privileges : Seller to Customer
-  [91]
-    > Rendre un customer vendeur
-  [92]
-    > Recherche
-      > Consulter un produit specifique grace à son id
-  [93]
-    > Filtre
-  [94]
-    > Lister
-      > Liste des clients
-      > Liste des admins
-      > Liste des vendeurs
-  [95]
-    > Envoyer des mails
-  [96]
-    > Activer un compte
-  [97]
-    > Desactiver un compte
-  [98]
-    > Avertissement(avec un degre de gravité)
-  [99]
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > Liste des produits
+    > Liste des produits d'un vendeur/boutique/entreprise
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Liste des produits par categorie
+    > Client, Vendeur, Admin, Utilisateur non connecté
+
+    > Liste des produits disponibles en stock sur la boutique
+    > Vendeur, Admin
+
+    > Liste des produits disponibles en stock mais pas sur la boutique
+    > Vendeur, Admin
+
+  > Changer la langue
+  > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > retrouver le mot de passe
+  > Utilisateur non connecté
+
+  > Afficher une facture
+  > Client, Vendeur, Admin
+
+  > Imprimer une facture
+  > Client, Vendeur, Admin
+
+  > Demander une facture pour une commande
+  > Client
+
+  > Devenir vendeur avec un compte Customer
+  > Client
+
+  > modifier les privileges d'un user
+    > Ajouter les privileges : Customer to Seller
+    > Diminuer les privileges : Seller to Customer
+  > Admin
+
+  > Supprimer son compte
+  > Client, Vendeur
+
+  > Supprimer un compte
+  > Admin
+
+  > Supprimer un Panier
+  > Admin
+
+  > Ajouter un commentaire
+  > Client, Vendeur, Admin
+
+  > Supprimer un commentaire
+  > Admin
+
+  > Supprimer mon commentaire
+  > Client, Vendeur
+
+  > Modifier un commentaire
+  > Admin
+
+  > Modifier son commentaire
+  > Client, Vendeur, Admin
+
+  > Supprimer mon message
+  > Client, Vendeur
+
+  > Supprimer un message
+  > Admin
+
+  > Modifier un compte
+  > Admin
+
+  > Modifier son compte
+    > Modifier son nom
+    > Modifier son prenom
+    > Modifier son Pseudo
+    > Modifier son mail
+    > Modifier son mot de passe
+    > Modifier son telephone
+    > Ajouter une adresse
+    > Modifier une adresse
+    > Supprimer une adresse
+  > Client, Vendeur, Admin
+
+  > Modifier un message
+  > Client, Vendeur, Admin
+
+  > Ajouter un message
+  > Client, Vendeur, Admin
+
+  > Consulter un produit
+  > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > Donner un prix à un produit
+  > Client, Vendeur
+
+  > Liste des commandes
+    > Commandes achetées
+    > Commandes Livrées
+    > Commandes Retournées
+  > Client, Vendeur, Admin
+
+  > Confirmer une commande : Acheter
+  > Client
+
+  > Consulter les informations de la commande
+  > Client, Vendeur, Admin
+
+  > Contacter un admin
+  > Client, Vendeur, Admin
+
+  > Noter
+    > Un Seller
+    > Un produit
+    > Une Boutique
+  > Client
+
+  > Creer un Panier(Un client a par defaut un panier non supprimable)
+  > Client, Vendeur, Admin
+
+  > Consulter les informations du compte
+    > Consulter une adresse
+  > Client, Vendeur, Admin
+
+  > Consulter une boutique
+  > Client, Vendeur, Admin, Utilisateur non connecté
+
+  > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
+  > Client, Vendeur, Admin
+
+  > Modifier l'etat de la commande
+  > Vendeur, Admin
+
+  > Ajouter un produit
+  > Vendeur, Admin
+
+  > Ajouter un produit dans la boutique
+  > Vendeur, Admin
+
+  > Ajouter une boutique
+  > Vendeur, Admin
+
+  > Ajouter une entreprise
+  > Vendeur, Admin
+
+  > Ajouter d'un fournisseur
+  > Vendeur, Admin
+
+  > Ajouter une categorie à un produit
+  > Vendeur, Admin
+
+  > Ajouter une promotion
+  > Vendeur, Admin
+
+  > Ajouter une promotion à un produit
+  > Vendeur
+
+  > Modifier un produit dans le site
+  > Admin
+
+  > Modifier un produit dans ma boutique
+  > Vendeur, Admin
+
+  > Modifier la quantité d'un produit dans le stock
+  > Vendeur, Admin
+
+  > Modifier une boutique
+  > Admin
+
+  > Modifier sa boutique
+  > Vendeur
+
+  > Supprimer ma promotion
+  > Vendeur
+
+  > Supprimer une promotion
+  > Admin
+
+  > Supprimer une promotion sur un produit
+  > Vendeur, Admin
+
+  > Supprimer une categorie
+  > Vendeur, Admin
+
+  > Supprimer une categorie d'un produit
+  > Vendeur, Admin
+
+  > Supprimer sa boutique
+  > Vendeur
+
+  > Supprimer une boutique
+  > Admin
+
+  > Supprimer son Entreprise
+  > Vendeur
+
+  > Supprimer une Entreprise
+  > Admin
+
+  > Supprimer un produit d'une boutique
+  > Admin
+
+  > Supprimer un produit de ma boutique
+  > Vendeur
+
+  > Supprimer ma boutique de mon entreprise
+  > Vendeur
+
+  > Supprimer une boutique d'une entreprise
+  > Admin
+
+  > Envoyer des mails à ses followers
+  > Vendeur
+
+  > Envoyer une facture
+  > Vendeur, Admin
+
+  > Deconnecter un utilisateur
+  > Admin
+
+  > Ajouter une categorie
+  > Admin
+
+  > Ajouter une boutique à une entreprise
+  > Vendeur, Admin
+
+  > Ajouter une marque
+  > Admin
+
+  > Supprimer une marque
+  > Admin
+
+  > Ajouter un mode de livraison
+  > Admin
+
+  > Supprimer un mode de livraison
+  > Admin
+
+  > Supprimer un produit
+  > Admin
+
+  > Modifier une marque
+  > Admin
+
+  > Modifier son Entreprise
+  > Vendeur
+
+  > Modifier une Entreprise
+  > Admin
+
+  > Lister
+    > Liste des clients
+    > Admin, Vendeur
+
+    > Liste des admins
+    > Admin
+
+    > Liste des vendeurs
+    > Admin
+
+    > Les fournisseurs
+    > Admin
+
+    > Les Boutiques
+    > Admin
+
+    > Les entreprises
+    > Admin
+
+    > Les followers
+    > Admin, Vendeurs
+  > Admin
+
+  > Envoyer des mails
+  > Admin
+
+  > Activer un compte
+  > Admin
+
+  > Desactiver un compte
+  > Admin
+
+  > Avertissement(avec un degre de gravité)
+  > Admin
+
+
+> Travail à faire
+  >> Etude de l'existant
+  >> Diagramme de classe
+  > Maquettes
+    > Creer un logo du site
+  > Architecture MVC du site
+  > Description textuelle des fonctionnalités
+  > Diagramme de cas d'utilisation
+  > Diagramme d'activité
+  > Diagramme de sequence
+  > Structure du projet(puisque sans framework)
+  > Planning previsionnel(diagramme de gantt)
+  > Choix de technologies et outils à utiliser
+    >> PHP
+    >> MySQL
+    >> HTML/CSS
+    >> GIT
+    >> JavaScript
+      > json
+      > Ajax
+      > JQUERY
+      > Vanilla JavaScript
+    > Node.js
+    > Chrome and Firefox
+    > Photoshop, GIMP for image editing
+    > FTP Client, SSH Tool
+    > Dropbox, Google Drive for cloud storage
+    > Filezilla/FTP
+    > DNS
+    > Bootstrap/Materialize CSS
+    > react / VueJS / Angular
+    > REST
+    > HTTP/SSL
+    > CSS (Sass)
+  > Formation
+  > PAQ
+  > developpement
+  > Test
+  > Validation
+  > Conclusion et test final
+  > Preparation pour la presentation de la Soutenance
+  > Soutenance
+
+
+> Choose something to do personnaly
+  > Choose a project to realize
