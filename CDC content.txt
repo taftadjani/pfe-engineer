@@ -438,63 +438,6 @@
   > B2C
   > B2B
 
-// TODO:Les pages possibles
-> Les pages possibles
-  > La page principale
-    > Produits par rapport à un algorithme
-      > Produit à succes
-      > Good vendeur
-      > Positions des boutiques
-    > Les jours de reductions
-    > Popular shop
-    > Popular product
-    >
-  > La page de chaque produit
-  > La page de chaque boutique
-  > La page d'ajout/modification de produit
-  > La page de resultat de recherche
-  > La page d'admin globale
-  > La page d'admin du vendeur
-  > La page de login
-  > La page de creation de compte
-  > La page de changement de mot de passe
-  > Entrer un nouveau produit par un vendeur
-  > La page d'insertion des fournisseurs
-  >
-
-> Tete de page
-  > Panier icone
-  > log in
-  > Sign in
-  > Notification icon
-  > Search Button
-  > Logo du site
-  > Logo compte
-  > Logo de menu
-
-> Side bar
-  > Filtre
-  >
-
-// TODO:Pied des pages
-> Pied des pages (footer)
-  > Contact information
-  > Privacy policy
-  > Social media icons
-  > Terms of service
-  > Copyright information
-  > SiteMap and related documents
-  > Langue/anglais par defaut
-  > newsletter
-
-// TODO:Navigation
-> Navigation
-  > Boutiques
-  > Sign in/sign out
-  > Panier/car
-  > Search field
-    > Categories de recherche
-
 // TODO: UML
 [1] 7/2/2020
 > UML
@@ -1435,6 +1378,103 @@
   > Avertissement(avec un degre de gravité)
   > Admin
 
+[2] 20-2-2020
+> Maquettes
+  // TODO:Les pages possibles
+  > La page principale
+    > Produits par rapport à un algorithme
+      > Produit à succes
+      > Good vendeur
+      > Positions des boutiques
+      > Par top rated seller
+      > Populaires
+      > TOP PRODUCT
+      > HOT PRODUCT(Les plus visités du moment)
+      > NEW PRODUCT
+    > Categories
+    > Nos partenaires et clients
+    > THE PERFECT GIFTS
+    > Tops posts
+    > Tops SALES OFF
+    > Les jours de reductions
+    > Popular shop
+    > Popular product
+    > Sell something
+    > Buy something
+    > Explore store around with a MAP
+    > Menu
+      > Shops/STORES
+      > MAPS
+      > Top seller
+      > Categories
+        > Cosmetiques
+        > Top sellers
+        > Latest
+        > Sale off
+        > CATALOGUES DES PRODUITS/GALERIES DES PHOTOS
+        > FASHION SELECTION
+      > Home
+      > Cart
+      > Search
+      > Profile
+      > Logo
+      > Langue
+    > Partner
+  > La page de chaque produit
+  > La page de chaque boutique
+  > La page d'ajout/modification de produit
+  > La page de resultat de recherche
+  > La page d'admin globale
+  > La page d'admin du vendeur
+  > La page de login
+  > La page de creation de compte
+  > La page de changement de mot de passe
+  > Entrer un nouveau produit par un vendeur
+  > La page d'insertion des fournisseurs
+  > La page de catalogues de produit
+
+  > Tete de page
+    > Panier icon
+    > log in
+    > Sign in
+    > Notification icon
+    > Search Button/Bar
+      > Filtre
+    > Langue
+    > Logo du site
+    > Logo compte
+    > Logo de menu
+      > Home
+      > Categories
+      > Stores
+
+  > Side bar
+    > Filtre
+    >
+
+  // TODO:Pied des pages
+  > Pied des pages (footer)
+    > Contact information
+    > Privacy policy
+    > Social media icons /Follows us
+      > Facebook
+      > Twitter
+      > Whatsapp
+      > Messenger
+    > Contact un admin
+    > Terms of service
+    > Copyright information
+    > newsletter
+    > Help
+
+  // TODO:Navigation
+  > Navigation
+    > Boutiques
+    > Sign in/sign out
+    > Panier/car
+    > Search field
+      > Categories de recherche
+
 
 > Travail à faire
   >> Etude de l'existant
@@ -1479,6 +1519,15 @@
   > Preparation pour la presentation de la Soutenance
   > Soutenance
 
-
 > Choose something to do personnaly
   > Choose a project to realize
+    > Youtube Video
+    > Social media Website and app
+    > Informatique web site
+    > Blog personnel on Informatique
+    > App jeux Video
+    > Apps
+    > E-commerce web site
+    > Security jobs
+    > Data science
+    > Web site
