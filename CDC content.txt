@@ -1522,9 +1522,12 @@
 > Choose something to do personnaly
   > Choose a project to realize
     > Youtube Video
+      > Tech channel
+      > Creative common
+      > Using powerpoint presentation + speaking
     > Social media Website and app
     > Informatique web site
-    > Blog personnel on Informatique
+    > Blog personnel on Informatique (What can we do with code by ourself)
     > App jeux Video
     > Apps
     > E-commerce web site
