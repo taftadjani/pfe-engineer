@@ -1421,6 +1421,21 @@
       > Langue
     > Partner
   > La page de chaque produit
+    > Nom du produit
+    > Description
+    > Store
+    > Categorie
+    > Prix|Reductions
+    > Couleur
+    > Different images
+    > Quantités
+    > Compare button
+    > Send message to seller
+    > Etoiles du produit
+    > Message
+    > Share
+    > Product recommendation par rapport au produit
+    > Localisation du produit
   > La page de chaque boutique
   > La page d'ajout/modification de produit
   > La page de resultat de recherche
@@ -1475,7 +1490,6 @@
     > Search field
       > Categories de recherche
 
-
 > Travail à faire
   >> Etude de l'existant
   >> Diagramme de classe
@@ -1522,9 +1536,7 @@
 > Choose something to do personnaly
   > Choose a project to realize
     > Youtube Video
-      > Tech channel
-      > Creative common
-      > Using powerpoint presentation + speaking
+      > Using powerpoint presentation + speaking for my
     > Social media Website and app
     > Informatique web site
     > Blog personnel on Informatique (What can we do with code by ourself)
@@ -1534,3 +1546,4 @@
     > Security jobs
     > Data science
     > Web site
+    > Facebook page for my blog
