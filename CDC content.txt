@@ -1438,7 +1438,7 @@
     > Localisation du produit
     > Suivre une store
     > Paiement methodes
-  > La page de chaque boutique
+  OK> La page de chaque boutique
     > Logo principal
     > Image de couverture
     > Les produits en ventes sur la boutique
@@ -1456,14 +1456,15 @@
     > Filtre
     > Liste de produits
     > 
-  > La page d'admin globale
-  > La page d'admin du vendeur
+  OK> La page d'admin globale
+    > 
+  OK> La page d'admin du vendeur
   > La page de login
   > La page de creation de compte
   > La page de changement de mot de passe
   > Entrer un nouveau produit par un vendeur
   > La page d'insertion des fournisseurs
-  > La page de catalogues de produit
+  OK> La page de catalogues de produit
 
   > Tete de page
     > Panier icon
