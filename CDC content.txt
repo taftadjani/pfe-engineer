@@ -1381,7 +1381,7 @@
 [2] 20-2-2020
 > Maquettes
   // TODO:Les pages possibles
-  > La page principale
+  OK> La page principale
     > Produits par rapport à un algorithme
       > Produit à succes
       > Good vendeur
@@ -1420,7 +1420,7 @@
       > Logo
       > Langue
     > Partner
-  > La page de chaque produit
+  OK> La page de chaque produit
     > Nom du produit
     > Description
     > Store
@@ -1436,9 +1436,26 @@
     > Share
     > Product recommendation par rapport au produit
     > Localisation du produit
+    > Suivre une store
+    > Paiement methodes
   > La page de chaque boutique
+    > Logo principal
+    > Image de couverture
+    > Les produits en ventes sur la boutique
+    > Les sellers
+    > Les derniers posts
+    > Les promotions
+    > Les contacts
+    > Les mails de 
+    > Follow button
+    > Menu
+      > Categories de produit vendu par le store
+    > Filtre
   > La page d'ajout/modification de produit
-  > La page de resultat de recherche
+  OK> La page de resultat de recherche
+    > Filtre
+    > Liste de produits
+    > 
   > La page d'admin globale
   > La page d'admin du vendeur
   > La page de login
