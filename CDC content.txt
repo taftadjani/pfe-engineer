@@ -1451,7 +1451,11 @@
     > Menu
       > Categories de produit vendu par le store
     > Filtre
-  > La page d'ajout/modification de produit
+  OK> La page d'ajout/modification de produit
+    [Admin,Seller]> Details du produit
+    [Seller]> Details de la vente
+    [Seller]> Information sur la livraison
+    [Seller]> Information de paiement
   OK> La page de resultat de recherche
     > Filtre
     > Liste de produits
@@ -1459,11 +1463,11 @@
   OK> La page d'admin globale
     > 
   OK> La page d'admin du vendeur
-  > La page de login
-  > La page de creation de compte
-  > La page de changement de mot de passe
-  > Entrer un nouveau produit par un vendeur
-  > La page d'insertion des fournisseurs
+  OK> La page de login
+  OK> La page de creation de compte
+  OK> La page de changement de mot de passe
+  OK> Entrer un nouveau produit par un vendeur
+  OK> La page d'insertion des fournisseurs
   OK> La page de catalogues de produit
 
   > Tete de page
