@@ -697,6 +697,7 @@
       > Liste des produits
     > Recherche
       > Chercher un produit grace à un mot ou plusieurs mot clés
+      > Consulter un produit specifique grace à sa reference
     > Filtre
       > Par categorie
       > Par marque
@@ -712,6 +713,7 @@
       > Modifier la quantité d'un produit dans le Panier
       > Supprimer un produit du Panier
     > Consulter le contenu d'un Panier
+    > Consulter une boutique
   > Customer
     > log out
     > Afficher une facture
@@ -757,19 +759,15 @@
     > Creer un Panier(Un client a par defaut un panier non supprimable)
     > Consulter les informations du compte
       > Consulter une adresse
-    > Consulter une boutique
     > Verifier mon compte apres etre inscrit pour remedier au probleme de faux informations
+    > Following
   > Seller
     > Modifier l'etat de la commande
-    > Recherche
-      > Consulter un produit specifique grace à sa reference
-    > Filtre
     > Ajouter un produit
     > Ajouter un produit dans la boutique
     > Ajouter une boutique
     > Ajouter une entreprise
     > Ajouter d'un fournisseur
-    > Ajouter une Entreprise
     > Ajouter mon boutique à mon entreprise
     > Ajouter une categorie à un produit
     > Ajouter une promotion
@@ -815,7 +813,6 @@
     > modifier les privileges d'un user
       > Ajouter les privileges : Customer to Seller
       > Diminuer les privileges : Seller to Customer
-    > Rendre un customer vendeur
     > Recherche
       > Consulter un produit specifique grace à son id
     > Filtre
@@ -1513,7 +1510,7 @@
     > Creer un logo du site
   > Architecture MVC du site
   > Description textuelle des fonctionnalités
-  > Diagramme de cas d'utilisation
+  >> Diagramme de cas d'utilisation
   > Diagramme d'activité
   > Diagramme de sequence
   > Structure du projet(puisque sans framework)
@@ -1563,3 +1560,13 @@
     > Data science
     > Web site
     > Facebook page for my blog
+    > Telecharger w3school
+
+
+> Github
+  > git add .
+  > git status
+  > git commit -m "message"
+  > git push
+  > git fetch
+  > git pull

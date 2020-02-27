@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="447a96f2-d276-47cf-879a-d7de9bfd5f87" name="UMLClassDiagram1" linkedPackageId="1e67b9d9-52b6-4021-afe1-91f8b6c018f7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="447a96f2-d276-47cf-879a-d7de9bfd5f87" name="UMLClassDiagram1" linkedPackageId="1e67b9d9-52b6-4021-afe1-91f8b6c018f7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="323dca7f-cec6-44ca-93dc-5868afbdbfd6">
       <elementDefinition Id="edd9b7f9-e00a-40cc-88f0-2ba234eebf9f" />
@@ -198,6 +198,13 @@ TITLE
 -- 19-2-2020</body>
       <annotatedElements>
         <classMoniker Id="c9360ca9-dae3-4f58-a45f-518b60a7754e" LastKnownName="Day" />
+      </annotatedElements>
+    </comment>
+    <comment Id="385d9146-1ad9-4581-bee7-c7f6298a0b1f">
+      <elementDefinition Id="b8f8fdf0-5e02-4f59-8221-899ac918637a" />
+      <body>Verified_with_code est le code utilisé pour  verifié le compte</body>
+      <annotatedElements>
+        <classMoniker Id="8d65838a-5e1c-4585-b37a-07e44d7dc7ef" LastKnownName="User" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -560,6 +567,22 @@ TITLE
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="849b3dd5-e4bc-4c6e-afcb-c9f9bc0c4fd6" />
           </association>
+          <association Id="afa647c3-b875-49fd-ad48-81702f814f70" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Login_out" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9806806e-afda-4a07-82ef-de3855ff88e7" LastKnownName="Signin_out" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8514e900-96fa-445f-b867-cab8ad8426ac" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc42b3a7-dcc2-4dfd-9d52-35a20832688c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00fcb0f5-11c7-47dd-9692-40c007b999d7" name="Login_out" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd62ccbd-7a9c-4d1a-8ca6-20e3e914dc25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5a0dba71-2bb4-44e1-939c-ee2680328fa0" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="d24c3c09-3aa7-47bd-8820-4c9a9c7eddcb" name="first_name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -652,6 +675,9 @@ TITLE
           </property>
           <property Id="cb6bc028-4b51-4f7e-ba6a-42d5350b139d" name="#password_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3ec890ab-ad95-4af5-9344-fcc32eb14cc0" />
+          </property>
+          <property Id="d6263798-3981-4a23-ad9b-31f311f5f16f" name="verified_with_code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="47ad2195-ee63-4b81-819e-24240b6d7eca" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -3244,6 +3270,31 @@ TITLE
           </property>
           <property Id="fc9ee7d0-3d57-4ec5-8ee6-a827ebd36313" name="inserted_at" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="39faca48-cdbc-487d-bcd7-caa05a5c72b4" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9806806e-afda-4a07-82ef-de3855ff88e7" name="Signin_out" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee9518b6-f15a-4281-addb-faa372b799f1" />
+        <ownedAttributesInternal>
+          <property Id="e440d309-8a1e-4e3e-84aa-22e3ebd975d0" name="#user_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c611b75c-224d-42a7-a1f1-73b32556602a" />
+          </property>
+          <property Id="54e0bdcc-ae9a-462c-a32d-c2ec25fdcf58" name="login_out_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4422e00b-36c9-4501-81ee-7517ac1c6ac9" />
+          </property>
+          <property Id="2864cf16-3594-4ea8-bc57-2fbb240db3d6" name="session_id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="42d64e3a-1597-4968-9bb6-3827b39e2403" />
+          </property>
+          <property Id="6d0c8be6-e441-41c3-9bd2-db9ce5a45af8" name="inserted_at" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de9e4103-6f96-4fd1-b3ff-237506d9f3ec" />
+          </property>
+          <property Id="cfb6c514-2548-49ed-85f9-8a518001f221" name="out_at" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0289ad38-ecac-4fb3-9c72-3685b423f363" />
+          </property>
+          <property Id="ba2cdb1e-0762-42a0-8c2d-92b17073c8c8" name="enabled" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c0ff46b-6576-4cf5-9fae-bcdf880363fb" />
           </property>
         </ownedAttributesInternal>
       </class>

@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="67984861-a9f6-4682-94d4-ada3ffbb29e1" name="UMLUseCaseDiagram1" linkedPackageId="77205f8b-e3ab-4801-b271-d055f43f8a06" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <ownedCommentsInternal>
-    <comment Id="9d188d72-9ac8-4db5-9e18-b9986a47b819">
-      <elementDefinition Id="1254b2f9-7558-4291-a16e-862634103a15" />
-      <body>Add </body>
-    </comment>
-  </ownedCommentsInternal>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="67984861-a9f6-4682-94d4-ada3ffbb29e1" name="UMLUseCaseDiagram1" linkedPackageId="77205f8b-e3ab-4801-b271-d055f43f8a06" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="d7ab6277-d60d-4286-8fbb-01d55b2586e7" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="eafa1e9e-c9c0-4177-a428-d5be9fdb19d1" />
@@ -83,165 +77,21 @@
       <actor Id="8e96b45c-c5ae-4d25-a1aa-e0f8b379f109" name="User not  Connected" isAbstract="false" isLeaf="false">
         <elementDefinition Id="662878f2-8044-456c-8967-3dc9b4d39524" />
         <targetEnds>
-          <association Id="8b6f2927-a91b-4006-9870-591036d29008" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="6aeef381-7406-40a0-bd2b-25fe94e12c85" LastKnownName="Search" />
+          <association Id="fa2ffff1-db02-4e7a-9054-3f1b6d99aa77" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Subsystem1" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="14aaa97f-a006-49b7-ae5e-2ff431f434ff" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="8320f68a-2069-4031-8a9f-c9d34b96b8e6" />
+                <memberEnd Id="5415524b-4080-4505-91c7-78c572a5878a" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="04071081-8c24-4dae-bc47-6f55db7775f8" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="eedb3ef8-7e43-4648-8898-c8fab3ec44b6" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="9172041d-8982-4b70-92c1-889f60103140" />
+                <memberEnd Id="e18968a3-e398-41b7-b9db-565d16d55f32" name="Subsystem1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3676d5ec-71da-4148-bfdb-d20fcce36fc2" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="09b4c7b0-1122-4075-9b5f-29580cd26565" />
-          </association>
-          <association Id="5d925be5-cf46-459f-b59c-b146d40ac8af" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="log in" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="816aa83c-f57b-4c54-8974-37fbd5479735" LastKnownName="log in" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="82826136-ff79-41b3-86c8-699614fecae4" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="fd1979a8-58a2-4ca9-bc28-67cfaf4fe813" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="62f90e54-0c71-4e92-ba99-02d55e7e80cb" name="log in" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="4ef3c4be-f8e5-4a8f-8009-c48c36bc1304" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="481d8cbe-39e1-4839-944e-2d041981fb4c" />
-          </association>
-          <association Id="fbcee9f0-49d4-45f8-90bf-75897e0d1d46" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Change Language" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="8307c44f-c693-489e-8152-edd6cd6fe0d8" LastKnownName="Change Language" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6572f767-8262-4802-be0f-836e08774a09" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a7fd9685-949d-4749-a17f-42865153a576" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="213f7269-0994-46e5-b102-0c8e28c029cf" name="Change Language" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8447fa88-b67d-4d00-ab43-2283be550b7f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="42fb5e6b-d9bc-483a-9977-f19c05e9152a" />
-          </association>
-          <association Id="bbcce8ad-662b-4b06-a7be-36e6db86b110" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Add to Cart" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="bfc22243-336a-4ab6-89a9-851cb331b5fb" LastKnownName="Add to Cart" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="c2024c73-7ad2-4c1b-a9fb-880c3c3b02f6" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="305ff3de-851f-4e0b-876b-b4684644b6ca" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="9f485277-326f-4c74-9433-e95703be4788" name="Add to Cart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="09944c06-5104-47dd-8f1c-0ba5f190e9fc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="438f6223-5f05-4ff3-8ea0-9b7d0b801902" />
-          </association>
-          <association Id="498c77a2-2c07-482d-bff3-147f746b1183" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Reset password" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="4cd40c5c-ce3a-474e-9514-7c3fe7b33df5" LastKnownName="Reset password" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="abe7b3b5-df92-422d-8d20-2c6c95bc9a92" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="56d9eb8f-615a-41cc-aac6-03af19dfbc9b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="37019435-b571-4549-8946-f0e0d6501461" name="Reset password" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="7a293e31-2f95-4553-b421-039fad7a2d11" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="8a4e875c-6448-47dd-be27-83fb9fac97be" />
-          </association>
-          <association Id="3144963c-6a58-4468-b21c-3375b41403ea" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Create an account" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c3cf7791-867f-4ae2-a6ba-13f7121f5b99" LastKnownName="Create an account" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28e6bcd4-e643-4c83-9c36-1af2144f83dd" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3b175862-fed7-41ed-a912-0f348767a47b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="05979400-8269-4a0a-a4bf-1de8fe4133c9" name="Create an account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="a523185f-736b-483c-b357-713933779dbb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="cfe7fb61-faef-49fd-81c6-674b08b08648" />
-          </association>
-          <association Id="f5ad0523-92fd-4f30-ac53-2fecb39f17cd" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Get product" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="fbae4ade-c3e2-47c9-8ddd-e9b5acb1f051" LastKnownName="Get product" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d39d15c3-852d-4f16-9494-9a9dffce4950" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="99b87732-9eee-4623-b8a0-1c031a83c8b5" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ce9a6f33-25d3-4249-acb5-7c2d8e56e653" name="Get product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fa93aeb5-6ab5-4042-9d9d-bfa0390013dd" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d86a0584-4f76-4cc5-8d58-ffffbedaa744" />
-          </association>
-          <association Id="a945e4f4-cc90-4adc-ba0c-1772ade60b24" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Manage Cart" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="a94f9eb3-a467-4c89-bae9-09fad402b74b" LastKnownName="Manage Cart" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3e3302de-d995-43de-a48e-fa0d722018c3" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="11030a4c-dfc1-470a-b64d-aee4c37394f0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="85b00b6e-1c0f-4906-88b3-211bc585cadf" name="Manage Cart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d70ac498-0a95-4b42-ae1e-7a571d284b9e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="663d61d6-4095-4799-851d-d08cdc81d1e8" />
-          </association>
-          <association Id="d587b6da-c99b-4850-a829-2e55fe8a5dae" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="Filter" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="b497f942-0a51-48d0-b807-482a041b75e1" LastKnownName="Filter" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3779f87f-fe52-463e-8d46-31f4026ff00f" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2bb96626-ba82-4c93-946d-bb54fa540ada" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="998334b7-94e5-4a28-b246-b4d5c0d65ea3" name="Filter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="7be518bb-0009-4945-a398-fce00c5378a0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="70500dd1-f3c7-4dfb-965a-ca0443299afe" />
-          </association>
-          <association Id="8abe31bb-543b-4bff-a6f9-85a8083db77a" isDerived="false" sourceEndRoleName="User not  Connected" targetEndRoleName="access the gallery page" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="d3236668-9934-4cef-93e6-c82caac5dfc3" LastKnownName="access the gallery page" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="49c237b9-ac7e-4cd6-8467-893163e889a3" name="User not  Connected" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f76c8bc0-2958-4f5c-8e04-0e7b5f448754" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f1480b98-6ce5-4912-95a8-ca848c51d048" name="access the gallery page" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="aebf27d9-b72d-4d18-8342-db53ad0dbdd6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="35bc12ef-49b3-410f-8052-3d250c0fccd7" />
+            <elementDefinition Id="d08e64a1-f8bd-4437-a8c7-20ce9375f67e" />
           </association>
         </targetEnds>
       </actor>
@@ -255,6 +105,24 @@
             <elementDefinition Id="9df9acf0-5c0f-40b4-b91d-d0e3c0091b48" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="b5f2e1e1-e163-44dd-a2a2-91cd452525da" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Subsystem11" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bee004eb-9d37-46de-86b5-3028366b23ea" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ea90ee8-09e2-4d14-9eaa-6e727170a5f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2db9a86b-dc37-497a-a937-5956f339cbcf" name="Subsystem11" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="554df639-1f59-4383-9734-c374994706bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="600fe45e-c4d3-4fe8-af4f-944714ae1ee5" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -266,6 +134,24 @@
             <elementDefinition Id="fff000e0-f1dd-407a-b975-077fa065f686" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="0e2cd640-abd7-48a7-8869-71aa5024138e" isDerived="false" sourceEndRoleName="Seller" targetEndRoleName="Subsystem11111" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6b95180-3feb-408c-979b-31832fc816ae" name="Seller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fdd07103-eb70-4e35-90db-b33b2a84b5a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7bec105-c91e-45b3-8fc4-d0834fb7fe2f" name="Subsystem11111" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aec2aa1f-7315-49de-b2b3-b614f08edfac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d50732bc-ad15-4a99-b277-f75e492a1624" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -277,6 +163,24 @@
             <elementDefinition Id="25cef295-37ee-4dd3-8646-dc8bbe333dd5" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="add78559-b059-4a58-b5cb-a754be8976ca" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Subsystem1112" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd70a13c-400b-402a-be79-35b21f460c09" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0a81dc62-f498-4acb-9960-87e719b1ba28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82bfccfc-93b3-46e2-820d-cde93ec21949" name="Subsystem1112" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e309f922-d84d-49e0-92cd-256c98925c71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="75319868-aa23-4f08-a80f-85354d6d013a" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -297,6 +201,13 @@ Change quantity
 Access Cart content</body>
             <annotatedElements>
               <useCaseMoniker Id="a94f9eb3-a467-4c89-bae9-09fad402b74b" LastKnownName="Manage Cart" />
+            </annotatedElements>
+          </comment>
+          <comment Id="12534bb1-4585-452f-8b13-fae47472c5eb">
+            <elementDefinition Id="2253b512-c29c-479b-bc3f-02950b290735" />
+            <body>Catalogues produits</body>
+            <annotatedElements>
+              <useCaseMoniker Id="d3236668-9934-4cef-93e6-c82caac5dfc3" LastKnownName="access the gallery page" />
             </annotatedElements>
           </comment>
         </ownedCommentsInternal>
@@ -327,7 +238,10 @@ Access Cart content</body>
             <body>Afficher le contenu d'une facture
 Supprimer une facture
 Imprimer une facture
-Filtrer la liste des factures</body>
+Filtrer la liste des factures
+&gt; Commandes achetées
+&gt; Commandes Livrées
+&gt; Commandes Retournées	</body>
             <annotatedElements>
               <useCaseMoniker Id="19e5eefb-1ca2-4608-a58f-826a3d162b66" LastKnownName="Manage our bills" />
             </annotatedElements>
@@ -335,7 +249,8 @@ Filtrer la liste des factures</body>
           <comment Id="0f8fad15-db05-4d3e-91b9-fb8311de611b">
             <elementDefinition Id="71824e86-0989-4e42-831c-29ce26830c98" />
             <body>Delete account
-Update informations</body>
+Update informations
+Get account details</body>
             <annotatedElements>
               <useCaseMoniker Id="119158f8-790d-4a15-b17b-320f15afd36a" LastKnownName="Manage our account" />
             </annotatedElements>
@@ -343,7 +258,9 @@ Update informations</body>
           <comment Id="63ab7df8-053c-430c-b4b9-61c799805a75">
             <elementDefinition Id="825c2710-4c48-4683-9810-3830d89a8330" />
             <body>Add Cart
-Delete Cart</body>
+Delete Cart
+Clear Cart
+Update product quantity</body>
             <annotatedElements>
               <useCaseMoniker Id="ee2ba3bd-5423-4858-9cfe-da2c93ff771b" LastKnownName="Manage Carts" />
             </annotatedElements>
@@ -357,38 +274,236 @@ Update Comment</body>
               <useCaseMoniker Id="a09c925e-de48-4cc4-9c88-28500fc29e6d" LastKnownName="Manage Comments" />
             </annotatedElements>
           </comment>
+          <comment Id="406781ad-def0-4266-9901-e2adbfdf8acf">
+            <elementDefinition Id="a78967bc-079b-41ba-a3fe-a826a34dba97" />
+            <body>Proposer un nouveau prix d'achat d'un produit</body>
+            <annotatedElements>
+              <useCaseMoniker Id="7a6ef273-3e8a-47e5-8d93-87041e211fe2" LastKnownName="Offer a price" />
+            </annotatedElements>
+          </comment>
+          <comment Id="94b7dc1d-26ff-4430-98d5-6e732f6cad65">
+            <elementDefinition Id="2675a57b-399e-49ce-aee4-0979be5e161a" />
+            <body>Consulter les details d'une commande
+Annuler la commande</body>
+            <annotatedElements>
+              <useCaseMoniker Id="dc1b7d95-1651-4e44-a278-808af87d2565" LastKnownName="Manage an order" />
+            </annotatedElements>
+          </comment>
+          <comment Id="9d2ae604-4f00-4f60-b8f2-584c48e902a2">
+            <elementDefinition Id="fd12ebe3-4327-4832-8414-fcc1f06456d0" />
+            <body>Noter un produit
+-- Qualité du produit
+Noter un vendeur
+-- Disponibilité
+-- Sa communication
+-- 
+Noter une boutique</body>
+            <annotatedElements>
+              <useCaseMoniker Id="c6b95a68-884f-45b0-b7cf-1cb8064fd673" LastKnownName="Mark" />
+            </annotatedElements>
+          </comment>
+          <comment Id="99dc1621-510c-4acc-8786-987062fec196">
+            <elementDefinition Id="c5b5ebc7-a721-444c-a09c-6bd80ee5b4f5" />
+            <body>Add an address
+Delete an address
+Update an address
+Get address details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="31115f95-42ac-43c9-9a90-e0fb3e7de535" LastKnownName="Manage our addresses" />
+            </annotatedElements>
+          </comment>
+          <comment Id="93035a6d-cb57-4eaf-b40d-b9a015e01273">
+            <elementDefinition Id="a39badd7-d6de-466b-98f8-162d663b968c" />
+            <body>Follow a product for new deal
+Follow a seller
+Follow a store
+Follow a company</body>
+            <annotatedElements>
+              <useCaseMoniker Id="b8a4433c-c7ae-4a9c-8f6b-bb4f7e69f738" LastKnownName="Follow" />
+            </annotatedElements>
+          </comment>
+          <comment Id="0a69dc45-8063-4d16-b677-fcbe40cb9321">
+            <elementDefinition Id="07ef03ca-103d-460c-b278-9b4b20050a13" />
+            <body>Add message
+Delete message
+Update message</body>
+            <annotatedElements>
+              <useCaseMoniker Id="3de4a281-fb7f-48fb-9ff2-cf79e142c72d" LastKnownName="Manage Messages" />
+            </annotatedElements>
+          </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <subsystem Id="525ca211-1800-4a1d-aa40-4f90d15ec0f5" name="Subsystem111" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="7ebd90cf-0a38-4c24-ae39-4cbc4ba79bfd" />
-      </subsystem>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <subsystem Id="56d2ef67-1f30-45cd-9e5b-f0f646ac9fc0" name="Subsystem1111" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e012939e-aa1e-40d3-890a-8fc28026f272" />
-      </subsystem>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <subsystem Id="fd5cfe15-4b03-4817-9764-3bcd4e3a2610" name="Subsystem112" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="3dcf188e-cd40-48aa-8e5f-ba22c3383b22" />
-      </subsystem>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <subsystem Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" name="Subsystem1112" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="9219a238-1135-4781-9801-6c44e90f9442">
+            <elementDefinition Id="5356795f-c190-406f-a18f-589929e04e16" />
+            <body>Add any account : Customer, Admin, Seller
+Delete any account
+Update any account
+Get any account details
+
+Add a privileges
+Delete privileges
+
+Add role
+delete role
+
+Activate an account
+Deactivate an account
+
+Warn a user</body>
+            <annotatedElements>
+              <useCaseMoniker Id="3af3a1bf-37e7-44bb-ba0e-6c50eb7127a7" LastKnownName="Manage an account" />
+            </annotatedElements>
+          </comment>
+          <comment Id="5dc0697a-80be-492d-8cdb-b2dec3fa7fae">
+            <elementDefinition Id="d759b3c3-ceaa-44f0-b744-0a3851d9bb38" />
+            <body>Add a brand
+Delete a brand
+Update a brand
+Get brand details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="86aa7ee7-6735-41df-9dc9-37a960993f2c" LastKnownName="Manage Brand" />
+            </annotatedElements>
+          </comment>
+          <comment Id="ea565777-4c77-4315-8979-a831216f05d8">
+            <elementDefinition Id="34a17284-11dc-4215-bcac-816ab375ba77" />
+            <body>Add a delivery method
+Delete a delivery method
+Update a delivery method
+Get delivery method details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="e82d7c56-40a6-498f-985f-3840eca5b440" LastKnownName="Manage delivery method" />
+            </annotatedElements>
+          </comment>
+          <comment Id="025ca75f-2416-4b6a-a04d-2a99ca52afb6">
+            <elementDefinition Id="a160fdb1-5682-4f34-8b79-b3a7719ed9cf" />
+            <body>Add a store to any company
+Delete a store from any company
+Update a store belong to any company
+
+get a store details
+
+Add a seller to a store
+Delete a seller from a store
+
+Add product to any store
+
+
+
+
+</body>
+            <annotatedElements>
+              <useCaseMoniker Id="8e776386-bacc-4873-9ec6-e9069b57f899" LastKnownName="Manage a store" />
+            </annotatedElements>
+          </comment>
+          <comment Id="1586b892-ddae-4225-8b27-89454501ed8e">
+            <elementDefinition Id="3d526e99-331b-4779-84ad-7fc2954511f0" />
+            <body>Add product
+Delete product
+Update product
+Get product details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="348170ff-d0e3-481b-b064-737e6381d3e0" LastKnownName="Manage product" />
+            </annotatedElements>
+          </comment>
+          <comment Id="d2bd32bf-8097-4e19-b3a9-05672ae7b7e2">
+            <elementDefinition Id="94821448-5207-4eae-a5e4-b39b28744d8b" />
+            <body>Add a company
+Delete a company
+Update company details
+Get company details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="65924ae2-edaf-4a12-a400-5286c8d9e3c2" LastKnownName="Manage companies" />
+            </annotatedElements>
+          </comment>
+          <comment Id="b730ac8c-a11c-4f3a-89df-6bd493bb7974">
+            <elementDefinition Id="b2fd87e9-57db-427d-9e87-d58c0c3e07bc" />
+            <body>Get all users details
+Get all sellers details
+Get all providers details
+Get all products details
+Get all brand
+Get all Categories
+Get all Sub categories</body>
+            <annotatedElements>
+              <useCaseMoniker Id="94a8e7f9-fbd5-4223-97bc-93c7f3f9b172" LastKnownName="Get" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="82cde971-8c78-48e7-bdc0-15c319e5b827" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <subsystem Id="2cfa6430-f401-42a8-860a-4d1802e52326" name="Subsystem11111" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="47c7dcba-9340-43c7-8d90-f95fc4f28425">
+            <elementDefinition Id="ee0f09cc-e803-4277-9cd9-bdc3628dbf6a" />
+            <body>Add a company
+Delete a company
+Get company details
+Update company details
+
+Add a store from a company
+Delete a store from a company
+Update store details from a company
+Get store details from a company</body>
+            <annotatedElements>
+              <useCaseMoniker Id="2182678f-894a-4a73-9df0-f5889afb7666" LastKnownName="Manage our companies" />
+            </annotatedElements>
+          </comment>
+          <comment Id="420d0f2e-fb19-4766-aea3-dffe9c030cd7">
+            <elementDefinition Id="9193b1d8-47d2-4af8-8a95-5a26f5b51454" />
+            <body>Add a store
+Delete a store
+Get store details
+Update store details
+
+Add product to the store
+Delete product from the store
+Get all product details from a store
+</body>
+            <annotatedElements>
+              <useCaseMoniker Id="e786a709-4927-44d3-9d80-bd4eb1b0fd89" LastKnownName="Manage our store" />
+            </annotatedElements>
+          </comment>
+          <comment Id="fb94251e-528a-4031-a917-c6fbd10f9a68">
+            <elementDefinition Id="25ee047a-8195-4365-bdb7-2bb467eeb9d4" />
+            <body>Add provider
+Delete provider
+Get all provider
+Get provider details
+Update provider details</body>
+            <annotatedElements>
+              <useCaseMoniker Id="a5e0d72b-0876-4170-9b70-3b39c5fb4e00" LastKnownName="Manage our provider" />
+            </annotatedElements>
+          </comment>
+          <comment Id="635c9870-88ef-4ebc-9584-8aaa826fca14">
+            <elementDefinition Id="3e2bec24-196f-4076-b558-8fdd1f7dc0bd" />
+            <body>Add a promotion to product
+Delete a promotion from a product
+
+Add a category to a product
+Delete a category from a product
+
+Modify stock quantity
+Update a product</body>
+            <annotatedElements>
+              <useCaseMoniker Id="7fc3f5ff-dbc0-417e-a872-5a81a9363c5c" LastKnownName="Manage product" />
+            </annotatedElements>
+          </comment>
+          <comment Id="421eb365-6175-414e-8a99-95b44deaee55">
+            <elementDefinition Id="22b68a56-6db0-4192-8cee-f19683164ef8" />
+            <body>Envoi de groupe de message à ses followers</body>
+            <annotatedElements>
+              <useCaseMoniker Id="f7f7c7f8-2caf-4acc-8ed2-586fcb206568" LastKnownName="Manage Messages" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="8fb39c6a-70a6-424e-ad3f-1cfce225875e" />
-      </subsystem>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <subsystem Id="b28958af-708b-478b-8598-e63214fee9f1" name="Subsystem1121" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="1a97a214-8cd9-4748-90e8-f8ce415e74e9" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <packageHasNamedElement>
@@ -480,14 +595,6 @@ Update Comment</body>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="b26e7c6f-25ef-4803-a368-dd77ba7a68c2" name="Become a seller" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="2c95585a-3aa4-48e7-8e36-33c7725a6670" />
-        <subjects>
-          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <useCase Id="119158f8-790d-4a15-b17b-320f15afd36a" name="Manage our account" isAbstract="false" isLeaf="false">
         <elementDefinition Id="fee019e5-d058-4fdd-840b-9d2287c5b2dd" />
         <subjects>
@@ -520,16 +627,268 @@ Update Comment</body>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="efc8d033-fd2f-4aaf-9d2f-4b671879243d" name="View product details" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="93420da2-023b-40fe-9584-214edac7db89" />
+      <useCase Id="519b6571-08e3-45e2-8c87-215bca2bbc1b" name="Get product details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="809a4650-c703-4452-a391-fbd747e5c9e8" />
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7a6ef273-3e8a-47e5-8d93-87041e211fe2" name="Offer a price" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bff2eb7-952f-4ef6-9e4a-9b13f06fc738" />
         <subjects>
           <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="4ab814d3-65ea-49c6-9967-a58f46c411b3" name="Get products catalogue" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="86d122fc-1010-47bc-a3ca-d68fabe4172c" />
+      <useCase Id="b42a0a33-15a9-4872-a301-535f9d2fbab4" name="Make an order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d50db43a-e546-4f84-bab5-655d3ec173f9" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="300d249d-2ae6-41e8-be38-2e108b6d617e" name="Confirm an order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f906dc2-8c86-4a2e-a210-ee2b5782fc7d" />
+        <additions>
+          <include Id="49238569-fd01-4118-8fe6-cf2c81c54e9f">
+            <useCaseMoniker Id="b42a0a33-15a9-4872-a301-535f9d2fbab4" LastKnownName="Make an order" />
+            <elementDefinition Id="87336ffe-012d-4f9a-93d1-d9492a22a536" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dc1b7d95-1651-4e44-a278-808af87d2565" name="Manage an order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2857d28d-9ae7-4724-a2cd-a614d613c9cf" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="18c4ee05-d971-42e4-b43e-3d1441012cac" name="Contact an admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c4daf95-48dd-4a15-b593-961952741a82" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c6b95a68-884f-45b0-b7cf-1cb8064fd673" name="Mark" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23841c2d-e6b0-46d8-b6b9-712e2d708560" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="31115f95-42ac-43c9-9a90-e0fb3e7de535" name="Manage our addresses" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a61aadb7-93cb-4504-9f71-66d02ae68987" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f5302e18-5fae-4b49-8480-58ad57a0a29f" name="Get store details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22090962-ff40-48ce-a7ce-4fbed40b1100" />
+        <subjects>
+          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="29a306cb-202e-4b6c-b010-b7d2693be691" name="Verify our account after count creation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="475e3167-bca6-4702-b97f-77fc4a1606e1" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c245311d-b334-4ff8-b416-07fe1829349a" name="Update order state" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f078f13-6d69-4b16-9e1f-cc282b5ea63c" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7fc3f5ff-dbc0-417e-a872-5a81a9363c5c" name="Manage product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a64028e-994e-4056-8b9b-c6329da67796" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e786a709-4927-44d3-9d80-bd4eb1b0fd89" name="Manage our store" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cc4c6edb-f63a-412c-8c8d-8a2a9312261c" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2182678f-894a-4a73-9df0-f5889afb7666" name="Manage our companies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb3fb2a9-478e-4c6c-a8ea-55f577526382" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a5e0d72b-0876-4170-9b70-3b39c5fb4e00" name="Manage our provider" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ffdfc3c2-2123-4da2-b079-61b8749f42c8" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f7f7c7f8-2caf-4acc-8ed2-586fcb206568" name="Manage Messages" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bdfb051-8b53-40a6-aaea-ce9c6e09cdb7" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b8a4433c-c7ae-4a9c-8f6b-bb4f7e69f738" name="Follow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="31c8c290-ed96-43ca-a240-673f21389dc2" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ccb84619-2f0e-44b8-b0c0-4a6c80d961fa" name="Send bill" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="07174117-4bae-4287-8a68-cedb4cb71d76" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3af3a1bf-37e7-44bb-ba0e-6c50eb7127a7" name="Manage an account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dbf454da-fd56-4237-b20f-2b1558b2896c" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="906af77b-ec36-4e47-a84a-b258293adacd" name="Disconnect a Connected user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f5afaf0-fb87-4e5a-b49f-51c327d057a0" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f716e341-9f1f-48e7-aeef-c9e7ff37cef6" name="Add a product category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1491ce0a-cbdf-4bd2-8323-086b79936e97" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9b18bf67-ee04-42a0-8e23-5924dba2b799" name="Add a product to any Cart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c56b0906-815c-42a0-9180-13401e15065a" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8e776386-bacc-4873-9ec6-e9069b57f899" name="Manage a store" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2eb323cc-2a65-4d96-bfbf-ebf8329bb2df" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="86aa7ee7-6735-41df-9dc9-37a960993f2c" name="Manage Brand" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9a0b3bf0-7f33-42df-894c-ada7cf9f41f9" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e82d7c56-40a6-498f-985f-3840eca5b440" name="Manage delivery method" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed6bf975-2793-42f4-b825-baa2287dccac" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0a44e67b-186a-4765-8ce4-ccd615bb5112" name="Add a delivery method to an order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="467e167f-8fef-4633-959a-848eb0a0c685" />
+        <additions>
+          <include Id="8816ba82-f25b-48ce-83fb-6e680418160c">
+            <useCaseMoniker Id="b42a0a33-15a9-4872-a301-535f9d2fbab4" LastKnownName="Make an order" />
+            <elementDefinition Id="7f93d86a-2005-47ab-9882-a341d3dc2bd3" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="348170ff-d0e3-481b-b064-737e6381d3e0" name="Manage product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43939c57-925f-4f25-a7ad-6a6de900a4cb" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="65924ae2-edaf-4a12-a400-5286c8d9e3c2" name="Manage companies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df9c13e5-43f3-4d18-b9a7-1004960e635f" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="94a8e7f9-fbd5-4223-97bc-93c7f3f9b172" name="Get" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b370a225-1b44-400d-b1e8-d7439f387f68" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="54e0485c-018f-4033-859b-4424dca43277" name="Send mails" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90b08738-a092-4f01-8418-03288a56332b" />
+        <subjects>
+          <subsystemMoniker Id="2cfa6430-f401-42a8-860a-4d1802e52326" LastKnownName="Subsystem11111" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7adf195b-aba7-4b69-9db7-fd5f7f3046a6" name="Send mails to anyone" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9477b1de-b055-4842-af5b-8e127b0d44a5" />
+        <subjects>
+          <subsystemMoniker Id="dd57fd53-ffd2-481b-9638-12eb82bbc77d" LastKnownName="Subsystem1112" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="18af14f5-137c-4fd3-8825-2c8ccc382d37" name="Become a seller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce0e4ee6-388a-4246-9c22-8f6fa4595efa" />
         <subjects>
           <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
         </subjects>
