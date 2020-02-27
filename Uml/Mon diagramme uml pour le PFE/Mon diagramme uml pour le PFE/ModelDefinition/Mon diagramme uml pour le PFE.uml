@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="0824559c-5ede-4f47-8284-9e39551eadd2"
   name="Mon diagramme uml pour le PFE" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -259,6 +259,80 @@ TITLE
           LastKnownName="Day"
           LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
       </annotatedElements>
+    </comment>
+    <comment
+      Id="b8868545-69e7-4260-b0e5-a554ebf305f5">
+      <body>acceder aux produits appartenant à une boutique</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="0d2b987d-6fd3-4a66-bc26-6526a9e94973"
+          LastKnownName="Get product"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="0276aa8a-9465-43b6-b6e0-29d6c4168a09">
+      <body>Add product
+Delete product
+Change quantity
+Access Cart content</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="2e7ef061-9231-4fbe-9f44-4e2da077eb66"
+          LastKnownName="Manage Cart"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="0353afc3-f99e-4c67-983f-2d1347963f49">
+      <body>Afficher le contenu d'une facture
+Supprimer une facture
+Imprimer une facture
+Filtrer la liste des factures</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="9d8857b1-85ba-43e4-96bc-30a67dc95bc9"
+          LastKnownName="Manage our bills"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="71824e86-0989-4e42-831c-29ce26830c98">
+      <body>Delete account
+Update informations</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="fee019e5-d058-4fdd-840b-9d2287c5b2dd"
+          LastKnownName="Manage our account"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="825c2710-4c48-4683-9810-3830d89a8330">
+      <body>Add Cart
+Delete Cart</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="2ef4f89c-1993-49ba-9764-e48940f858de"
+          LastKnownName="Manage Carts"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="af7abb76-a3ac-43c0-af6e-ad9618262202">
+      <body>Add Comment
+Delete Comment
+Update Comment</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="20e683dd-bab9-43fa-8cc1-cf7e7a1a9fb2"
+          LastKnownName="Manage Comments"
+          LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="1254b2f9-7558-4291-a16e-862634103a15">
+      <body>Add </body>
     </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
@@ -7792,6 +7866,357 @@ TITLE
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="481d8cbe-39e1-4839-944e-2d041981fb4c"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ccb7d6aa-cf1f-4b9b-b5ab-67cbb353eba6"
+              LastKnownName="log in"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd1979a8-58a2-4ca9-bc28-67cfaf4fe813"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ef3c4be-f8e5-4a8f-8009-c48c36bc1304"
+                  name="log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="42fb5e6b-d9bc-483a-9977-f19c05e9152a"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Change Language"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2c0c42fa-0828-40be-b61e-d857a32f125a"
+              LastKnownName="Change Language"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7fd9685-949d-4749-a17f-42865153a576"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8447fa88-b67d-4d00-ab43-2283be550b7f"
+                  name="Change Language"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="438f6223-5f05-4ff3-8ea0-9b7d0b801902"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Add to Cart"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="23ca81f0-5b5e-41bf-a1e1-6d40e9fffea0"
+              LastKnownName="Add to Cart"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="305ff3de-851f-4e0b-876b-b4684644b6ca"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="09944c06-5104-47dd-8f1c-0ba5f190e9fc"
+                  name="Add to Cart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a4e875c-6448-47dd-be27-83fb9fac97be"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Reset password"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52789632-5653-45ce-8aa1-4204adc41c3b"
+              LastKnownName="Reset password"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56d9eb8f-615a-41cc-aac6-03af19dfbc9b"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a293e31-2f95-4553-b421-039fad7a2d11"
+                  name="Reset password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cfe7fb61-faef-49fd-81c6-674b08b08648"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Create an account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c47cfe1-8230-4945-932e-36cd72ed965f"
+              LastKnownName="Create an account"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b175862-fed7-41ed-a912-0f348767a47b"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a523185f-736b-483c-b357-713933779dbb"
+                  name="Create an account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d86a0584-4f76-4cc5-8d58-ffffbedaa744"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Get product"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0d2b987d-6fd3-4a66-bc26-6526a9e94973"
+              LastKnownName="Get product"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99b87732-9eee-4623-b8a0-1c031a83c8b5"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa93aeb5-6ab5-4042-9d9d-bfa0390013dd"
+                  name="Get product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="663d61d6-4095-4799-851d-d08cdc81d1e8"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Manage Cart"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e7ef061-9231-4fbe-9f44-4e2da077eb66"
+              LastKnownName="Manage Cart"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11030a4c-dfc1-470a-b64d-aee4c37394f0"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d70ac498-0a95-4b42-ae1e-7a571d284b9e"
+                  name="Manage Cart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="70500dd1-f3c7-4dfb-965a-ca0443299afe"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="Filter"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c1df7fa-61ea-4995-baa0-9e69f2a5009a"
+              LastKnownName="Filter"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2bb96626-ba82-4c93-946d-bb54fa540ada"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7be518bb-0009-4945-a398-fce00c5378a0"
+                  name="Filter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="35bc12ef-49b3-410f-8052-3d250c0fccd7"
+            isDerived="false"
+            sourceEndRoleName="User not  Connected"
+            targetEndRoleName="access the gallery page"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f89ad1ac-fc03-4b6e-85ad-34b67b478f26"
+              LastKnownName="access the gallery page"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f76c8bc0-2958-4f5c-8e04-0e7b5f448754"
+                  name="User not  Connected"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aebf27d9-b72d-4d18-8342-db53ad0dbdd6"
+                  name="access the gallery page"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -7801,6 +8226,16 @@ TITLE
         name="Customer"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9df9acf0-5c0f-40b4-b91d-d0e3c0091b48"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="662878f2-8044-456c-8967-3dc9b4d39524"
+              LastKnownName="User not  Connected"
+              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="d0823f87-aeed-4ef1-980d-20c686e4e8a9"
@@ -7841,84 +8276,6 @@ TITLE
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="1de95312-06b3-4286-ba6a-c3fe6a965c0d"
-            isDerived="false"
-            sourceEndRoleName="Customer"
-            targetEndRoleName="subscribe to a newsletter"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="8de2e4f7-42f6-44a0-bd73-8f352bc85b50"
-              LastKnownName="subscribe to a newsletter"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="65f46ec5-9e43-4d36-a810-de1cbfb3e8b6"
-                  name="Customer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ba8742fe-aa2c-46fe-a095-33b136cbdd5b"
-                  name="subscribe to a newsletter"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="59c96407-81f5-4fc8-8ee1-265a2eb54a1a"
-            isDerived="false"
-            sourceEndRoleName="Customer"
-            targetEndRoleName="Search"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="9c16d85d-cdb0-4af4-8310-8acce9702acf"
-              LastKnownName="Search"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e716201a-84f9-4c0c-8c1a-04ee87534bb2"
-                  name="Customer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ce51a0df-3fdd-40a9-9c5c-e5424518c125"
-                  name="Search"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -7928,125 +8285,16 @@ TITLE
         name="Seller"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="86554f75-d2f4-4877-9430-44d515a418da"
-            isDerived="false"
-            sourceEndRoleName="Seller"
-            targetEndRoleName="log out"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="54db3a84-0955-4c04-9907-99fe2927e504"
-              LastKnownName="log out"
+        <generalsInternal>
+          <generalization
+            Id="fff000e0-f1dd-407a-b975-077fa065f686"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="ec6615c7-0d29-41c2-a0df-b44a1522fcdb"
+              LastKnownName="Customer"
               LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d5871aef-39fc-4b43-857c-c0a6fce32f65"
-                  name="Seller"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d49f099c-4ce7-4f5b-95bd-b10546e229d6"
-                  name="log out"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="ee8dd11f-04a5-4165-8c7d-52b50e3e687e"
-            isDerived="false"
-            sourceEndRoleName="Seller"
-            targetEndRoleName="subscribe to a newsletter"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="8de2e4f7-42f6-44a0-bd73-8f352bc85b50"
-              LastKnownName="subscribe to a newsletter"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2721b957-c7a3-47f1-99ad-35ecf0a3a7c9"
-                  name="Seller"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ba26a188-9a43-4e00-ac75-b365508d0275"
-                  name="subscribe to a newsletter"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="c1dec7b5-a1f1-4c0f-8ac6-43ad57b1fe89"
-            isDerived="false"
-            sourceEndRoleName="Seller"
-            targetEndRoleName="Search"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="9c16d85d-cdb0-4af4-8310-8acce9702acf"
-              LastKnownName="Search"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="44dc3eba-4234-4d69-bce3-d223c7313d37"
-                  name="Seller"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8bdd098c-54a5-4376-b13c-803b3bc65592"
-                  name="Search"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+          </generalization>
+        </generalsInternal>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -8055,125 +8303,16 @@ TITLE
         name="Admin"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="cd801b89-96ec-4b4d-89e4-fc60f27a4804"
-            isDerived="false"
-            sourceEndRoleName="Admin"
-            targetEndRoleName="log out"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="54db3a84-0955-4c04-9907-99fe2927e504"
-              LastKnownName="log out"
+        <generalsInternal>
+          <generalization
+            Id="25cef295-37ee-4dd3-8646-dc8bbe333dd5"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="dd93ce12-e874-4d56-9194-fbb42f57534e"
+              LastKnownName="Seller"
               LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="fdd29b1a-935d-4f9a-852f-9008040412b3"
-                  name="Admin"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="672ab3da-51df-4c67-9a84-1569641efab1"
-                  name="log out"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="21e10b28-2028-42ad-8a79-8411cbed67c2"
-            isDerived="false"
-            sourceEndRoleName="Admin"
-            targetEndRoleName="subscribe to a newsletter"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="8de2e4f7-42f6-44a0-bd73-8f352bc85b50"
-              LastKnownName="subscribe to a newsletter"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1d871b15-1602-448f-8bc4-7d078058f921"
-                  name="Admin"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a6683766-bd44-4fda-a5a5-c783029fcbd0"
-                  name="subscribe to a newsletter"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="29b8820d-3b41-4389-aca9-07a35da309cc"
-            isDerived="false"
-            sourceEndRoleName="Admin"
-            targetEndRoleName="Search"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="9c16d85d-cdb0-4af4-8310-8acce9702acf"
-              LastKnownName="Search"
-              LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0440e857-02a6-4280-963f-23aba5d872a9"
-                  name="Admin"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="44141347-7bfb-4603-b394-a3c72012011c"
-                  name="Search"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+          </generalization>
+        </generalsInternal>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -8210,14 +8349,7 @@ TITLE
         Id="73c5323d-008c-4bc9-a1a9-a81662e63280"
         name="log in"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="6dc8243b-3c37-436d-89e4-aba252680215"
-            LastKnownName="Subsystem1"
-            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -8234,18 +8366,19 @@ TITLE
               LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
           </include>
         </additions>
-        <subjects>
-          <subsystemMoniker
-            Id="6dc8243b-3c37-436d-89e4-aba252680215"
-            LastKnownName="Subsystem1"
-            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
-        </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="8de2e4f7-42f6-44a0-bd73-8f352bc85b50"
         name="subscribe to a newsletter"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9c16d85d-cdb0-4af4-8310-8acce9702acf"
+        name="Search"
         isAbstract="false"
         isLeaf="false">
         <subjects>
@@ -8258,8 +8391,344 @@ TITLE
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
-        Id="9c16d85d-cdb0-4af4-8310-8acce9702acf"
-        name="Search"
+        Id="ccb7d6aa-cf1f-4b9b-b5ab-67cbb353eba6"
+        name="log in"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+        name="Subsystem11"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5321049f-6344-49a9-b66f-193433ec7ed6"
+        name="subscribe to a newsletter1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7abc64dd-a0b1-4826-af0f-5974e4298560"
+        name="Search1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d87d4e40-94ed-44b2-b4a5-b335bc5bdcaa"
+        name="log in1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7ebd90cf-0a38-4c24-ae39-4cbc4ba79bfd"
+        name="Subsystem111"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e012939e-aa1e-40d3-890a-8fc28026f272"
+        name="Subsystem1111"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="3dcf188e-cd40-48aa-8e5f-ba22c3383b22"
+        name="Subsystem112"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="82cde971-8c78-48e7-bdc0-15c319e5b827"
+        name="Subsystem1112"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8fb39c6a-70a6-424e-ad3f-1cfce225875e"
+        name="Subsystem11111"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1a97a214-8cd9-4748-90e8-f8ce415e74e9"
+        name="Subsystem1121"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d7b4463-b2f3-4115-8e95-1d3f0b29a3e4"
+        name="access the gallery page"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f89ad1ac-fc03-4b6e-85ad-34b67b478f26"
+        name="access the gallery page"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c1df7fa-61ea-4995-baa0-9e69f2a5009a"
+        name="Filter"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c47cfe1-8230-4945-932e-36cd72ed965f"
+        name="Create an account"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23ca81f0-5b5e-41bf-a1e1-6d40e9fffea0"
+        name="Add to Cart"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c0c42fa-0828-40be-b61e-d857a32f125a"
+        name="Change Language"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d2b987d-6fd3-4a66-bc26-6526a9e94973"
+        name="Get product"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52789632-5653-45ce-8aa1-4204adc41c3b"
+        name="Reset password"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e7ef061-9231-4fbe-9f44-4e2da077eb66"
+        name="Manage Cart"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6dc8243b-3c37-436d-89e4-aba252680215"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f76ac5aa-d8cf-4809-93df-8226817c162d"
+        name="Log out"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9d8857b1-85ba-43e4-96bc-30a67dc95bc9"
+        name="Manage our bills"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="81055bd2-3670-4601-974e-6dc5c7a19b0b"
+        name="Ask for a bill about an order"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c95585a-3aa4-48e7-8e36-33c7725a6670"
+        name="Become a seller"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fee019e5-d058-4fdd-840b-9d2287c5b2dd"
+        name="Manage our account"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2ef4f89c-1993-49ba-9764-e48940f858de"
+        name="Manage Carts"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="20e683dd-bab9-43fa-8cc1-cf7e7a1a9fb2"
+        name="Manage Comments"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21c953b7-b87c-4a06-a47a-258865339fda"
+        name="Manage Messages"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93420da2-023b-40fe-9584-214edac7db89"
+        name="View product details"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="fdf0d6e6-de84-43fa-b937-23de0cfd9051"
+            LastKnownName="Subsystem11"
+            LastKnownLocation="Mon diagramme uml pour le PFE.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86d122fc-1010-47bc-a3ca-d68fabe4172c"
+        name="Get products catalogue"
         isAbstract="false"
         isLeaf="false">
         <subjects>

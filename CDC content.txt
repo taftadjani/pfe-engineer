@@ -694,6 +694,7 @@
     > Login
     > S'abonner à une newsletter
     > Acceder à la galerie de produit
+      > Liste des produits
     > Recherche
       > Chercher un produit grace à un mot ou plusieurs mot clés
     > Filtre
@@ -711,10 +712,6 @@
       > Modifier la quantité d'un produit dans le Panier
       > Supprimer un produit du Panier
     > Consulter le contenu d'un Panier
-    > Modifier le contenu d'un Panier
-      > Ajouter un produit
-      > Supprimer un produit
-      > Modifier la Quantité de chaque produit dans le panier
   > Customer
     > log out
     > Afficher une facture
@@ -723,7 +720,6 @@
     > Filtre
       > Par date
       > Par etat de la commande
-    > Devenir vendeur avec un compte Customer
     > Supprimer son compte
     > Supprimer un Panier
     > Ajouter un commentaire
@@ -743,8 +739,6 @@
     > Modifier un message
     > Ajouter un message
     > Client devient vendeur
-    > Consulter un produit
-    > Liste des produits
     > Donner un prix à un produit
     > Liste des commandes
       > Commandes achetées
@@ -1446,7 +1440,7 @@
     > Les derniers posts
     > Les promotions
     > Les contacts
-    > Les mails de 
+    > Les mails de
     > Follow button
     > Menu
       > Categories de produit vendu par le store
@@ -1459,9 +1453,9 @@
   OK> La page de resultat de recherche
     > Filtre
     > Liste de produits
-    > 
+    >
   OK> La page d'admin globale
-    > 
+    >
   OK> La page d'admin du vendeur
   OK> La page de login
   OK> La page de creation de compte
