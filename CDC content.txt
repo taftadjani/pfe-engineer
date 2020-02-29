@@ -193,9 +193,10 @@
     > Frais et commission associé à la place du marché
   > Systeme de TVA
 
+[3]28-2-2020
 // TODO:Project structure
 > Project structure
-  > Project structure
+  > Project structure v1
     > app
     > assets
     > config
@@ -222,7 +223,7 @@
     > vendor
     > composer.json
 
-  > Project structure
+  > Project structure v2
     > app
     > assets    : Uncompiled/raw CSS, LESS, Sass, JavaScript, images
     > database
@@ -249,6 +250,70 @@
     > vendor : 3rd party packages and components with Composer
       > librairies
     > composer.json :
+
+  > Project structure v3
+    > application // application directory is the web app’s directory;
+      > config // config - stores the app’s configuration files
+      > controllers // controllers - this is for all app’s Controller classes
+        > admin
+        > home
+      > models // model - this is for all app’s Model classes
+      > views // view - this is for all app’s View classes
+        > admin
+        > home
+    > framework // framework directory is for the framework itself;
+      > core // core - it will store the framework’s core classes
+      > database // database - database related classes, such as database driver classes
+      > helpers // helpers - help/assistant functions
+      > librairies // libraries - for class libraries
+    > public // public directory is to store all the public static resources like html, css and js files.
+      > css // css - for css files
+      > images // images - for images files
+      > js // js - for javascript files
+      > uploads // uploads - for uploaded files, such as uploaded images
+    > index.php // index.php is the ‘entry-point’ file, the front controller.
+
+    >>> Explanations
+      > Front Controller design pattern
+        What is index.php in the above example? This file is called ‘Front Controller’ in PHP’s MVC frameworks. The name is usually index.php, but you can name it something else(few people do that thought…) One of the function of this index.php file is, it works as the single entry point for any HTTP requests, that is, no matter what resource you request in the URL, it will all go into this index.php file first. But why? How does the magic happen? Front Controller design pattern is implemented in PHP using Apache HTTP server’s distribution configuration file called .htaccess. In this file, we can tell the Apache HTTP server to redirect all requests to index.php using its rewrite module. You can code similar to this:
+
+          <IfModule mod_rewrite.c>
+
+            Options +FollowSymLinks
+
+            RewriteEngine on
+
+            # Send request via index.php
+
+            RewriteCond %{REQUEST_FILENAME} !-f
+
+            RewriteCond %{REQUEST_FILENAME} !-d
+
+            RewriteRule ^(.*)$ index.php/$1 [L]
+
+          </IfModule>   
+      > Our MVC Framework’s Structure
+        This configuration file is very powerful and when you change it, you don’t need to restart Apache. If you change Apache’s other configuration files, you need to restart it, the reason is that for other Apache configuration files, Apache only will read them when it’s started, that’s why any change requires a restart(Apache is mainly written in C by the way). But for .htaccess distribution configuration file, no restart is needed for any change.   
+        Simply put, index.php will also do the proper initialization for the framework and it will route the request to the proper Controller(goodsController in above example) and an action method(member function) within that Controller class.
+
+        As you can see, within the application folder, we created frontend and backend subfolder in controllers and views folder, as our application has a frontend site and a backend site. But why we did not do the same in the models folder?
+        Well, the reason here is, normally for a web app:
+        Frontend and Backend can be two different ‘websites’, but the are CRUD the same database, that’s why an internal user updated a product’s price, the price is immediately show on the frontend public page - backend and frontend share the same database/tables.
+        So that’s why both backend and frontend can share a set of Model classes, and that’s why we didn’t create separate folders in the models folder.
+
+        Now let’s move on to the framework directory, some frameworks name this folder using the framework’s name, say ‘symfony’. In this folder, we quickly create these subfolders first:
+      > Framework’s core class
+        Now under framework/core folder, we’ll create the framework’s first class - Framework.class.php in framework/core folder.
+        // framework/core/Framework.class.php
+        class Framework {
+          public static function run() {
+              echo "run()";
+          }
+        }
+        we created a static function called run(). Now test it in index.php:
+        <?php
+        require "framework/core/Framework.class.php";
+        Framework::run();
 
 // TODO:Cahier de charge
 > Cahier de charge
@@ -1503,10 +1568,11 @@
     > Search field
       > Categories de recherche
 
+// TODO:Travail à faire
 > Travail à faire
   >> Etude de l'existant
   >> Diagramme de classe
-  > Maquettes
+  >> Maquettes
     > Creer un logo du site
   > Architecture MVC du site
   > Description textuelle des fonctionnalités
@@ -1546,6 +1612,7 @@
   > Preparation pour la presentation de la Soutenance
   > Soutenance
 
+// TODO:Choose something to do personnaly
 > Choose something to do personnaly
   > Choose a project to realize
     > Youtube Video
@@ -1562,7 +1629,7 @@
     > Facebook page for my blog
     > Telecharger w3school
 
-
+// TODO:Github
 > Github
   > git add .
   > git status
@@ -1570,3 +1637,4 @@
   > git push
   > git fetch
   > git pull
+
