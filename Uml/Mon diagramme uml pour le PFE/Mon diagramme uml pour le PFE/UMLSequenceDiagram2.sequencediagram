@@ -254,6 +254,10 @@ return a connected customer with all his details and we add all his cart element
               <behaviorExecutionSpecificationMoniker Id="ecf4dcaa-ab6a-4ebd-9bbc-5b54b9b53a48" LastKnownName="BehaviorExecutionSpecification22" />
             </annotatedElements>
           </comment>
+          <comment Id="5ee8a819-ce5a-4aad-8500-4a06aa969a02">
+            <elementDefinition Id="02796c41-6456-46d1-bbd9-e06e3da394b7" />
+            <body>Diagramme de sequence boite noire</body>
+          </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="a46e9a15-f124-4830-ace8-01bbbbbca743" />
         <fragments>
@@ -508,16 +512,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8567245a-08da-4772-b23f-30dc81808a75" name="MessageOccurrenceSpecification55">
+            <elementDefinition Id="7dbae68e-0055-4cc8-af26-44035b8e7104" />
+            <covered>
+              <lifelineMoniker Id="9dc5c761-5c6b-49e8-91f9-6ba1750da6f5" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="b3fec840-a392-4fd7-a5ff-06e9aca5d2be" name="MessageOccurrenceSpecification56">
             <elementDefinition Id="8cf0e478-135d-4781-ab8e-1ac14341710a" />
             <covered>
               <lifelineMoniker Id="b42fe93b-76e7-4a15-823d-3ea53fd5aeea" LastKnownName="Cart Detail" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="52d12df8-b461-42c3-b5df-ea91683fd004" name="MessageOccurrenceSpecification1">
-            <elementDefinition Id="c95ca228-32e4-467e-9e1c-b13e49267e0c" />
-            <covered>
-              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6b9507a0-49e8-4719-85d8-ead1ad472bc0" name="MessageOccurrenceSpecification2">
@@ -526,10 +530,10 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="8567245a-08da-4772-b23f-30dc81808a75" name="MessageOccurrenceSpecification55">
-            <elementDefinition Id="7dbae68e-0055-4cc8-af26-44035b8e7104" />
+          <messageOccurrenceSpecification Id="52d12df8-b461-42c3-b5df-ea91683fd004" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="c95ca228-32e4-467e-9e1c-b13e49267e0c" />
             <covered>
-              <lifelineMoniker Id="9dc5c761-5c6b-49e8-91f9-6ba1750da6f5" LastKnownName="System" />
+              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="f0e34675-8627-463c-8919-7a57801b7070" name="MessageOccurrenceSpecification62">
@@ -601,16 +605,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="cd8b2748-e34f-4b39-ac11-c994cbd768f2" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="c82e84bf-4533-446c-a136-c6ffe2127dc0" name="MessageOccurrenceSpecification4">
-            <elementDefinition Id="7b64a3cb-698b-4c88-a8ba-74e2ef5e7548" />
-            <covered>
-              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="ed9c8a48-a16d-403b-8ba5-35152605138e" name="MessageOccurrenceSpecification57">
             <elementDefinition Id="6b8679f2-580b-4702-9411-672038647741" />
             <covered>
               <lifelineMoniker Id="b42fe93b-76e7-4a15-823d-3ea53fd5aeea" LastKnownName="Cart Detail" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c82e84bf-4533-446c-a136-c6ffe2127dc0" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="7b64a3cb-698b-4c88-a8ba-74e2ef5e7548" />
+            <covered>
+              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="af65c3ab-4a21-4faf-847a-7c423d55dc65" name="MessageOccurrenceSpecification3">
@@ -670,16 +674,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="3e5b7609-dc29-4974-aaf4-1d944010051c" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="10c7061a-c9d0-4a42-83b5-31690de65464" name="MessageOccurrenceSpecification54">
-            <elementDefinition Id="6e05032d-f703-401a-95dd-4b88cbeed269" />
-            <covered>
-              <lifelineMoniker Id="aff32a41-e6d4-4759-9bb9-74d3e5fdd631" LastKnownName="User" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="fbe28e25-c8aa-48da-b6bb-719c1d5547d4" name="MessageOccurrenceSpecification53">
             <elementDefinition Id="0dd95622-a2a3-4498-ba35-21fc58d25b13" />
             <covered>
               <lifelineMoniker Id="9dc5c761-5c6b-49e8-91f9-6ba1750da6f5" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="10c7061a-c9d0-4a42-83b5-31690de65464" name="MessageOccurrenceSpecification54">
+            <elementDefinition Id="6e05032d-f703-401a-95dd-4b88cbeed269" />
+            <covered>
+              <lifelineMoniker Id="aff32a41-e6d4-4759-9bb9-74d3e5fdd631" LastKnownName="User" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="c932bd27-7500-4b91-a2ca-264d03110769" name="ExecutionOccurrenceSpecification28">
@@ -761,16 +765,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6662c955-3c2f-4547-8162-9cc405bdac83" name="MessageOccurrenceSpecification5">
-            <elementDefinition Id="a4827b9e-47d2-409d-890c-a85e00af9c22" />
-            <covered>
-              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="84f84a72-903f-4bf5-877c-031bd944a139" name="MessageOccurrenceSpecification6">
             <elementDefinition Id="0925e949-947d-46eb-b5b3-6c6853529028" />
             <covered>
               <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6662c955-3c2f-4547-8162-9cc405bdac83" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="a4827b9e-47d2-409d-890c-a85e00af9c22" />
+            <covered>
+              <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="a0ab697b-de99-44dd-9556-91249817702a" name="BehaviorExecutionSpecification6">
@@ -800,16 +804,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="592f18d1-9f35-4934-8ceb-87937af83193" name="MessageOccurrenceSpecification22">
-            <elementDefinition Id="5d8efd60-5a1d-4e7b-ba2d-939e4986040c" />
-            <covered>
-              <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="09167b8f-28fd-4df2-aaf0-05879ef5b2d5" name="MessageOccurrenceSpecification21">
             <elementDefinition Id="d88a092d-9900-4843-9eca-dbe3eb67bf98" />
             <covered>
               <lifelineMoniker Id="198f3579-c965-4987-b307-e98e7f1e7f65" LastKnownName="Navigator" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="592f18d1-9f35-4934-8ceb-87937af83193" name="MessageOccurrenceSpecification22">
+            <elementDefinition Id="5d8efd60-5a1d-4e7b-ba2d-939e4986040c" />
+            <covered>
+              <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="ac8f8f3d-f4b7-4c7d-9c88-4b29041e3436" name="BehaviorExecutionSpecification12">
@@ -841,16 +845,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="cd8b2748-e34f-4b39-ac11-c994cbd768f2" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="b0f23901-1390-4873-a515-ac6dec0a98ed" name="MessageOccurrenceSpecification43">
-            <elementDefinition Id="daca0eee-08e6-4750-93ca-3f51c31cc631" />
-            <covered>
-              <lifelineMoniker Id="16e638d6-b7af-46d7-a782-167d21ae8c8e" LastKnownName="Customer" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="f2f173aa-aa77-429c-acd2-b471090061c9" name="MessageOccurrenceSpecification44">
             <elementDefinition Id="35c05d22-532f-47d0-8e13-9d34275bcc9e" />
             <covered>
               <lifelineMoniker Id="cd8b2748-e34f-4b39-ac11-c994cbd768f2" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b0f23901-1390-4873-a515-ac6dec0a98ed" name="MessageOccurrenceSpecification43">
+            <elementDefinition Id="daca0eee-08e6-4750-93ca-3f51c31cc631" />
+            <covered>
+              <lifelineMoniker Id="16e638d6-b7af-46d7-a782-167d21ae8c8e" LastKnownName="Customer" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="642f9a95-3583-4537-af02-7643883e2fe9" name="BehaviorExecutionSpecification17">
@@ -1059,16 +1063,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="96d71d28-8863-4f75-a28c-94591c2eb24b" LastKnownName="Store" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="ae709ef1-8942-48e0-884d-3477e0b13b84" name="MessageOccurrenceSpecification16">
-            <elementDefinition Id="ee6b3fc8-fcdc-4f15-81e9-38963d0453fa" />
-            <covered>
-              <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="14780864-457d-4c62-a3a5-829c67da3918" name="MessageOccurrenceSpecification15">
             <elementDefinition Id="f1eda6bc-3ca1-44b1-87a7-0daf45a60892" />
             <covered>
               <lifelineMoniker Id="a252ee87-1fca-48b4-85f4-96fd7d5c49b3" LastKnownName="User" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ae709ef1-8942-48e0-884d-3477e0b13b84" name="MessageOccurrenceSpecification16">
+            <elementDefinition Id="ee6b3fc8-fcdc-4f15-81e9-38963d0453fa" />
+            <covered>
+              <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="4e261b39-7992-48aa-b14e-da3d7557adfd" name="ExecutionOccurrenceSpecification8">
@@ -1109,16 +1113,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="3e5b7609-dc29-4974-aaf4-1d944010051c" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="e07a39a3-1d04-48f8-b746-cd71764a60b4" name="MessageOccurrenceSpecification83">
-            <elementDefinition Id="1659c225-3bb7-4652-8b4c-1a0913f26613" />
-            <covered>
-              <lifelineMoniker Id="4098a539-aa27-4675-b45f-5e482475ad2a" LastKnownName="User" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="506564f7-4f50-43c8-958c-715793ed536c" name="MessageOccurrenceSpecification84">
             <elementDefinition Id="d80c6cb3-af25-49e6-bc7a-8609ba70c3a6" />
             <covered>
               <lifelineMoniker Id="3e5b7609-dc29-4974-aaf4-1d944010051c" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e07a39a3-1d04-48f8-b746-cd71764a60b4" name="MessageOccurrenceSpecification83">
+            <elementDefinition Id="1659c225-3bb7-4652-8b4c-1a0913f26613" />
+            <covered>
+              <lifelineMoniker Id="4098a539-aa27-4675-b45f-5e482475ad2a" LastKnownName="User" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="2273f048-6322-4b3a-97ee-af8a1d6c7c42" name="BehaviorExecutionSpecification7">
@@ -1148,16 +1152,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="80423d35-933b-48ed-b096-cd6e1c6c3580" name="MessageOccurrenceSpecification26">
-            <elementDefinition Id="66c3326b-d63e-495f-8a82-82a3aaf6cb3c" />
-            <covered>
-              <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="f5c3a20d-b84d-4902-9fc6-a82b578e4d24" name="MessageOccurrenceSpecification25">
             <elementDefinition Id="c1a20cdb-6466-4618-ae59-4baa75ce2380" />
             <covered>
               <lifelineMoniker Id="198f3579-c965-4987-b307-e98e7f1e7f65" LastKnownName="Navigator" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="80423d35-933b-48ed-b096-cd6e1c6c3580" name="MessageOccurrenceSpecification26">
+            <elementDefinition Id="66c3326b-d63e-495f-8a82-82a3aaf6cb3c" />
+            <covered>
+              <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="47394671-7fb1-408f-9cdb-48c1e11dd488" name="MessageOccurrenceSpecification70">
@@ -1206,16 +1210,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="96d71d28-8863-4f75-a28c-94591c2eb24b" LastKnownName="Store" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="bed292e0-f09c-404f-b582-89e7ae9e29c9" name="MessageOccurrenceSpecification7">
-            <elementDefinition Id="e43d5983-3089-42e3-8eab-8216adf503b9" />
-            <covered>
-              <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="c6120a9e-dba4-474a-9f99-62c3cb9b9c2d" name="MessageOccurrenceSpecification8">
             <elementDefinition Id="1c0a3313-4e0f-4dad-b2af-c42718e91695" />
             <covered>
               <lifelineMoniker Id="8a288deb-ac4c-4734-a6d6-fcfe9602d653" LastKnownName="Navigator" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bed292e0-f09c-404f-b582-89e7ae9e29c9" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="e43d5983-3089-42e3-8eab-8216adf503b9" />
+            <covered>
+              <lifelineMoniker Id="1302723b-c858-417b-adee-cec7ca615183" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="2b9e8dd4-7d91-403d-bc1b-e4269b2e6b18" name="ExecutionOccurrenceSpecification4">
@@ -1325,16 +1329,16 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5d93a4af-8c10-4bcb-91cd-3d63a818bbfc" name="MessageOccurrenceSpecification35">
-            <elementDefinition Id="103c10d3-6754-4028-92e0-ba1e64193a4d" />
-            <covered>
-              <lifelineMoniker Id="198f3579-c965-4987-b307-e98e7f1e7f65" LastKnownName="Navigator" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="2b31747b-fce0-45f4-888c-6b7685d142cf" name="MessageOccurrenceSpecification36">
             <elementDefinition Id="d0b85d87-d76a-49ef-b944-6382be663e3a" />
             <covered>
               <lifelineMoniker Id="8f705a0f-94a4-4d4b-85fa-4b45f640fb7f" LastKnownName="System" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5d93a4af-8c10-4bcb-91cd-3d63a818bbfc" name="MessageOccurrenceSpecification35">
+            <elementDefinition Id="103c10d3-6754-4028-92e0-ba1e64193a4d" />
+            <covered>
+              <lifelineMoniker Id="198f3579-c965-4987-b307-e98e7f1e7f65" LastKnownName="Navigator" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="519b818b-e543-4a59-a472-97aed9905509" name="MessageOccurrenceSpecification37">
@@ -1387,28 +1391,28 @@ return a connected customer with all his details and we add all his cart element
               <lifelineMoniker Id="e456fd34-8405-41ea-a2ed-6cf46f526fd3" LastKnownName="Signin_out" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="776a4488-243c-4a51-aac3-780804589b3a" name="MessageOccurrenceSpecification72">
-            <elementDefinition Id="f0fbb5bc-f0e2-475b-8080-94698cd183a2" />
-            <covered>
-              <lifelineMoniker Id="e456fd34-8405-41ea-a2ed-6cf46f526fd3" LastKnownName="Signin_out" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="eff63d27-9d08-4842-8cc5-993211c963d9" name="MessageOccurrenceSpecification71">
             <elementDefinition Id="b39a44ac-d760-4e8b-bb51-1b3915ea4b24" />
             <covered>
               <lifelineMoniker Id="d55c47e5-7b76-4f32-9dbb-0f329e50c60a" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="6ec7186e-2ffb-451e-a547-98bb98a9cf16" name="MessageOccurrenceSpecification74">
-            <elementDefinition Id="a094d487-a272-4747-9761-e0b9816dca39" />
+          <messageOccurrenceSpecification Id="776a4488-243c-4a51-aac3-780804589b3a" name="MessageOccurrenceSpecification72">
+            <elementDefinition Id="f0fbb5bc-f0e2-475b-8080-94698cd183a2" />
             <covered>
-              <lifelineMoniker Id="d55c47e5-7b76-4f32-9dbb-0f329e50c60a" LastKnownName="System" />
+              <lifelineMoniker Id="e456fd34-8405-41ea-a2ed-6cf46f526fd3" LastKnownName="Signin_out" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="3c8dd0ad-f5e4-4e2f-a6a5-4f545b6246aa" name="MessageOccurrenceSpecification73">
             <elementDefinition Id="37d6db35-33cf-4b2f-b2a2-66ece3de12b2" />
             <covered>
               <lifelineMoniker Id="e456fd34-8405-41ea-a2ed-6cf46f526fd3" LastKnownName="Signin_out" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6ec7186e-2ffb-451e-a547-98bb98a9cf16" name="MessageOccurrenceSpecification74">
+            <elementDefinition Id="a094d487-a272-4747-9761-e0b9816dca39" />
+            <covered>
+              <lifelineMoniker Id="d55c47e5-7b76-4f32-9dbb-0f329e50c60a" LastKnownName="System" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="2e63f298-bae0-49c1-93f8-c38db6e9274e" name="ExecutionOccurrenceSpecification38">
@@ -1615,6 +1619,15 @@ return a connected customer with all his details and we add all his cart element
               <executionOccurrenceSpecificationMoniker Id="4cb94270-4c97-4afb-b89f-a6209d262b65" LastKnownName="ExecutionOccurrenceSpecification43" />
               <executionOccurrenceSpecificationMoniker Id="61b1f117-2f94-4972-bf4b-47144dd8785e" LastKnownName="ExecutionOccurrenceSpecification44" />
             </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="e7e010f6-8611-4bdb-873a-b696eee4c7a6" name="User" isActor="false" lifelineDisplayName="User">
+            <elementDefinition Id="fbfda14f-d5d7-4fbd-aa8d-60887fd511e8" />
+            <represents>
+              <propertyMoniker Id="4b1a0fa0-57a3-4512-8a6d-592e50f84f14" />
+            </represents>
+          </lifeline>
+          <lifeline Id="c9936d13-466d-4b5a-99d8-2959d077c691" name="Navigator" isActor="false" lifelineDisplayName="Navigator">
+            <elementDefinition Id="27bca47c-f67e-408b-bc5c-e349b9488539" />
           </lifeline>
         </lifelines>
         <messages>
@@ -1994,6 +2007,12 @@ return a connected customer with all his details and we add all his cart element
           </property>
           <property Id="e82f4319-3ce9-4804-8400-523df2e0bc3d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="24c6c35c-102a-421d-9093-f66089dc730d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="af8f8ddb-0f31-4e0e-a60a-ed1ba2f01ecf" LastKnownName="User" />
+            </type_NamedElement>
+          </property>
+          <property Id="4b1a0fa0-57a3-4512-8a6d-592e50f84f14" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7be0a44a-0e3c-4984-95ce-90410793cb15" />
             <type_NamedElement>
               <referencedTypeMoniker Id="af8f8ddb-0f31-4e0e-a60a-ed1ba2f01ecf" LastKnownName="User" />
             </type_NamedElement>
