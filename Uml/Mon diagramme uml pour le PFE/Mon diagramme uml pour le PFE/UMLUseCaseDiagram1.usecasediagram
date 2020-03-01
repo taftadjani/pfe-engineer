@@ -195,10 +195,11 @@
           </comment>
           <comment Id="06b71733-f476-4500-a72d-0b4500aa7fe2">
             <elementDefinition Id="0276aa8a-9465-43b6-b6e0-29d6c4168a09" />
-            <body>Add product
+            <body>Add product to Cart
 Delete product
 Change quantity
-Access Cart content</body>
+Access Cart content
+Clear Cart</body>
             <annotatedElements>
               <useCaseMoniker Id="a94f9eb3-a467-4c89-bae9-09fad402b74b" LastKnownName="Manage Cart" />
             </annotatedElements>
@@ -258,9 +259,7 @@ Get account details</body>
           <comment Id="63ab7df8-053c-430c-b4b9-61c799805a75">
             <elementDefinition Id="825c2710-4c48-4683-9810-3830d89a8330" />
             <body>Add Cart
-Delete Cart
-Clear Cart
-Update product quantity</body>
+Delete Cart</body>
             <annotatedElements>
               <useCaseMoniker Id="ee2ba3bd-5423-4858-9cfe-da2c93ff771b" LastKnownName="Manage Carts" />
             </annotatedElements>
@@ -296,7 +295,6 @@ Annuler la commande</body>
 Noter un vendeur
 -- Disponibilité
 -- Sa communication
--- 
 Noter une boutique</body>
             <annotatedElements>
               <useCaseMoniker Id="c6b95a68-884f-45b0-b7cf-1cb8064fd673" LastKnownName="Mark" />
@@ -444,13 +442,10 @@ Get all Sub categories</body>
             <elementDefinition Id="ee0f09cc-e803-4277-9cd9-bdc3628dbf6a" />
             <body>Add a company
 Delete a company
-Get company details
 Update company details
 
 Add a store from a company
-Delete a store from a company
-Update store details from a company
-Get store details from a company</body>
+Delete a store from a company</body>
             <annotatedElements>
               <useCaseMoniker Id="2182678f-894a-4a73-9df0-f5889afb7666" LastKnownName="Manage our companies" />
             </annotatedElements>
@@ -459,7 +454,6 @@ Get store details from a company</body>
             <elementDefinition Id="9193b1d8-47d2-4af8-8a95-5a26f5b51454" />
             <body>Add a store
 Delete a store
-Get store details
 Update store details
 
 Add product to the store
@@ -525,14 +519,6 @@ Update a product</body>
     <packageHasNamedElement>
       <useCase Id="c3cf7791-867f-4ae2-a6ba-13f7121f5b99" name="Create an account" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8c47cfe1-8230-4945-932e-36cd72ed965f" />
-        <subjects>
-          <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="bfc22243-336a-4ab6-89a9-851cb331b5fb" name="Add to Cart" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="23ca81f0-5b5e-41bf-a1e1-6d40e9fffea0" />
         <subjects>
           <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
         </subjects>
@@ -891,6 +877,14 @@ Update a product</body>
         <elementDefinition Id="ce0e4ee6-388a-4246-9c22-8f6fa4595efa" />
         <subjects>
           <subsystemMoniker Id="6f65b83a-5c72-4224-bda5-e2c79b4b7b3d" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f1d3d306-05c9-4450-ab10-63ec73ecdccd" name="&#xD;&#xA;Get company details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c28467f7-551b-41f1-b0e3-55eff9254335" />
+        <subjects>
+          <subsystemMoniker Id="91c5d981-6ace-4cc2-b464-77181cbbe239" LastKnownName="Subsystem11" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
