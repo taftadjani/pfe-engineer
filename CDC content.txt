@@ -194,6 +194,9 @@
   > Systeme de TVA
 
 // TODO:Project structure
+<<<<<<< HEAD
+> Project Structure
+=======
 > Project structure
   > Project structure
     > app
@@ -249,6 +252,7 @@
     > vendor : 3rd party packages and components with Composer
       > librairies
     > composer.json :
+>>>>>>> 5c8b641a7d9deffcfa9a109169801f0da42f2440
 
 // TODO:Cahier de charge
 > Cahier de charge
@@ -1570,5 +1574,18 @@
   > git fetch
   > git pull
 
+<<<<<<< HEAD
+> Laravel commande
+  > Laravel Installation
+    > install composer
+    > install php 
+  > Installation de laravel : composer global require laravel/installer
+  > Laravel project creation
+    > laravel new hanouti
+  > Local Development Server
+    > php artisan serve
+      > This command will start a development server at http://localhost:8000
+=======
 // TODO:Diagramme de sequence
 [3] Diagramme de sequence boite blanche/ boite noire
+>>>>>>> 5c8b641a7d9deffcfa9a109169801f0da42f2440
