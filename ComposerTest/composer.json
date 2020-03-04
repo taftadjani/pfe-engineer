@@ -1,0 +1,12 @@
+{
+    "name": "taftadjani/composer-test",
+    "require": {
+        "michelf/php-markdown": "^1.9"
+    },
+    "authors": [
+        {
+            "name": "taftadjani",
+            "email": "taftadjani@gmail.com"
+        }
+    ]
+}
