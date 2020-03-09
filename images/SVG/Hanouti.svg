@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Hanouti">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Hanouti" clip-path="url(#clip-Hanouti)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g id="Groupe_1705" data-name="Groupe 1705">
+      <text id="HanOuti-2" data-name="HanOuti" transform="translate(626 519)" fill="#061508" font-size="79" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Han</tspan><tspan y="0" fill="#ff4e00" font-size="99" font-family="Roboto-Bold, Roboto" font-weight="700">O</tspan><tspan y="0">uti</tspan></text>
+      <text id="eCommerce" transform="translate(791 550)" fill="#061508" font-size="25" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">eCommerce</tspan></text>
+    </g>
+  </g>
+</svg>

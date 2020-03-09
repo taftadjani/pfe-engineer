@@ -194,65 +194,7 @@
   > Systeme de TVA
 
 // TODO:Project structure
-<<<<<<< HEAD
 > Project Structure
-=======
-> Project structure
-  > Project structure
-    > app
-    > assets
-    > config
-    > docs
-    > exemples
-    > files
-    > node_modules
-    > public
-      > css
-      > js
-      > img
-        > content
-        > layout
-    > resources
-    > src
-      > Controllers
-      > Model
-      > Utils
-    > templates
-    > tests
-    > themes
-    > tmp
-    > translations
-    > vendor
-    > composer.json
-
-  > Project structure
-    > app
-    > assets    : Uncompiled/raw CSS, LESS, Sass, JavaScript, images
-    > database
-    > config    : Application configuration (config, etc, app/config)
-    > language
-    > node_modules :
-    > public    : Publicly accessible files (pub, web, public_html)
-      > css : All your css files.
-      > js : All your javascript files.
-      > img :  All your image files. I decided to split content images from layout images.
-        > content
-        > layout
-    > resources
-      > view
-    > routes
-    > src       : PHP source code files
-      > Controller : Classes for managing request and response by displaying
-                     templates with logic from services and or data from DB
-      > Model : classes for holding values from the database
-      > Utils : Application services - business logic
-    > templates : Template files
-    > tests :
-    > translations : Translation files
-    > vendor : 3rd party packages and components with Composer
-      > librairies
-    > composer.json :
->>>>>>> 5c8b641a7d9deffcfa9a109169801f0da42f2440
 
 // TODO:Cahier de charge
 > Cahier de charge
@@ -968,7 +910,12 @@
       > Securité
       > Performance
       > Responsive
-        > Bootstrap 4
+        > Media query (Bootstrap breakpoints)
+          > default (min screean possible)
+          > min-width = 576px
+          > min-width = 768px
+          > min-width = 992px
+          > min-width = 1200px
         > Mobile et web pour le vendeur
         > Mobile et web pour le client
         > Web pour l'admin
@@ -1054,6 +1001,8 @@
   > Client, Vendeur, Admin, Utilisateur non connecté
 
   > Filtre
+    > Par prix
+    > Par sexe
     > Par categorie
     > Client, Vendeur, Admin, Utilisateur non connecté
 
@@ -1465,14 +1414,17 @@
   OK> La page d'insertion des fournisseurs
   OK> La page de catalogues de produit
 
+
+
+
   > Tete de page
-    > Panier icon
-    > log in
-    > Sign in
+    > Cart or panier
+    > Log
+      > log in
+      > Sign in
     > Notification icon
     > Search Button/Bar
       > Filtre
-    > Langue
     > Logo du site
     > Logo compte
     > Logo de menu
@@ -1498,6 +1450,10 @@
     > Copyright information
     > newsletter
     > Help
+    > Langue
+    > policy
+    > About us 
+    > Cart icons
 
   // TODO:Navigation
   > Navigation
@@ -1506,6 +1462,33 @@
     > Panier/car
     > Search field
       > Categories de recherche
+
+> Choosing color
+  > https://color.adobe.com/create
+  > materialpalette.com
+  > materialui.co
+  > material.io/resources/color
+  > coolors.co
+  >> Resulted coolors
+    > AMBER 
+    > ORANGE
+    > DEEP ORAANGE 
+    > RED
+    > GREY
+    > GREEN
+    > LIGHT GREEN
+
+
+> Choosing fonts 
+  > https://fonts.google.com/
+
+  > 
+
+  >> Resulted fonts
+
+
+
+
 
 > Travail à faire
   >> Etude de l'existant
@@ -1574,7 +1557,6 @@
   > git fetch
   > git pull
 
-<<<<<<< HEAD
 > Laravel commande
   > Laravel Installation
     > install composer
@@ -1585,7 +1567,3 @@
   > Local Development Server
     > php artisan serve
       > This command will start a development server at http://localhost:8000
-=======
-// TODO:Diagramme de sequence
-[3] Diagramme de sequence boite blanche/ boite noire
->>>>>>> 5c8b641a7d9deffcfa9a109169801f0da42f2440
