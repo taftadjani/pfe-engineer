@@ -1,6 +1,6 @@
 // TODO:Etude de l'existant
 [0] 28/1/2020
-> Etude de l'existant
+//!> Etude de l'existant
   > Jumia.ma
     > Description
       Jumia est un site d’achats en ligne qui est disponible au Maroc et fondé en 2012.
@@ -156,7 +156,7 @@
     > inconvenients
 
 // TODO:Avantages et inconvenients patterns
-> Avantages et inconvenients patterns
+//!> Avantages et inconvenients patterns
   > Systeme de Livraison
     > Livraison gratuite pour la plupart des produits
     > Respect des delais de livraison
@@ -194,10 +194,10 @@
   > Systeme de TVA
 
 // TODO:Project structure
-> Project Structure
+//!> Project Structure
 
 // TODO:Cahier de charge
-> Cahier de charge
+//!> Cahier de charge
   > Cahier de charges V1
     un cahier des charges a pour fonction de formaliser un besoin afin que ce dernier soit compris par l'ensemble des acteurs impliqués dans le projet .
     > Contexte et définition du problème
@@ -373,20 +373,20 @@
         > Maîtrise d'oeuvre
 
 // TODO:E-commerce feature
-> E-commerce feature
+//!> E-commerce feature
   > Images de bonne qualité
   > Marketing
   > Paiement en detail
   > Produit generic : pour faciliter la saisie de produit
 
 // TODO:Types de e-commerce
-> Types de e-commerce
+//!> Types de e-commerce
   > B2C
   > B2B
 
 // TODO: UML
 [1] 7/2/2020
-> UML
+//!> UML
   [v]> User
     [Attr]:
       > firstName
@@ -635,7 +635,7 @@
   > Password
 
 // TODO:Fonctionnalités detaillées
-> Fonctionnalités detaillées
+//!> Fonctionnalités detaillées
   > Not connected user
     > Login
     > S'abonner à une newsletter
@@ -772,7 +772,7 @@
     > Avertissement(avec un degre de gravité)
 
 // TODO:Rapport de stage
-> Rapport de stage
+//!> Rapport de stage
   > dedicace
   > remerciement
   > Gloassaire(Liste des abbreviations)/Terminologie
@@ -972,11 +972,11 @@
   > Reference/document de reference
 
 // TODO:PAQ
-> PAQ
+//!> PAQ
   >
 
 // TODO:Description textuelle des fonctionnalités
-> Description textuelle des fonctionnalités
+//!> Description textuelle des fonctionnalités
   > Cas d'utilisation
   > Acteurs
   > Objectifs
@@ -1323,7 +1323,7 @@
   > Admin
 
 [2] 20-2-2020
-> Maquettes
+//!> Maquettes
   // TODO:Les pages possibles
   OK> La page principale
     > Produits par rapport à un algorithme
@@ -1414,9 +1414,6 @@
   OK> La page d'insertion des fournisseurs
   OK> La page de catalogues de produit
 
-
-
-
   > Tete de page
     > Cart or panier
     > Log
@@ -1436,7 +1433,7 @@
     > Filtre
     >
 
-  // TODO:Pied des pages
+//! TODO:Pied des pages
   > Pied des pages (footer)
     > Contact information
     > Privacy policy
@@ -1455,7 +1452,7 @@
     > About us 
     > Cart icons
 
-  // TODO:Navigation
+//! TODO:Navigation
   > Navigation
     > Boutiques
     > Sign in/sign out
@@ -1463,7 +1460,7 @@
     > Search field
       > Categories de recherche
 
-> Choosing color
+//!> Choosing color
   > https://color.adobe.com/create
   > materialpalette.com
   > materialui.co
@@ -1478,19 +1475,17 @@
     > GREEN
     > LIGHT GREEN
 
-
-> Choosing fonts 
-  > https://fonts.google.com/
-
-  > 
+//!> Choosing fonts 
+  > https://fonts.google.com/ 
 
   >> Resulted fonts
 
+//!> Choosing icons
+  > Google icons
+  > Font awesome 
+  > Icon monstr
 
-
-
-
-> Travail à faire
+//!> Travail à faire
   >> Etude de l'existant
   >> Diagramme de classe
   > Maquettes
@@ -1533,7 +1528,7 @@
   > Preparation pour la presentation de la Soutenance
   > Soutenance
 
-> Choose something to do personnaly
+//!> Choose something to do personnaly
   > Choose a project to realize
     > Youtube Video
       > Using powerpoint presentation + speaking for my
@@ -1549,7 +1544,7 @@
     > Facebook page for my blog
     > Telecharger w3school
 
-> Github
+//!> Github
   > git add .
   > git status
   > git commit -m "message"
@@ -1557,13 +1552,230 @@
   > git fetch
   > git pull
 
-> Laravel commande
+//!> Laravel 
   > Laravel Installation
     > install composer
     > install php 
   > Installation de laravel : composer global require laravel/installer
   > Laravel project creation
     > laravel new hanouti
+    > composer create-project --prefer-dist laravel/laravel hanouti
+  > Laravel folders
+    > storage/app/public : store users files such as avatar
+
+  //* To use
+  > Laravel validation
+  > Laravel relationships inside models files
+    > Inside model, we need to define some variable such us protected $table that hold the table name, $primaryKey,timestamps
+  > Laravel controllers for creating, updating, deleting and getting data, redirecting
+  > Laravel mass assignment
+    > protected $fillable vs protected $guarded 
+  > Before deploying
+    > encryption key
+  > creation
+    > Un controller
+      > php artisan make:controller HomeController
+    > Une migration
+      > php artisan make:migration creates_services_table --create services
+    > Model(one line in our table)
+      > php artisan make:model Cart
+    //! > All the three 
+      > php artisan make:model Cart -cmr
+      > php artisan make:model Cart -c(for controller) -m(for migration) -r(for controller resources)
+    //! > All with all the resources
+      > php artisan make:model Cart --all 
+  > composer require laravel/ui (for authentication)
+    > php artisan ui:auth
+  > Laravel ckeditor
+  > RouteServiceProvider : (HOME property) pour modifier la redirections apres le logging
+  > LoginController : (username method) retrun the field used for login like the username.
+  > Auth : getting the authenticated user
+    > Auth::user()
+    > Auth::id()
+    > Auth::check() return true if a user is connected otherwise false
+
+    Some thing, we can access authenticated user with request
+    > $request->user()
+
+  //* Laravel functions
+  > env 
+  > config 
+  > compact 
+  > old('field name')
+  > request
+  > with (used with view function)
+  //! Route func
+    > route
+    > route::view 
+    > route::posts
+    > route::get 
+    > match (in route file)
+    > redirect 
+    > any (in route file)
+    > middleware() for protecting routes inside controllers like this : $this->middleware('auth'); 
+    > intended : method used after the redirect method redirect the user form where he was intercepted
+
+//!> php artisan
+  > php artisan help something
+    > php artisan help make:controller
+  > php artisan key:generate : generate a new key
+  > php artisan config:cache : This will combine all of the configuration options for your application into a single file which will be loaded quickly by the framework.
+  > php artisan down : maintenance mode
+  > php artisan up : disable maintenance mode
+  > php artisan list make : available commands
+  > php artisan make:auth : not working
   > Local Development Server
     > php artisan serve
       > This command will start a development server at http://localhost:8000
+  > php artisan make:controller HomeController
+  > php artisan migrate
+  > php artisan make:mail
+  > php artisan tinker
+  > php artisan route:list
+  > php artisan db:seed
+
+//!> Slider
+  > Les lignes de controles en bas des images
+  > Auto sliding
+  > Les buttons de controls next et prev 
+    > Ces boutons ne s'affiche que si le curseur est proche d'eux
+    > Il s'affiche par defaut sur des petits ecrans.
+
+//!> Vs Code 
+  > Ctrl + p : search for files
+
+//!> Hanouti dev 
+  > config directory
+    > app.php
+      > APP_NAME = Hanouti (Changed)
+  > .env file
+    > APP_NAME = Hanouti (Changed)
+    > DB_DATABASE=hanouti_db (Changed)
+  > app directory
+    > Http directory
+      > Controller directory
+        //* Controller to create
+        > UserController
+        //* Controller created
+        > BillController
+        > BrandController
+        > CartController
+        > CategoryController
+        > CityController
+        > ColorController
+        > CommentController
+        > CommissionController
+        > CompanyController
+        > ConditionController
+        > CountryController
+        > DeliveryController
+        > DeliveryModeController
+        > DeviseController
+        > DistrictController
+        > LocationController
+        > MailController
+        > MessageController
+        > ModeleController
+        > OrderController
+        > OrderRegulationController
+        > OrderStateController
+        > PaymentController
+        > PhoneController
+        > PostController
+        > PriceController
+        > PriceDescriptionController
+        > ProductController
+        > PromotionController or SaleOffController
+        > ProviderController
+        > ShopController
+        > StarController
+        > SubCategoryController
+        > SubCommentController
+        > TaxController
+        > WarrantyController
+    //* Model to create
+    > User
+    //* Model created
+    > Product
+    > Shop
+    > Company
+    > Category
+    > SubCategory
+    > Comment
+    > SubComment
+    > Warranty
+    > Message
+    > Provider
+    > Location
+    > Cart
+    > Order
+    > OrderState
+    > Bill
+    > Devise
+    > Condition
+    > Price
+    > Brand
+    > Model
+    > Country
+    > City
+    > Delivery
+    > DeliveryMode
+    > PriceDescription
+    > Color
+    > Phone
+    > Mail
+    > Tax
+    > Star
+    > Promotion or SaleOff
+    > District
+    > Post
+    > OrderRegulation
+    > Payment
+    > Commission
+  > database directory
+    > migration directory
+      //* Migration to create
+      //* Migration created
+        > Product
+        > Shop
+        > Company
+        > Category
+        > SubCategory
+        > Comment
+        > SubComment
+        > Warranty
+        > Message
+        > Provider
+        > Location
+        > Cart
+        > Order
+        > OrderState
+        > Bill
+        > Devise
+        > Condition
+        > Price
+        > Brand
+        > Model
+        > Country
+        > City
+        > Delivery
+        > DeliveryMode
+        > PriceDescription
+        > Color
+        > Phone
+        > Mail
+        > Tax
+        > Star
+        > Promotion or SaleOff
+        > District
+        > Post
+        > OrderRegulation
+        > Payment
+        > Commission
+  > resources 
+    > views
+      > layouts (to create)  
+  > Created 
+    > database (hanouti_db)
+  > hanouti.pfe/admin : Tous pour l'admin
+  > hanouti.pfe : Tous les autres
