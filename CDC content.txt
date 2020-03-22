@@ -549,6 +549,11 @@
       > Mode de paiement
   [v]> Etat de la commande (Commande livré, encours, )
     > Nom de l'etat
+      New
+      encours
+      livré
+      Envoyer
+      Fermé
   [v]> Factures
     [Attr] :
       > Date de facture
@@ -583,7 +588,7 @@
   [v]> Livraison
     > Date de livraison
     > Description de la livraison
-  [v]> Mode de livraison
+  [v]> Mode de livraison OR Delivery method
     > Description
     > titre
       > Mode de livraison
@@ -594,6 +599,7 @@
         > Prix de livraison par rapport à chaque type
   [v]> Price
     > prix
+    > Description(PriceDescription)
   [v]> Color (Product color)
     > nom
     > valeur
@@ -633,6 +639,20 @@
   [v]> Langue
     > langue
   > Password
+  > Day
+    > value
+    > work? :boolean
+    > raison : work|vacation|others
+    > default? yes: effective(effective means time exact open/close)
+  > Time 
+    > Start_time
+    > End_time
+    > raison : work|pause|pray_time|closed
+  > SignInOut
+    > user_id
+    > Signin? true:signout 
+    > signout_by
+    > created_at
 
 // TODO:Fonctionnalités detaillées
 //!> Fonctionnalités detaillées
@@ -1322,98 +1342,6 @@
   > Avertissement(avec un degre de gravité)
   > Admin
 
-[2] 20-2-2020
-//!> Maquettes
-  // TODO:Les pages possibles
-  OK> La page principale
-    > Produits par rapport à un algorithme
-      > Produit à succes
-      > Good vendeur
-      > Positions des boutiques
-      > Par top rated seller
-      > Populaires
-      > TOP PRODUCT
-      > HOT PRODUCT(Les plus visités du moment)
-      > NEW PRODUCT
-    > Categories
-    > Nos partenaires et clients
-    > THE PERFECT GIFTS
-    > Tops posts
-    > Tops SALES OFF
-    > Les jours de reductions
-    > Popular shop
-    > Popular product
-    > Sell something
-    > Buy something
-    > Explore store around with a MAP
-    > Menu
-      > Shops/STORES
-      > MAPS
-      > Top seller
-      > Categories
-        > Cosmetiques
-        > Top sellers
-        > Latest
-        > Sale off
-        > CATALOGUES DES PRODUITS/GALERIES DES PHOTOS
-        > FASHION SELECTION
-      > Home
-      > Cart
-      > Search
-      > Profile
-      > Logo
-      > Langue
-    > Partner
-  OK> La page de chaque produit
-    > Nom du produit
-    > Description
-    > Store
-    > Categorie
-    > Prix|Reductions
-    > Couleur
-    > Different images
-    > Quantités
-    > Compare button
-    > Send message to seller
-    > Etoiles du produit
-    > Message
-    > Share
-    > Product recommendation par rapport au produit
-    > Localisation du produit
-    > Suivre une store
-    > Paiement methodes
-  OK> La page de chaque boutique
-    > Logo principal
-    > Image de couverture
-    > Les produits en ventes sur la boutique
-    > Les sellers
-    > Les derniers posts
-    > Les promotions
-    > Les contacts
-    > Les mails de
-    > Follow button
-    > Menu
-      > Categories de produit vendu par le store
-    > Filtre
-  OK> La page d'ajout/modification de produit
-    [Admin,Seller]> Details du produit
-    [Seller]> Details de la vente
-    [Seller]> Information sur la livraison
-    [Seller]> Information de paiement
-  OK> La page de resultat de recherche
-    > Filtre
-    > Liste de produits
-    >
-  OK> La page d'admin globale
-    >
-  OK> La page d'admin du vendeur
-  OK> La page de login
-  OK> La page de creation de compte
-  OK> La page de changement de mot de passe
-  OK> Entrer un nouveau produit par un vendeur
-  OK> La page d'insertion des fournisseurs
-  OK> La page de catalogues de produit
-
   > Tete de page
     > Cart or panier
     > Log
@@ -1562,6 +1490,70 @@
     > composer create-project --prefer-dist laravel/laravel hanouti
   > Laravel folders
     > storage/app/public : store users files such as avatar
+  
+  //* Migrations
+  > Create a migration
+    php artisan make:migration create_users_table
+  > Run migration
+    php artisan migrate
+    php artisan migrate --force (Force the migration)
+    php artisan migrate:rollback (Rollback the last migration)
+    php artisan migrate:rollback --step=5
+    php artisan migrate:reset (rollback all of the migration)
+    php artisan migrate:refresh (rollback and migrate)
+    php artisan migrate:refresh --seed (rollback, migrate, and seed)
+    php artisan migrate:fresh (drop all tables and migrate)
+    php artisan migrate:fresh --seed (drop all table, migrate and seed)
+
+  //!> Schema facade
+    > Schema::create method
+    > Schema::table method (for creating column inside the table)
+    > Schema::hasTable('users')
+    > Schema::hasColumn('users','email')
+    > Schema::rename($from, $to); (rename a database)
+    //? Drop an table
+    > Schema::drop('users');
+    > Schema::dropIfExists('users');
+    //? Modifiers methods 
+    > nullable()
+    > after()
+    > autoIncrement()
+    > comment()
+    > default()
+    > fisrt()
+    > unsigned()
+    > useCurrent()
+    > change()
+    > renameColumn('from', 'to')
+    > dropColumn('votes')
+    > dropColumn(['col1','col2'])
+    > dropSoftDeletes() (drop the delete_at column)
+    > dropTimestamps() (drop the created_at and updated_at columns)
+    //? Add some indexes
+    > unique()
+    > unique('email')
+    > unique('email', 'unique_mail')
+    > primary('id')
+    > primary(['id','parent_id'])
+    > index()
+    //? Droping indexes
+    > dropPrimary('users_id_primary')
+    > dropUnique('users_email_unique')
+    > dropIndex('geo_state_index')  
+    //? Types in migration
+    > bigIncrements('id')
+    > unsignedBigInteger('user_id')
+    > bigInteger('votes')
+    > binary('data')
+    > boolean('confirmed')
+    > char('name', 100)
+    > etc
+    //? key
+    > foreign('user_id')
+    > references('id')
+    > on('users')
+    > foreignId('user_id')
+
 
   //* To use
   > Laravel validation
@@ -1596,6 +1588,7 @@
 
     Some thing, we can access authenticated user with request
     > $request->user()
+  > composer require doctrine/dbal (pour pouvoir changer les colonnes attributs dans la base de donnée)
 
   //* Laravel functions
   > env 
@@ -1633,13 +1626,6 @@
   > php artisan tinker
   > php artisan route:list
   > php artisan db:seed
-
-//!> Slider
-  > Les lignes de controles en bas des images
-  > Auto sliding
-  > Les buttons de controls next et prev 
-    > Ces boutons ne s'affiche que si le curseur est proche d'eux
-    > Il s'affiche par defaut sur des petits ecrans.
 
 //!> Vs Code 
   > Ctrl + p : search for files
@@ -1735,43 +1721,53 @@
   > database directory
     > migration directory
       //* Migration to create
+        > Privilege
+        > Role
+        > Day
+        > Time 
       //* Migration created
-        > Product
-        > Shop
-        > Company
-        > Category
-        > SubCategory
-        > Comment
-        > SubComment
-        > Warranty
-        > Message
-        > Provider
-        > Location
+        > Commission
+        > OrderRegulation
+      //* Migration completed
+        > Bill
+        > Brand
         > Cart
+        > Category
+        > City
+        > Color
+        > Comment
+        > Company
+        > Condition
+        > Country
+        > Currency
+        > Delivery
+        > DeliveryMode or Delivery method
+        > Discount
+        > District
+        > Location
+        > Mail
+        > Message
+        > Modele
         > Order
         > OrderState
-        > Bill
-        > Devise
-        > Condition
-        > Price
-        > Brand
-        > Model
-        > Country
-        > City
-        > Delivery
-        > DeliveryMode
-        > PriceDescription
-        > Color
-        > Phone
-        > Mail
-        > Tax
-        > Star
-        > Promotion or SaleOff
-        > District
-        > Post
-        > OrderRegulation
         > Payment
-        > Commission
+        > Phone
+        > Post
+        > Price
+        > Product
+        > Product_store
+        > Provider
+        > Star
+        > SubCategory
+        > SubComment
+        > Unit
+
+
+      //* Migration half-completed
+        > Store
+        > Tax
+        > Warranty
+
   > resources 
     > views
       > layouts (to create)  
@@ -1779,3 +1775,418 @@
     > database (hanouti_db)
   > hanouti.pfe/admin : Tous pour l'admin
   > hanouti.pfe : Tous les autres
+  > Done 
+    > composer require doctrine/dbal
+    > composer require laravel/ui
+    > php artisan ui:auth
+  
+  > Security part
+    > rememberToken in user table : It's used by the framework to help against Remember Me cookie hijacking. 
+
+//!> Maquettes
+  // TODO:Les pages possibles
+  > La page principale
+    > Nos partenaires et clients
+    > THE PERFECT GIFTS
+    > Tops posts
+    > Tops SALES OFF
+    > Les jours de reductions
+    > Popular shop
+    > Popular product
+    > Sell something
+    > Buy something
+    > Explore store around with a MAP
+    > Menu
+      > Logo
+      > Stores
+        > Store 1
+        > Store 2
+        > Store 3
+        > Store 4
+      > Categories
+        > category 1
+        > category 2
+        > category 3
+        > category 4
+
+        //* Examples
+        > Cosmetiques
+        > Latest
+        > FASHION SELECTION
+        > Electronics
+        > Fournitures
+      > Products 
+        > Top selling product
+        > Popular products
+        > Products catalogs
+      > New arrivals
+      > Top sellers
+        > Seller 1
+        > Seller 2
+        > Seller 3
+        > Seller 4
+      > Sale off
+        > Now sales off
+        > Special offers
+        > Hot deals
+        > Black friday
+        > Top sales off of the Day/Deals of the day
+        > Sales off around
+        > Summer sales off
+      > Search
+      > Cart
+      > Profile
+      
+    > MAPS
+    > Langue
+    
+    > Partner
+    
+    > Produits par rapport à un algorithme
+      > Produit à succes
+      > Good vendeur
+      > Positions des boutiques
+      > Par top rated seller
+      > Populaires
+      > TOP PRODUCT
+      > HOT PRODUCT(Les plus visités du moment)
+      > NEW PRODUCT
+    
+  > La page de chaque produit
+    > Nom du produit
+    > Description
+    > Store
+    > Categorie
+    > Prix|Reductions
+    > Couleur
+    > Different images
+    > Quantités
+    > Compare button
+    > Send message to seller
+    > Etoiles du produit
+    > Message
+    > Share
+    > Product recommendation par rapport au produit
+    > Localisation du produit
+    > Suivre une store
+    > Paiement methodes
+  > La page de chaque boutique
+    > Logo principal
+    > Image de couverture
+    > Les produits en ventes sur la boutique
+    > Les sellers
+    > Les derniers posts
+    > Les promotions
+    > Les contacts
+    > Les mails de
+    > Follow button
+    > Menu
+      > Categories de produit vendu par le store
+    > Filtre
+  > La page d'ajout/modification de produit
+    [Admin,Seller]> Details du produit
+    [Seller]> Details de la vente
+    [Seller]> Information sur la livraison
+    [Seller]> Information de paiement
+  > La page de resultat de recherche
+    > Filtre
+    > Liste de produits
+    >
+  > La page d'admin globale
+    >
+  > La page d'admin du vendeur
+  > La page de login
+  > La page de creation de compte
+  > La page de changement de mot de passe
+  > Entrer un nouveau produit par un vendeur
+  > La page d'insertion des fournisseurs
+  > La page de catalogues de produit
+  //*> Slider
+  > Les lignes de controles en bas des images
+  > Auto sliding
+  > Les buttons de controls next et prev 
+    > Ces boutons ne s'affiche que si le curseur est proche d'eux
+    > Il s'affiche par defaut sur des petits ecrans.
+
+//!> Maquettes ordered and css classes, id name
+  > Landing page - 
+    > Preloader : chargement avant que la page finit de se charger : avec javascript (Dev Eds dans mes videos)
+    > Header 
+      > Logo
+      > 
+    
+
+//todo 
+  > Warranty (#accorded_by - accorded_type)
+    > Garantie - Store - StoreProduct table
+    > Garantie - Company - StoreProduct table
+    > Garantie - Hanouti - StoreProduct table
+    > Garantie - Seller - StoreProduct table
+  > Tax
+    > name -> title
+    > percentage check constraint to add (doesn't exist in laravel)
+  > Store
+    > Commission_id à revoir : peut etre someone peut changer le type de commission
+  > Provider
+    > Created_by to add
+    > Address_id -> location_id
+  > Product
+    > is_liquid : added (pour differencier et permettre l'utilisation de kg ou litre dans les affichages)
+    > (l'ordre d'images sera utilisé pour l'affichage) et on va fournir un systeme pour ordonner les images
+    > weight : removed
+    > weight_unit : removed 
+    > dimension : removed
+
+  > Product_store : to create with all the controller etc
+    > weight to add
+    > weight_unit added : to add
+    
+    $table->decimal('weight',10,3,true);
+
+    // To add : ['gramme','Kilogramme','tonne','litre']
+    $table->string('weight_unit');
+
+  > Price
+    > Devise_id : added
+    > quantity : added permettre de donner plusieurs prix differents selon la quantity 
+    > unit_id : added
+
+    > Phone
+      > inserted_by : added
+
+  > PriceDescription : deleted and add it in price as an enum
+
+  > Unit : To add
+    > id
+    > value
+    > for_liquid (boolean)
+    
+  > OrderRegulation : to review
+
+  > Order
+    > Commission not interesting here : removed
+
+  > Company 
+    > description : added
+  > Commission : à revoir
+
+
+
+> Translation
+  > Don't forget translating weight_unit in product migration
+
+
+//* Links
+  > Advertissement
+    > Advertissement_type
+    > User : admin, seller or Customer or Store or Company
+  > Bill
+    > Order 
+    > Order > User
+  > Brand
+    > Modele
+    > Product
+    > User
+  > Cart
+    > User
+    > Cart_detail > Product_store
+    > currency
+  > Cart_detail
+    > Product_store
+    > Cart
+  > Category
+    > SubCategory
+    > Product
+    > User : Un seller peut ajouter une categorie si elle n'existe pas(ça pourrait nous aider à completer la liste)
+  > City
+    > Country
+    > District
+    > Location > User
+  > Color
+    > Product
+  > Comment
+    > User
+    > Post
+    > Product
+    > Store
+    > SubComment
+  > Commission
+    > Store
+    > User
+  > Company
+    > Store
+    > location
+    > User : inserted_by
+  > Condition
+    > Product
+  > Country
+    > City
+    > City > District
+    > Location > District or City > User
+    > Location > Company
+    > Location > Store
+    > Location > Provider
+    > Location > Delivery
+  > Currency
+    > User : default currency
+    > Cart
+    > Price
+    > Store : default currency
+    > Order
+  > Day
+    > Time
+    > Store
+  > Delivery
+    > Order
+    > Order > User
+    > Location
+    > DeliveryMode ou method 
+    > Order > OrderDetails > Product
+  > DeliveryMode
+    > Delivery
+  > Discount
+    > User : inserted_by
+    > Product_store
+    > Product_store > Store
+  > District
+    > Location 
+    > Location > User
+    > City
+    > City > Country
+  > Follow
+    > User : follower, seller
+    > Store
+  > Language
+    > User : Un user peut parler plusieurs langues
+  > Location
+    > District
+    > User
+    > City
+    > City > Country
+    > Store
+    > Company : Siege
+    > Delivery
+  > Mail
+    > User
+    > User > Order
+    > Store
+    > Company
+    > Provider
+  > Message
+    > User
+  > Modele
+    > Product
+    > Brand
+  > newsletter
+    > Mail
+    > Mail > User
+  > Order
+    > OrderDetails
+    > OrderDetails > Return
+    > OrderDetails > Product_store
+    > OrderState
+    > Bill
+    > Delivery
+    > User
+    > Payment
+  > OrderDetails
+    > Order
+    > Product_store
+    > Product_store > Tax
+    > Return
+  > OrderState
+    > Order
+  > Payment
+    > Order
+    > Payment_Method
+    > Payment_Type
+    > User : belong_to
+  > Payment_Method
+    > Payment
+  > Payment_Type
+    > Payment
+  > Phone
+    > User
+    > Store
+    > Company
+    > Provider
+  > Post
+    > User
+    > Store
+  > Price
+    > User
+    > Product_store
+    > Unit
+  > Privilege
+    > User
+  > Product
+    > Color
+    > User : inserted_by
+    > Product_store
+    > Condition
+    > Categorie
+    > SubCategory
+    > Modele
+    > Brand
+    > Product_store > Store
+  > Product_store
+    > Store
+    > Provider
+    > User : inserted_by a seller
+    > Price : A product can have multiple price par rapport à la quantity nous permettant de donner un autre prix pour une quantity differentes
+    > Price > Unit
+    > Warranty : default one to set up
+    > OrderDetails > Order
+    > View 
+    > Cart_detail > Cart
+    > Tax
+  > Provider
+    > Product_store
+    > User : inserted_by
+  > Return 
+    > OrderDetails
+  > Role 
+    > User
+  > SignInOut
+    > User
+  > Star
+    > Seller
+    > Product_store
+    > Store
+    > Customer
+  > Store
+    > User : inserted_by
+    > Commission
+    > Location
+    > Mail
+    > Company
+    > Product_store
+    > Star
+    > Follow
+    > Phone
+    > Currency
+    > Post
+  > SubCategory
+    > Category
+    > User
+    > Product
+  > SubComment
+    > User
+    > Comment
+  > Tax
+    > Product_store : frais de taxe
+  > Time
+    > Day
+    > User : inserted_by : seller
+    > Day > Store
+  > Unit
+    > Price
+  > View
+    > User : viewer
+    > Product_store
+    > Store
+  > Warranty
+    > User
+    > Company
+    > Store
+    > Product_store
