@@ -193,9 +193,6 @@
     > Frais et commission associé à la place du marché
   > Systeme de TVA
 
-// TODO:Project structure
-//!> Project Structure
-
 // TODO:Cahier de charge
 //!> Cahier de charge
   > Cahier de charges V1
@@ -387,144 +384,44 @@
 // TODO: UML
 [1] 7/2/2020
 //!> UML
-  [v]> User
-    [Attr]:
-      > firstName
-      > lastName
-      > Pseudo
-      > adresse mail
-      > mot de passe
-      > telephone
-      > Genre
-      > Adresse
-      > date de naissance
-      > Langue de communication
-      > ville
-      > pays
-      > nationalité
-  [v]> Client : User
-  [v]> Vendeur (Seller): User
-    > Date où il est devenu vendeur
-  [v]> Admin : User
-  [v]> Privilege
-    > Nom de la privilege
-    > Descripton de la privilege
-  [v]> Produits
-    [Attr] :
-      > Titre
-      > Localisation du produit
-        > Par defaut, celui de la boutique
-        > Ou à definir
-      > Model
-      > Sous titre
-      > Taxe de vente
-        > Par pays(Juste pour le Maroc now)
-      > prix
-        > Prix reel
-        > Prix promotionnel
-        > Reduction
-          > Reduction pour client fidele
-          > Reduction pendant une durée
-          > Reduction par code coupon si la boutique accepte
-        > Prix donnée par un utilisateur/vendeur lors des negociations
-      > Marque(brand)
-      > designation
-      > SKU
-      > Poids(weight)
-      > dimension
-      > Description
-        > Mise en forme du texte
-      > Garantie(warranty)
-        > Durée de garantie
-      > Condition du produit
-        > Neuf
-        > Remis à neuf
-        > Occasion
-  [v]> Boutique
-    [Attr] :
-      > Nom de la boutique
-      > Garantie par defaut sur les produits
-      > Adresse de la boutique
-      > Telephone de la boutique
-        > Peut etre le numero d'un des vendeurs
-      > Mail de la boutique
-      > Description de la boutique
-  [v]> Entreprise
-    [Attr ] :
-      > Nom
-      > localisation
-      > ville
-      > pays
-      > Zero ou plusieurs boutiques
-  [v]> Categories (Famille, Section)
-    [Attr] :
-      > Nom de la categorie (libelle de la categorie)
-    [Meth] :
-      > Ajouter une categorie
-      > Modifier une categorie
-      > Supprimer une categorie
-      > Liste des categories
-  [v]> Sous categorie
-    [Attr] :
-      > Nom de la sous categorie (libelle de la categorie)
-    [Meth] :
-      > Ajouter une sous categorie
-      > Modifier une sous categorie
-      > Supprimer une sous categorie
-      > Liste des sous categories
-  [v]> Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
-    [Attr] :
-      > Emetteur (Client, vendeur, admin)
-      > Recepteur (boutique, Produit, Vendeur)
-      > comment
-      > Recepeteur_id
-      > Recepteur_type (Produit, Client, Vendeur, Post)
-      > où le comment a-t-il été ecrit?
-        > Sur un produit
-        > Sur une boutique
-        > Sur un vendeur
-        > Sur un post
-      > Date du comment
-  [v]> Sous Commentaires ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
-    [Attr] :
-      > Emetteur (Client, vendeur, admin)
-      > Recepteur (Commentaire)
-      > comment
-      > Date du comment
-  [v]> Garantie
+  > Advertissement
+    > id
+    > admin_id
+    > user_id 
+    > Advertissement_type_id
+    > enabled
+    > created_at
+    > updated_at
+    > delete_at
+  > Advertissement_type
+    > id
+    > gravity 
     > description
-    > Titre
-    > durée de la garantie
-  [v]> Messages privés
-    > Emetteur (Client, vendeur, admin)
-    > Recepteur (Client, vendeur, admin)
-    > Message
-    > Date de creation
-  [v]> Fournisseur
-    > Un fournisseur peut etre une personne ou une entreprise
+    > title
+    > created_at
+    > updated_at
+    > delete_at
+  > Bill
     [Attr] :
-      > Nom
-      > Mail
-      > Telephone
-      > Adresse
-      > Descripton
-    [Meth] :
-      > Ajouter un fournisseur
-      > Supprimer un fournisseur
-      > Modifier un fournisseur
-      > Consulter un fournisseur
-  [v]> Adresse/location
+      > id
+      > id_order : Chaque facture est lié à une commande(Order) fournit par Hanouti
+      > Discount_id : discount global sur la facture
+      > Payment_Type : details | totals
+      > paid : complete | no | partial
+      > created_at
+      > updated_at
+  > Brand
     [Attr] :
-      > Region/quartier
-      > ville
-      > Pays
-      > description
-      > latitude
-      > longitude
-  [v]> Panier
-    [Attr] :
+      > id
       > name
-      > devise (currency)
+      > created_at
+      > updated_at
+  > Cart
+    [Attr] :
+      > id
+      > Currency_id
+      > belong_to : user_id
+      > name
     [Meth] :
       > Ajouter un produit dans le panier
       > Supprimer un produit du panier
@@ -538,121 +435,492 @@
       > Consulter un panier
       > Modifier la devise
       > Modifier le nom
-  [v]> Commandes
+  > Cart_detail
+    > id
+    > store_id
+    > Product_store_id
+    > unit_id
+    > inserted_by : Customer | admin
+    > quantity
+    > created_at
+    > updated_at
+    > delete_at
+  > Category
     [Attr] :
-      > Date de commande
-      > Description de la commande
-      > Etat de la commande
-      > Date livraison estimée
-      > Lieu de livraison
-      > Mode de livraison
-      > Mode de paiement
-  [v]> Etat de la commande (Commande livré, encours, )
-    > Nom de l'etat
-      New
-      encours
-      livré
-      Envoyer
-      Fermé
-  [v]> Factures
+      > id
+      > title
+      > inserted_by : Donner la possibility au seller d'entrée des categories pour ameliorer la listes
+    [Meth] :
+      > Ajouter une categorie
+      > Modifier une categorie
+      > Supprimer une categorie
+      > Liste des categories
+  > City
     [Attr] :
-      > Date de facture
-  [v]> Devise
-    > MAD (DH)
-    > Euro
+      > id
+      > Country_id
+      > name
+  > Comment
     [Attr] :
-      > abbreviations ($)
-      > title (Dollar)
-      > Description
-  [v]> Condition (condition du produit)
-    > new
-    > used
-    > open box
-    > Not working or partially
+      > id
+      > sender_id : user_id
+      > receiver_id
+      > receiver_type : Product_store, Store, Post, Seller, Company
+      > content 
+      > created_at
+      > updated_at
+      > delete_at
+  > Commission
     [Attr] :
-      > titre
-  [v]> Prix description
-    > titre(prix min, prix max, prix de reduction, prix lors des negociations,...)
-    > Description
-  [v]> Marque
-    [Attr] :
-      > Nom de la marque
-  [v]> Model (model du produit)
-    > Nom du model
-  [v]> Pays
-    > Nom du pays
-    > Prefixe (indicateur telephonique)
-      > +212 pour le Maroc
-  [v]> Ville
-    > Nom de la ville
-  [v]> Livraison
-    > Date de livraison
-    > Description de la livraison
-  [v]> Mode de livraison OR Delivery method
-    > Description
-    > titre
-      > Mode de livraison
-        > Achat à la boutique
-        > Livraison par le vendeur
-        > Livraison par notre site
-        > Livraison par une tierce personne
-        > Prix de livraison par rapport à chaque type
-  [v]> Price
-    > prix
-    > Description(PriceDescription)
-  [v]> Color (Product color)
-    > nom
-    > valeur
-  [v]> Phone
-    > valeur
-  [v]> Mail
-  [v]> Receiver type
-  [v]> Taxe sur Valeur Ajouté
-    > Pourcentage
-  [v]> Etoiles
-    [Attr] :
-      > value
-    > 5 etoiles
-    > 4 etoiles
-    > 3 etoiles
-    > 2 etoiles
-    > 1 etoile
-  [v]> Promotion
-    > Pourcentage
-  [v]> Quartier/Region
-  [v]> Posts
-    > Faits par tous les types de users selon leur besoins
-    > Vendeur pour attirer des clients sur leur produit
-    > Client pour reagir au produit qu'ils ont acheté(retour)
-  [v]> Reglement
-    > Mode de reglement d'une commande
-      > Details ou complet
-  [v]> Paiement
-    > Ajouter une carte bancaire
-    > Modifier les informations d'une carte bancaire
-    > Consulter les informations d'une carte bancaire
-  [v]> Commission
-    [Attr] :
-      > Date transaction
+      > id
+      > Created_by : Admin
       > Pourcentage
-      > Montant de la commission (donnée calculée)
-  [v]> Langue
-    > langue
-  > Password
+      > enabled
+      > created_at
+      > updated_at
+      > delete_at
+  > Company
+    [Attr ] :
+      > id
+      > location_id
+      > name
+      > description
+  > Condition
+    [Attr] :
+      > id
+      > titre
+        > new
+        > used
+        > open box
+        > Not working or partially
+  > Country
+    > id
+    > name
+    > phone_indicatif
+  > Currency
+    [Attr] :
+      > id
+      > initials
+      > title
+      > Description
   > Day
-    > value
+    > value : 20/3/2020
     > work? :boolean
     > raison : work|vacation|others
     > default? yes: effective(effective means time exact open/close)
+  > Delivery
+    > id 
+    > location_id
+    > DeliveryMode_id
+    > description
+    > Delivery_date
+    > created_at
+    > updated_at
+    > delete_at
+  > DeliveryMode
+    > id
+    > Description
+    > titre
+      > Achat à la boutique
+      > Livraison par le vendeur
+      > Livraison par notre site
+      > Livraison par une tierce personne
+  > Discount
+    > id
+    > Created_by : Seller
+    > Product_store_id
+    > percentage
+    > enabled : true or false
+    > start_datetime
+    > end_datetime
+    > created_at
+    > updated_at
+    > delete_at
+  > District
+    > id
+    > City_id
+    > name
+  > Follow
+    > id
+    > followed_by : User(Customer)
+    > follow_id
+    > follow_type : Seller | Store | Company
+    > created_at
+    > updated_at
+    > delete_at
+  > Langage
+    > id
+    > langue
+  > Location
+    [Attr] :
+      > id
+      > City_id
+      > inserted_by : User
+      > description
+      > lat
+      > lng
+      > postal_code
+  > Mail
+    > id
+    > mail
+    > inserted_by
+    > created_at
+    > updated_at
+    > delete_at
+  > Messages 
+    > id
+    > sender_id : User
+    > receiver_id : User
+    > content
+    > created_at
+    > updated_at
+    > delete_at
+  > Modele
+    > id
+    > brand_id
+    > product_id
+    > name
+    > inserted_by : Seller | Admin
+    > created_at
+    > updated_at
+    > delete_at
+  > newsletter
+    > id
+    > Mail_id
+    > inserted_by : Customer | Admin
+    > created_at
+    > updated_at
+    > delete_at
+    > enabled (si le user veut se desabonner du newsletter ou l'admin veut sortir les user du newsletter)
+  > Order
+    [Attr] :
+      > id
+      > order_by : User
+      > Delivery_id
+      > status : Delivered | Shipping | Created | New | encours | closed
+      > created_at
+      > updated_at
+      > delete_at
+  > OrderDetails
+    > id
+    > Discount_id
+    > order_id
+    > tax_id
+    > Product_store_id
+    > quantity
+    > created_at
+    > updated_at
+    > delete_at
+  > Payment
+    > id
+    > Bill_id
+    > Payment_Method_id
+    > created_at
+    > updated_at
+    > delete_at
+  > Payment_Method
+    > id
+    > title : Carte bancaire | Cash à la livraison | A la boutique | Check 
+    > description
+    > created_at
+    > updated_at
+    > delete_at
+  > Phone
+    > id
+    > value
+    > inserted_by : User
+    > created_at
+    > updated_at
+    > delete_at
+  > Post
+    > id
+    > posted_by : Seller or Admin
+    > store_id
+    > content
+    > created_at
+    > updated_at
+    > delete_at
+  > Price
+    > id
+    > Product_store_id
+    > inserted_by : User
+    > unit_id
+    > Currency_id
+    > quantity
+    > price
+    > description : negoce | discount_price | standard
+    > created_at
+    > updated_at
+    > delete_at
+  > Privilege
+    > id
+    > title
+    > description
+    > created_at
+    > updated_at
+    > delete_at
+  > Product
+    [Attr] :
+      > id
+      > inserted_by : Admin | Seller
+      > title
+      > designation
+      > description
+        > Mise en forme du texte
+      > dimension
+      > is_liquid : true | false
+        > is_liquid : added (pour differencier et permettre l'utilisation de kg ou litre dans les affichages)
+      ?> SKU
+      > images : '','','' 
+      > keywords : '','','',''
+      > colors : '', '',  '','',''
+      > reference
+  > Product_store
+    > id
+    > store_id
+    > condition_id
+    > inserted_by : Seller
+    > price_id : standard price
+    > warranty_id : if not, default warranty
+    > unit_id
+    > tax_id
+    > location_id
+      > Par defaut, celui de la boutique
+      > Ou à definir
+    > images
+      > (l'ordre d'images sera utilisé pour l'affichage) et on va fournir un systeme pour ordonner les images
+    > have_return : true | false
+    > quantity
+    > keywords
+    > visible_on_store : true | false
+    > negociable : true | false
+    > visible_on_store_at
+    > invisible_on_store_at
+    > weight to add
+    > weight_unit added : gramme | Kilogramme | tonne | litre
+    > created_at
+    > updated_at
+    > delete_at
+  > Product_store_provider : un produit peut avoir plusieurs fournisseurs
+    > id
+    > Product_store_id
+    > Provider_id
+    > inserted_by
+    > created_at
+    > updated_at
+    > delete_at
+  > Provider
+    > Un fournisseur peut etre une personne ou une entreprise
+    [Attr] :
+      > id
+      > location_id
+      > inserted_by
+      > Phone_id 
+      > Mail_id
+      > Complete_name
+      > Description
+      > created_at
+      > updated_at
+      > delete_at
+    [Meth] :
+      > Ajouter un fournisseur
+      > Supprimer un fournisseur
+      > Modifier un fournisseur
+      > Consulter un fournisseur
+  > Return
+    > id
+    > OrderDetails_id
+    > reason
+    > returned_at
+    > return_validated_customer : true | false (Signature de retour)
+    > return_validated_seller : true | false 
+    > created_at
+    > updated_at
+    > delete_at
+  > Role : Customer, Admin, Seller
+    > id
+    > title
+    > description
+    > created_at
+    > updated_at
+    > delete_at
+  > Role_User
+    > id
+    > role_id
+    > user_id
+    > created_at
+    > updated_at
+    > delete_at
+  > Seller
+    > id
+    > user_id
+    > description
+    > seller_pseudo
+    > created_at
+    > updated_at
+    > delete_at
+  > SignInOut
+    > id
+    > user_id
+    > Signin? true:signout 
+    > signout_by : Admin | -1(By himself)
+    > out_at
+    > created_at
+    > updated_at
+    > delete_at
+  > Star
+    [Attr] :
+      > id
+      > inserted_by : Customer
+      > receiver_id 
+      > receiver_type : Store | Product_store | Seller | Company
+      > value : 1 | 2 | 3 | 4 | 5
+      > created_at
+      > updated_at
+      > delete_at
+  > Store
+    [Attr] :
+      > id
+      > belong_to_id
+      > Created_by : Seller
+      > location_id
+        > Adresse de la boutique
+      > Mail_id
+        > Mail de la boutique
+      > Phone_id
+        > Telephone de la boutique
+          > Peut etre le numero d'un des vendeurs
+      > warranty_id : default
+        > Garantie par defaut sur les produits
+      > belong_to_type : User | Company
+      > name
+        > Nom de la boutique
+      > description
+        > Description de la boutique
+      > miniature_img
+      > cover_img
+      > keywords
+      > created_at
+      > updated_at
+      > delete_at
+  > Store_commission : Pour garder un historique des commissions utilisé par les stores
+    > id
+    > store_id
+    > inserted_by
+    > Commission_id
+    > enabled : true | false
+    > created_at
+    > updated_at
+    > delete_at
+  > SubCategory
+    [Attr] :
+      > id
+      > category_id
+      > Created_by : Seller
+      > title
+      > created_at
+      > updated_at
+      > delete_at
+    [Meth] :
+      > Ajouter une sous categorie
+      > Modifier une sous categorie
+      > Supprimer une sous categorie
+      > Liste des sous categories
+  > SubComment ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
+    [Attr] :
+      > id
+      > sender_id : User
+      > comment_id
+      > content
+      > created_at
+      > updated_at
+      > delete_at
+  > Tax
+    > id
+    > inserted_by
+    > title
+    > Pourcentage
+      > percentage check constraint to add (doesn't exist in laravel)
+    > created_at
+    > updated_at
+    > delete_at
   > Time 
     > Start_time
     > End_time
     > raison : work|pause|pray_time|closed
-  > SignInOut
-    > user_id
-    > Signin? true:signout 
-    > signout_by
+  > Unit
+    > id
+    > inserted_by
+    > initials
+    > description
+    > for_liquid : true | false
+  > User
+    [Attr]:
+      > id
+      > Mail_id
+      > Phone_id
+      > City_id
+      > Country_id
+      > enabled
+      > verified
+      > lang (used pour traduire le site pour le user)
+      > firstName
+      > lastName
+      > Pseudo
+      > password
+      > Genre : homme | femme | other
+      > birthday
+      > nationality : Country
     > created_at
+    > updated_at
+    > delete_at
+    > Admin : User
+    > Client : User
+    > Vendeur (Seller): User
+      > Date où il est devenu vendeur
+  > User_lang
+    > id
+    > user_id
+    > Language_id
+    > description
+  > User_loc
+    > id
+    > location_id
+    > user_id
+    > location_type : Delivery | home
+  > View
+    > id
+    > user_id
+    > viewed_id
+    > viewed_type : Product_store | Store
+    > created_at
+    > updated_at
+    > delete_at
+  > Warranty
+    > id
+    > inserted_by
+    > Titre 
+    > description
+    > duration
+    > who : Store | Hanouti | Company | Seller
+    > created_at
+    > updated_at
+    > delete_at
+  > Wishlist
+    > id
+    > belong_to : User
+    > name
+    > created_at
+    > updated_at
+    > delete_at
+  > Wishlist_details
+    > id
+    > Product_store_id
+    > inserted_by : Customer
+    > quantity
+    > created_at
+    > updated_at
+    > delete_at
 
 // TODO:Fonctionnalités detaillées
 //!> Fonctionnalités detaillées
@@ -1914,67 +2182,9 @@
     > Header 
       > Logo
       > 
-    
-
-//todo 
-  > Warranty (#accorded_by - accorded_type)
-    > Garantie - Store - StoreProduct table
-    > Garantie - Company - StoreProduct table
-    > Garantie - Hanouti - StoreProduct table
-    > Garantie - Seller - StoreProduct table
-  > Tax
-    > name -> title
-    > percentage check constraint to add (doesn't exist in laravel)
-  > Store
-    > Commission_id à revoir : peut etre someone peut changer le type de commission
-  > Provider
-    > Created_by to add
-    > Address_id -> location_id
-  > Product
-    > is_liquid : added (pour differencier et permettre l'utilisation de kg ou litre dans les affichages)
-    > (l'ordre d'images sera utilisé pour l'affichage) et on va fournir un systeme pour ordonner les images
-    > weight : removed
-    > weight_unit : removed 
-    > dimension : removed
-
-  > Product_store : to create with all the controller etc
-    > weight to add
-    > weight_unit added : to add
-    
-    $table->decimal('weight',10,3,true);
-
-    // To add : ['gramme','Kilogramme','tonne','litre']
-    $table->string('weight_unit');
-
-  > Price
-    > Devise_id : added
-    > quantity : added permettre de donner plusieurs prix differents selon la quantity 
-    > unit_id : added
-
-    > Phone
-      > inserted_by : added
-
-  > PriceDescription : deleted and add it in price as an enum
-
-  > Unit : To add
-    > id
-    > value
-    > for_liquid (boolean)
-    
-  > OrderRegulation : to review
-
-  > Order
-    > Commission not interesting here : removed
-
-  > Company 
-    > description : added
-  > Commission : à revoir
-
-
 
 > Translation
   > Don't forget translating weight_unit in product migration
-
 
 //* Links
   > Advertissement
@@ -2002,8 +2212,6 @@
     > Country
     > District
     > Location > User
-  > Color
-    > Product
   > Comment
     > User
     > Post
@@ -2094,16 +2302,10 @@
     > Product_store
     > Product_store > Tax
     > Return
-  > OrderState
-    > Order
   > Payment
-    > Order
+    > Bill 
     > Payment_Method
-    > Payment_Type
-    > User : belong_to
   > Payment_Method
-    > Payment
-  > Payment_Type
     > Payment
   > Phone
     > User
@@ -2140,6 +2342,7 @@
     > View 
     > Cart_detail > Cart
     > Tax
+  > Product_store_provider
   > Provider
     > Product_store
     > User : inserted_by
@@ -2147,6 +2350,7 @@
     > OrderDetails
   > Role 
     > User
+  > Role_User
   > SignInOut
     > User
   > Star
@@ -2166,6 +2370,7 @@
     > Phone
     > Currency
     > Post
+  > Store_commission
   > SubCategory
     > Category
     > User
@@ -2181,6 +2386,7 @@
     > Day > Store
   > Unit
     > Price
+  > User
   > View
     > User : viewer
     > Product_store
@@ -2190,3 +2396,10 @@
     > Company
     > Store
     > Product_store
+  > Wishlist
+  > Wishlist_details
+
+//todo 
+  > impersonate
+  > laravel role and privileges
+  > Wes bos es6
