@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 0.5,
+  "debug.console.fontFamily": "'Ubuntu Mono'",
+  "git.ignoreLimitWarning": true
+}

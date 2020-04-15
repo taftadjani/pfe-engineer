@@ -1,0 +1,83 @@
+.container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.caroussel {
+    border: 2px solid #ccc;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    border: 2px solid red;
+    /* transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s; */
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+.slider .section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.right {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    list-style: none;
+    display: flex;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.controls ul li {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    margin: 10px;
+    background-color: #333;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.controls ul li.selected {
+    background-color: transparent;
+}

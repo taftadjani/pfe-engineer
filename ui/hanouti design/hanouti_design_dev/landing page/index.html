@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--* Start of navbar -->
+    <nav class="navbar">
+        <!-- Start of navbar top -->
+        <div class="navbar-top">
+            <div class="nt-logo">
+                <a href="#">
+                    <span class="logo material-icons">shopping_cart</span>
+                    <span class="logo-text">Hanouti</span>
+                </a>
+            </div>
+            <ul class="navigation">
+                <li class="nt-search">
+                    <input type="text" class="search-txt" id='search-txt' name="" placeholder="Type to search" value="">
+                    <a href="#" class="search-btn">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </a>
+                </li>
+                <li class="nt-user-details">
+                    <a href="#" class="user-sign">
+                        <div class="account">
+                            <span class="account-logo material-icons">
+                            person
+                            </span>
+                            <div class="account-count">10</div>
+                        </div>
+                        <span>Sign in</span>
+                    </a>
+                    <a href="#" class="user-cart">
+                        <div class="cart">
+                            <span class="cart-logo material-icons-outlined">
+                                shopping_cart
+                            </span>
+                            <div class="cart-items-count">0</div>
+                        </div>
+                        <span>Cart</span>
+                    </a>
+                </li>
+                <li class="nt-menu-hamburger">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- End of navbar top -->
+        <!-- Start of navbar bottom -->
+        <div class="navbar-bottom">
+            <div class="nb-menu-left">
+                <ul>
+                    <li>
+                        <a href="#" class="menu-left-categories">
+                            <span class="categories-icon material-icons">
+                                format_list_bulleted
+                            </span>
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span>Stores</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Sellers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span>Sales off</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>New arrivals</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nb-links-right">
+                <ul>
+                    <li><a href="#">Create an account</a></li>
+                    <li>
+                        <div class="links-line"></div>
+                    </li>
+                    <li><a href="#">Products around</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of navbar bottom -->
+    </nav>
+    <!--* End of navbar -->
+    <!--* Start of the hero -->
+    <div class="hero">
+        <div class="hero-caroussel" id='hero-caroussel'>
+            <div class="hero-slider" id='hero-slider'>
+                <div class="hero-section one">Section 1</div>
+                <div class="hero-section two">Section 2</div>
+                <div class="hero-section three">Section 3</div>
+                <div class="hero-section four">Section 4</div>
+                <div class="hero-section five"><button>Hi mother fucker</button></div>
+            </div>
+            <div class="hero-controls">
+                <div class="hero-arrow-parent arrow-parent-first">
+                    <span id='arrow-prev' class="hero-arrow">
+                        <span class="material-icons">navigate_before</span>
+                    </span>
+                </div>
+                <div class="hero-arrow-parent arrow-parent-last">
+                    <span id='arrow-next' class="hero-arrow">
+                    <span class="material-icons">navigate_next</span>
+                    </span>
+                </div>
+            </div>
+            <div class="slide-selectors">
+                <ul>
+                    <li class="slide-selector slide-selector-1"></li>
+                    <li class="slide-selector slide-selector-2"></li>
+                    <li class="slide-selector slide-selector-3 slide-selector-active"></li>
+                    <li class="slide-selector slide-selector-4"></li>
+                    <li class="slide-selector slide-selector-5"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--* End of the hero -->
+
+    <!--* Start Shop by categories -->
+    <div class="wrapper-container">
+        <div class="main-container">
+            <div class="container-top-title">
+                <h2>Shop by categories</h2>
+                <a href="#" class="show-all">
+                    <span>Show all</span>
+                    <span class="material-icons">
+                        arrow_right_alt
+                    </span>
+                </a>
+            </div>
+            <!--* Start des categorie -->
+            <div class="container-categories">
+                <div class="category category-first">
+                    <div class="category-image-container">
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title"><a href="#">Nike</a></h3>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+                <div class="category category-last">
+                    <div class="category-image-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="category-details-container">
+                        <h3 class="category-title">Nike</h3>
+                    </div>
+                </div>
+            </div>
+            <!--* End des categories -->
+
+        </div>
+    </div>
+
+    <!--* End Shop by categories -->
+
+    <!--* Start of Popular products -->
+
+    <div class="wrapper-container">
+        <div class="main-container">
+            <div class="container-top-title">
+                <h2>Popular products</h2>
+            </div>
+
+            <!--* Start du grid des products -->
+            <secttion class="products-grid-containers">
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                        <div class="percent-price-off">
+                            <span>-50%</span>
+                        </div>
+                        <div class="product-new">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <!-- <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div> -->
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <!-- <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div> -->
+                    </div>
+                </article>
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+            </secttion>
+            <!--* End du grid des products -->
+            <div class="show-more-container">
+                <button class="show-more-btn">
+                    <span class="show-more-txt">Show more</span>
+                    <span class="material-icons rotate-right">
+                        rotate_right
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--* End of Popular products -->
+    <!--* Start of Pub -->
+
+    <div class="wrapper-container">
+        <!-- <div class="main-container"> -->
+
+        <div class="main-pub-container">
+            <div class="pub-container pub-container-left"></div>
+            <div class="pub-container pub-container-right"></div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!--* End of Pub -->
+    <script src="app.js"></script>
+</body>
+
+</html>

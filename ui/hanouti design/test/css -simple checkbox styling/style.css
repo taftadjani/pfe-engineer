@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #FF8E3C;
+    --bg-primary-color: #F1F1F1;
+    --secondary-text-color: #FFFFFF;
+    --dark-primary-color: #3A3A3A;
+    --light-primary-color: #707070;
+    --light-primary-variant: #BDBDBD;
+    --divider-color: #E9EAE9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    display: block;
+    margin: .2em;
+    cursor: pointer;
+}
+
+input[type=checkbox]+label::before {
+    content: "\2714";
+    border: .1rem solid #000;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    padding-left: .2em;
+    padding-bottom: .3em;
+    margin-right: .2em;
+    vertical-align: bottom;
+    color: transparent;
+    transform: .2s;
+    -webkit-transform: .2s;
+    -moz-transform: .2s;
+    -ms-transform: .2s;
+    -o-transform: .2s;
+}
+
+input[type=checkbox]:checked+label::before {
+    background-color: mediumseagreen;
+    color: #fff;
+    border-color: mediumseagreen;
+}
+
+input[type=checkbox]:disabled+label::before {
+    border-color: #aaa;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+input[type=checkbox]:disabled:checked+label::before {
+    background-color: #bfb;
+    border-color: #bfb;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}

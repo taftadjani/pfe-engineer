@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A81DAB;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 3s;
+    -webkit-animation: fill 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 604.4830322265625px;
+    stroke-dashoffset: 604.4830322265625px;
+    animation: line-anim 2s ease forwards;
+    -webkit-animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 226.94398498535156px;
+    stroke-dashoffset: 226.94398498535156px;
+    animation: line-anim 2s ease forwards 0.3s;
+    -webkit-animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 534.5280151367188px;
+    stroke-dashoffset: 534.5280151367188px;
+    animation: line-anim 2s ease forwards 0.6s;
+    -webkit-animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 490.2920837402344px;
+    stroke-dashoffset: 490.2920837402344px;
+    animation: line-anim 2s ease forwards 0.9s;
+    -webkit-animation: line-anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 297.2159729003906px;
+    stroke-dashoffset: 297.2159729003906px;
+    animation: line-anim 2s ease forwards 1.2s;
+    -webkit-animation: line-anim 2s ease forwards 1.2s;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: bisque;
+    margin: 10px;
+}
+
+.bottom span {
+    font-family: Cunia;
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}

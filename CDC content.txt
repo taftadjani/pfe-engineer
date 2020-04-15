@@ -1,4 +1,3 @@
-// TODO:Etude de l'existant
 [0] 28/1/2020
 //!> Etude de l'existant
   > Jumia.ma
@@ -155,7 +154,6 @@
 
     > inconvenients
 
-// TODO:Avantages et inconvenients patterns
 //!> Avantages et inconvenients patterns
   > Systeme de Livraison
     > Livraison gratuite pour la plupart des produits
@@ -193,7 +191,6 @@
     > Frais et commission associé à la place du marché
   > Systeme de TVA
 
-// TODO:Cahier de charge
 //!> Cahier de charge
   > Cahier de charges V1
     un cahier des charges a pour fonction de formaliser un besoin afin que ce dernier soit compris par l'ensemble des acteurs impliqués dans le projet .
@@ -369,39 +366,19 @@
         > Maîtrise d'ouvrage
         > Maîtrise d'oeuvre
 
-// TODO:E-commerce feature
 //!> E-commerce feature
   > Images de bonne qualité
   > Marketing
   > Paiement en detail
   > Produit generic : pour faciliter la saisie de produit
 
-// TODO:Types de e-commerce
 //!> Types de e-commerce
   > B2C
   > B2B
 
-// TODO: UML
 [1] 7/2/2020
 //!> UML
-  > Advertissement
-    > id
-    > admin_id
-    > user_id 
-    > Advertissement_type_id
-    > enabled
-    > created_at
-    > updated_at
-    > delete_at
-  > Advertissement_type
-    > id
-    > gravity 
-    > description
-    > title
-    > created_at
-    > updated_at
-    > delete_at
-  > Bill
+  ---------> Bill
     [Attr] :
       > id
       > id_order : Chaque facture est lié à une commande(Order) fournit par Hanouti
@@ -410,13 +387,15 @@
       > paid : complete | no | partial
       > created_at
       > updated_at
-  > Brand
+  -> Brand
     [Attr] :
       > id
       > name
+      > logo_path
+      > description
       > created_at
       > updated_at
-  > Cart
+  ----> Cart
     [Attr] :
       > id
       > Currency_id
@@ -435,9 +414,9 @@
       > Consulter un panier
       > Modifier la devise
       > Modifier le nom
-  > Cart_detail
+  --------> Cart_detail
     > id
-    > store_id
+    > cart_id
     > Product_store_id
     > unit_id
     > inserted_by : Customer | admin
@@ -445,22 +424,23 @@
     > created_at
     > updated_at
     > delete_at
-  > Category
+  ----> Category
     [Attr] :
       > id
       > title
+      > description
       > inserted_by : Donner la possibility au seller d'entrée des categories pour ameliorer la listes
     [Meth] :
       > Ajouter une categorie
       > Modifier une categorie
       > Supprimer une categorie
       > Liste des categories
-  > City
+  --> City
     [Attr] :
       > id
       > Country_id
       > name
-  > Comment
+  --------> Comment
     [Attr] :
       > id
       > sender_id : user_id
@@ -470,45 +450,63 @@
       > created_at
       > updated_at
       > delete_at
-  > Commission
+  ----> Commission
     [Attr] :
       > id
+      > title
+      > description
       > Created_by : Admin
       > Pourcentage
-      > enabled
       > created_at
       > updated_at
       > delete_at
-  > Company
+  -----> Company
     [Attr ] :
       > id
       > location_id
+      > inserted_by
       > name
       > description
-  > Condition
+  -> Condition
     [Attr] :
       > id
       > titre
-        > new
+        > brand new
+        > Like new
+        > Excellent
+        > Very Good
+        > Good
         > used
-        > open box
-        > Not working or partially
-  > Country
+        > Fair (acceptable)
+        > Poor 
+        > Non fonctioning
+        > Bad Condition
+  -> Country
     > id
+    todo> Currency_id
+    todo> official_name
+    todo> iso_code
+    todo> country_code_top_level_domain : cctld
     > name
     > phone_indicatif
-  > Currency
+  -> Currency
     [Attr] :
       > id
-      > initials
-      > title
+      > title : Euro | United States dollar
+      > symbol : € | $
+      todo> iso_code : EUR | MAD | Fr
+      todo> fract_unit : Luma | Centime
+      todo> curr_num : Three digit number (string)
+      todo> num_to_basic / 	100 | 	1000
       > Description
-  > Day
+  ----> Dayly
+    > id
+    > inserted_by
     > value : 20/3/2020
     > work? :boolean
     > raison : work|vacation|others
     > default? yes: effective(effective means time exact open/close)
-  > Delivery
+  -----> Delivery
     > id 
     > location_id
     > DeliveryMode_id
@@ -517,17 +515,17 @@
     > created_at
     > updated_at
     > delete_at
-  > DeliveryMode
+  -> DeliveryMode
     > id
-    > Description
     > titre
       > Achat à la boutique
       > Livraison par le vendeur
       > Livraison par notre site
       > Livraison par une tierce personne
-  > Discount
+    > Description
+  --------> Discount
     > id
-    > Created_by : Seller
+    > inserted_by : Seller
     > Product_store_id
     > percentage
     > enabled : true or false
@@ -536,11 +534,12 @@
     > created_at
     > updated_at
     > delete_at
-  > District
+  ---> District
     > id
     > City_id
     > name
-  > Follow
+    > description
+  -------> Follow
     > id
     > followed_by : User(Customer)
     > follow_id
@@ -548,26 +547,33 @@
     > created_at
     > updated_at
     > delete_at
-  > Langage
+  ----> Langage
     > id
-    > langue
-  > Location
+    > user_id
+    > langue : enum
+    > description : couramment parlé | ecrit
+    > created_at
+    > updated_at
+    > delete_at
+  ----> Location
     [Attr] :
       > id
       > City_id
+      > District_id
       > inserted_by : User
       > description
+      > location_type : provider : store | Delivery | 
       > lat
       > lng
       > postal_code
-  > Mail
+  ----> Mail
     > id
     > mail
     > inserted_by
     > created_at
     > updated_at
     > delete_at
-  > Messages 
+  ----> Messages 
     > id
     > sender_id : User
     > receiver_id : User
@@ -575,72 +581,79 @@
     > created_at
     > updated_at
     > delete_at
-  > Modele
+  -----> Modele
     > id
     > brand_id
     > product_id
-    > name
     > inserted_by : Seller | Admin
+    > name
     > created_at
     > updated_at
     > delete_at
-  > newsletter
+  -----> newsletter
     > id
     > Mail_id
     > inserted_by : Customer | Admin
+    > enabled (si le user veut se desabonner du newsletter ou l'admin veut sortir les user du newsletter)
     > created_at
     > updated_at
     > delete_at
-    > enabled (si le user veut se desabonner du newsletter ou l'admin veut sortir les user du newsletter)
-  > Order
+  ------> Order
     [Attr] :
       > id
       > order_by : User
+      > status : Delivered | Shipping | Created | New | encours | closed 
+              | Awaiting Payment | Pending | Awaiting fulfillment | Awaiting Shipment | Awaiting pickup
+              | completed | Cancelled | Declined | Refunded | Disputed | Manual verification | Partially refunded
       > Delivery_id
-      > status : Delivered | Shipping | Created | New | encours | closed
       > created_at
       > updated_at
       > delete_at
-  > OrderDetails
+  --------> OrderDetails
     > id
-    > Discount_id
     > order_id
     > tax_id
     > Product_store_id
+    > status : Delivered | Shipping | Created | New | encours | closed 
+              | Awaiting Payment | Pending | Awaiting fulfillment | Awaiting Shipment | Awaiting pickup
+              | completed | Cancelled | Declined | Refunded | Disputed | Manual verification | Partially refunded
     > quantity
     > created_at
     > updated_at
     > delete_at
-  > Payment
+  ----------> Payment
     > id
     > Bill_id
     > Payment_Method_id
     > created_at
     > updated_at
     > delete_at
-  > Payment_Method
+  -> Payment_Method
     > id
-    > title : Carte bancaire | Cash à la livraison | A la boutique | Check 
+    > title : Carte bancaire | Cash à la livraison | A la boutique | Check |Paypal
     > description
+    > img_path
     > created_at
     > updated_at
     > delete_at
-  > Phone
+  ----> Phone
     > id
     > value
     > inserted_by : User
     > created_at
     > updated_at
     > delete_at
-  > Post
+  -------> Post
     > id
     > posted_by : Seller or Admin
     > store_id
+    > visible_on_store_at
+    > invisible_on_store_at
     > content
     > created_at
     > updated_at
     > delete_at
-  > Price
+  --------> Price
     > id
     > Product_store_id
     > inserted_by : User
@@ -652,14 +665,14 @@
     > created_at
     > updated_at
     > delete_at
-  > Privilege
+  -> Privilege
     > id
     > title
     > description
     > created_at
     > updated_at
     > delete_at
-  > Product
+  ----> Product
     [Attr] :
       > id
       > inserted_by : Admin | Seller
@@ -675,18 +688,18 @@
       > keywords : '','','',''
       > colors : '', '',  '','',''
       > reference
-  > Product_store
+  -------> Product_store
     > id
     > store_id
+    > product_id
     > condition_id
-    > inserted_by : Seller
-    > price_id : standard price
-    > warranty_id : if not, default warranty
     > unit_id
     > tax_id
     > location_id
       > Par defaut, celui de la boutique
       > Ou à definir
+    > inserted_by : Seller
+    > warranty_id : if not, default warranty
     > images
       > (l'ordre d'images sera utilisé pour l'affichage) et on va fournir un systeme pour ordonner les images
     > have_return : true | false
@@ -696,12 +709,10 @@
     > negociable : true | false
     > visible_on_store_at
     > invisible_on_store_at
-    > weight to add
-    > weight_unit added : gramme | Kilogramme | tonne | litre
     > created_at
     > updated_at
     > delete_at
-  > Product_store_provider : un produit peut avoir plusieurs fournisseurs
+  --------> Product_store_provider : un produit peut avoir plusieurs fournisseurs
     > id
     > Product_store_id
     > Provider_id
@@ -709,7 +720,7 @@
     > created_at
     > updated_at
     > delete_at
-  > Provider
+  -----> Provider
     > Un fournisseur peut etre une personne ou une entreprise
     [Attr] :
       > id
@@ -727,31 +738,29 @@
       > Supprimer un fournisseur
       > Modifier un fournisseur
       > Consulter un fournisseur
-  > Return
-    > id
-    > OrderDetails_id
-    > reason
-    > returned_at
-    > return_validated_customer : true | false (Signature de retour)
-    > return_validated_seller : true | false 
-    > created_at
-    > updated_at
-    > delete_at
-  > Role : Customer, Admin, Seller
+  -> Role : Customer, Admin, Seller
     > id
     > title
     > description
     > created_at
     > updated_at
     > delete_at
-  > Role_User
+  ----> Role_User
     > id
     > role_id
     > user_id
     > created_at
     > updated_at
     > delete_at
-  > Seller
+  --------> Seen
+    > id
+    > user_id
+    > viewed_id
+    > viewed_type : Product_store | Store
+    > created_at
+    > updated_at
+    > delete_at
+  ----> Seller
     > id
     > user_id
     > description
@@ -759,29 +768,29 @@
     > created_at
     > updated_at
     > delete_at
-  > SignInOut
+  -----> SignInOut
     > id
-    > user_id
+    > user_id : Seller | User | Admin
+    > signout_by : Admin | (By himself)
     > Signin? true:signout 
-    > signout_by : Admin | -1(By himself)
     > out_at
     > created_at
     > updated_at
     > delete_at
-  > Star
+  --------> Star
     [Attr] :
       > id
       > inserted_by : Customer
       > receiver_id 
       > receiver_type : Store | Product_store | Seller | Company
+      > star_type : ['Seller_Communication', 'Product_Quality', 'Delivery_Delay','Seller_Professionalism','Seller_disponibility']
       > value : 1 | 2 | 3 | 4 | 5
       > created_at
       > updated_at
       > delete_at
-  > Store
+  ------> Store
     [Attr] :
       > id
-      > belong_to_id
       > Created_by : Seller
       > location_id
         > Adresse de la boutique
@@ -790,8 +799,10 @@
       > Phone_id
         > Telephone de la boutique
           > Peut etre le numero d'un des vendeurs
+      > Currency_id : default
       > warranty_id : default
-        > Garantie par defaut sur les produits
+        > Garantie par defaut sur les produits               hanouti_db
+      > belong_to_id
       > belong_to_type : User | Company
       > name
         > Nom de la boutique
@@ -803,7 +814,7 @@
       > created_at
       > updated_at
       > delete_at
-  > Store_commission : Pour garder un historique des commissions utilisé par les stores
+  -------> Store_commission : Pour garder un historique des commissions utilisé par les stores
     > id
     > store_id
     > inserted_by
@@ -812,7 +823,7 @@
     > created_at
     > updated_at
     > delete_at
-  > SubCategory
+  -----> SubCategory
     [Attr] :
       > id
       > category_id
@@ -826,7 +837,7 @@
       > Modifier une sous categorie
       > Supprimer une sous categorie
       > Liste des sous categories
-  > SubComment ( Sur un produit, sur une boutique, sur un vendeur, sur une entreprise)
+  ---------> SubComment
     [Attr] :
       > id
       > sender_id : User
@@ -835,7 +846,7 @@
       > created_at
       > updated_at
       > delete_at
-  > Tax
+  ----> Tax
     > id
     > inserted_by
     > title
@@ -844,25 +855,38 @@
     > created_at
     > updated_at
     > delete_at
-  > Time 
+  ---------> Thereturn
+    > id
+    > OrderDetails_id
+    > inserted_by
+    > reason
+    > returned_at
+    > return_validated_customer : true | false (Signature de retour)
+    > return_validated_seller : true | false 
+    > created_at
+    > updated_at
+    > delete_at
+  -----> Timely 
+    > id
+    > day_id
+    > inserted_by
     > Start_time
     > End_time
     > raison : work|pause|pray_time|closed
-  > Unit
+  ----> Unit
     > id
     > inserted_by
-    > initials
+    > title
+    > abbrev
     > description
     > for_liquid : true | false
-  > User
+  ---> User
     [Attr]:
       > id
-      > Mail_id
-      > Phone_id
       > City_id
-      > Country_id
+      > Country_id : nationality
       > enabled
-      > verified
+      > verified (email_verified_at)
       > lang (used pour traduire le site pour le user)
       > firstName
       > lastName
@@ -870,59 +894,61 @@
       > password
       > Genre : homme | femme | other
       > birthday
-      > nationality : Country
-    > created_at
-    > updated_at
-    > delete_at
+      > created_at
+      > updated_at
+      > delete_at
     > Admin : User
     > Client : User
     > Vendeur (Seller): User
       > Date où il est devenu vendeur
-  > User_lang
+  UserPrivilege
+    id
+    user_id
+    privilege_id
+  ----> Warning
     > id
-    > user_id
-    > Language_id
-    > description
-  > User_loc
-    > id
-    > location_id
-    > user_id
-    > location_type : Delivery | home
-  > View
-    > id
-    > user_id
-    > viewed_id
-    > viewed_type : Product_store | Store
+    > admin_id
+    > user_id 
+    > Warning_type_id
+    > enabled
     > created_at
     > updated_at
     > delete_at
-  > Warranty
+  -> Warning_type
     > id
-    > inserted_by
+    > gravity : Between 0 and 5
+    > description
+    > title
+    > created_at
+    > updated_at
+    > delete_at
+  ----> Warranty
+    > id
+    > inserted_by : Admin
     > Titre 
     > description
     > duration
-    > who : Store | Hanouti | Company | Seller
+    > by_who : Store | Hanouti | Company | Seller (String) enum
     > created_at
     > updated_at
     > delete_at
-  > Wishlist
+  ----> Wishlist
     > id
     > belong_to : User
     > name
     > created_at
     > updated_at
     > delete_at
-  > Wishlist_details
+  --------> Wishlist_details
     > id
     > Product_store_id
+    > Wishlist_id
     > inserted_by : Customer
     > quantity
     > created_at
     > updated_at
     > delete_at
-
-// TODO:Fonctionnalités detaillées
+  
 //!> Fonctionnalités detaillées
   > Not connected user
     > Login
@@ -932,6 +958,7 @@
     > Recherche
       > Chercher un produit grace à un mot ou plusieurs mot clés
       > Consulter un produit specifique grace à sa reference
+      > Click enter
     > Filtre
       > Par categorie
       > Par marque
@@ -1059,7 +1086,6 @@
     > Desactiver un compte
     > Avertissement(avec un degre de gravité)
 
-// TODO:Rapport de stage
 //!> Rapport de stage
   > dedicace
   > remerciement
@@ -1259,11 +1285,9 @@
   > Bibliographie
   > Reference/document de reference
 
-// TODO:PAQ
 //!> PAQ
   >
 
-// TODO:Description textuelle des fonctionnalités
 //!> Description textuelle des fonctionnalités
   > Cas d'utilisation
   > Acteurs
@@ -1629,53 +1653,6 @@
     > Filtre
     >
 
-//! TODO:Pied des pages
-  > Pied des pages (footer)
-    > Contact information
-    > Privacy policy
-    > Social media icons /Follows us
-      > Facebook
-      > Twitter
-      > Whatsapp
-      > Messenger
-    > Contact un admin
-    > Terms of service
-    > Copyright information
-    > newsletter
-    > Help
-    > Langue
-    > policy
-    > About us 
-    > Cart icons
-
-//! TODO:Navigation
-  > Navigation
-    > Boutiques
-    > Sign in/sign out
-    > Panier/car
-    > Search field
-      > Categories de recherche
-
-//!> Choosing color
-  > https://color.adobe.com/create
-  > materialpalette.com
-  > materialui.co
-  > material.io/resources/color
-  > coolors.co
-  >> Resulted coolors
-    > AMBER 
-    > ORANGE
-    > DEEP ORAANGE 
-    > RED
-    > GREY
-    > GREEN
-    > LIGHT GREEN
-
-//!> Choosing fonts 
-  > https://fonts.google.com/ 
-
-  >> Resulted fonts
-
 //!> Choosing icons
   > Google icons
   > Font awesome 
@@ -1773,6 +1750,21 @@
     php artisan migrate:fresh (drop all tables and migrate)
     php artisan migrate:fresh --seed (drop all table, migrate and seed)
 
+  //* Route method
+    > Regular expression used on route with the 'where' method
+
+  //* Session
+    > request->session()
+    > session()
+    > session()->put()
+    > session()->push()
+    > session()->all()
+    > session()->has()
+    > session()->exists()
+    > session()->forget()
+    > session()->flush()
+    > session()->pull()
+    > session()->regenerate();
   //!> Schema facade
     > Schema::create method
     > Schema::table method (for creating column inside the table)
@@ -1822,8 +1814,7 @@
     > on('users')
     > foreignId('user_id')
 
-
-  //* To use
+//! To use
   > Laravel validation
   > Laravel relationships inside models files
     > Inside model, we need to define some variable such us protected $table that hold the table name, $primaryKey,timestamps
@@ -1836,7 +1827,8 @@
     > Un controller
       > php artisan make:controller HomeController
     > Une migration
-      > php artisan make:migration creates_services_table --create services
+      > php artisan make:migration creates_services_table --create services 
+      php artisan make:migration add_fks_to_cities_table --table=cities
     > Model(one line in our table)
       > php artisan make:model Cart
     //! > All the three 
@@ -1857,15 +1849,17 @@
     Some thing, we can access authenticated user with request
     > $request->user()
   > composer require doctrine/dbal (pour pouvoir changer les colonnes attributs dans la base de donnée)
+  > Use middleware
+  > Use Access Control
 
   //* Laravel functions
-  > env 
-  > config 
-  > compact 
-  > old('field name')
-  > request
-  > with (used with view function)
-  //! Route func
+    > env 
+    > config 
+    > compact 
+    > old('field name')
+    > request
+    > with (used with view function)
+  //* Route func
     > route
     > route::view 
     > route::posts
@@ -1875,6 +1869,61 @@
     > any (in route file)
     > middleware() for protecting routes inside controllers like this : $this->middleware('auth'); 
     > intended : method used after the redirect method redirect the user form where he was intercepted
+    > group route for applying middleware on all of them
+    > Use named route and use the 'route' method to generate the url
+    > namespace method to assign a name space to a liste of controller like admin namespace to 
+      admin's controller
+    > domain method 
+    > prefix method
+    > fallback method for handling route that doesn't exist: It must figure at the buttom of our web.php file
+  //* Binding
+    > Use model Binding directly au lieu de use id et aller nous meme search dans la bd
+    > getRouteKeyName() Customize the default key for binding
+    > Explicit binding
+    > bind method to explicitly bind our model : ex : user for injecting user
+    > resolveRouteBinding alternative to bind method but it is a method used in our Eloquent model
+
+  //* Migration
+    > php artisan db:seed
+    > php artisan db:seed --class=UsersTableSeeder
+    > php artisan migrate:fresh --seed
+
+  //* middleware 
+    > next Closure
+    > Registering a middleware
+      app/Http/Kernel.php class
+    > middleware group
+    > middleware priority with $middlewarePriority attribute in Kernel.php
+    > Middleware parameter
+    > terminate method
+    > singleton method to register a middleware 
+      used in AppServiceProvider.php inside the register method
+    > VerifyCsrfToken middleware
+
+  //*Controller
+    > Le constructeur des controllers peuvent etre des endroits où on peut appeler les middleware
+      et ils vont etre executé à chaque fois qu'on fait appel à une methode du controller.
+    > We can add middleware in constructor and even specify method that use the middleware like 'only', 'except'
+    > Register a middleware using a Closure. This middleware is used only there
+    > path method
+    > request->has method
+    > request->hasAny method
+    > request->filled method
+    > request->missing   method
+    > request->old method
+  //* Cookie 
+    > request->cookie method
+      Cookie::get('name')
+    > response('Hello World')->cookie(
+          'name', 'value', $minutes
+      );
+
+  //* Files
+    > $request->file('photo');
+      $request->photo
+
+  //* Blade and views
+    > View::exists method
 
 //!> php artisan
   > php artisan help something
@@ -1894,6 +1943,9 @@
   > php artisan tinker
   > php artisan route:list
   > php artisan db:seed
+  > php artisan route:cache
+  > php artisan route:clear
+  > php artisan session:table
 
 //!> Vs Code 
   > Ctrl + p : search for files
@@ -2050,356 +2102,808 @@
   
   > Security part
     > rememberToken in user table : It's used by the framework to help against Remember Me cookie hijacking. 
+  composer dump-autoload
 
-//!> Maquettes
-  // TODO:Les pages possibles
-  > La page principale
-    > Nos partenaires et clients
-    > THE PERFECT GIFTS
-    > Tops posts
-    > Tops SALES OFF
-    > Les jours de reductions
-    > Popular shop
-    > Popular product
-    > Sell something
-    > Buy something
-    > Explore store around with a MAP
-    > Menu
-      > Logo
-      > Stores
-        > Store 1
-        > Store 2
-        > Store 3
-        > Store 4
-      > Categories
-        > category 1
-        > category 2
-        > category 3
-        > category 4
+  > Fallback 
+    > redirect to the landing page
+  
+  > Use the throttle middleware
+    > Add a rate limit attribute in user model(migration) to use with throttle
+    > Use for guest | authenticated user,minute
+    > We can use it with group to apply for multiple route
 
-        //* Examples
-        > Cosmetiques
-        > Latest
-        > FASHION SELECTION
-        > Electronics
-        > Fournitures
-      > Products 
-        > Top selling product
-        > Popular products
-        > Products catalogs
-      > New arrivals
-      > Top sellers
-        > Seller 1
-        > Seller 2
-        > Seller 3
-        > Seller 4
-      > Sale off
-        > Now sales off
-        > Special offers
-        > Hot deals
-        > Black friday
-        > Top sales off of the Day/Deals of the day
-        > Sales off around
-        > Summer sales off
-      > Search
-      > Cart
-      > Profile
+  > Form method spoofing
+
+  > Form request validation : custom request that integrate validation
+  
+  
+  > CSS
+    calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+
+//!> Translation
+  > Don't forget translating weight_unit in product migration
+
+//! (Arranger les migrations)
+  Brand
+  Condition
+  Country
+  Currency
+  DeliveryMode
+  Payment_Method
+  Privilege
+  Role 
+  Warning_type
+  City
+  District
+  User
+  Cart
+  Category
+  Commission
+  Dayly
+  Language
+  Location
+  Mail
+  Message
+  Phone
+  Unit
+  Product
+  Role_User
+  Seller
+  Tax
+  Warning
+  Warranty
+  Wishlist
+  Company
+  Delivery
+  Provider
+  Modele
+  newsletter
+  SignInOut
+  SubCategory
+  Timely
+  Order
+  Store
+  Follow
+  Post
+  Product_store
+  Store_commission
+  Cart_detail
+  Comment
+  Discount
+  OrderDetails
+  Price
+  Product_store_provider
+  Seen
+  Star
+  Wishlist_details
+  Bill
+  SubComment
+  TheReturn 
+  Payment
+
+//! Model(Eloquent)
+  > protected $table = 'my_flights';
+  > protected $primaryKey = 'flight_id';
+  > public $incrementing = false;
+  > protected $keyType = 'string';
+  > public $timestamps = false;
+  > const CREATED_AT = 'creation_date';
+  > const UPDATED_AT = 'last_update';
+  > protected $attributes = [
+        'delayed' => false,
+    ];
+  > chunk()
+  > cursor()
+  > filter()
+  > addSelect
+  > select
+  > whereColumn
+  > orderBy
+  > limit
+  > get()
+  > orderByDesc
+  > find
+  > where
+  > first
+  > firstWhere
+  > firstOr
+  > findOrFail
+  > firstOrFail
+  > count()
+  > max
+  > save()
+  > update
+  > create
+  > isDirty()
+  > isClean()
+  > wasChanged()
+  > fillable or guarded
+  > fill
+  > firstOrCreate/ firstOrNew
+  > updateOrCreate
+  > delete()
+  > destroy(1)
+  > use SoftDeletes;
+  > trashed()
+  > withTrashed()
+  > history()
+  > onlyTrashed()
+  > restore()
+  > forceDelete()
+  > replicate()
+  > Writing Global Scopes
+  > Applying Global Scopes
+  > Anonymous Global Scopes
+  > Removing Global Scopes
+  > Local Scopes
+  > orWhere
+  > Dynamic Scopes
+  > is()
+  > Events
+  > Using Closures
+  > Observers
+  //! relationships
+    //* One to one
+      > hasOne
+      > belongsTo
+    //* One to Many
+      > hasMany
+      > belongsTo
+    //* Many To Many
+      > belongsToMany
+      > pivot
+      > withPivot
+      > withTimestamps 
+      > as
+      > wherePivot
+      > wherePivotIn
+      > wherePivotNotIn
+      > extends Pivot
+      > hasOneThrough
+      > hasManyThrough 
+    //*One To One (Polymorphic)
+      > morphTo()
+      > morphOne
+    //* One To Many (Polymorphic)
+      > morphMany
+      > morphTo()
+    //* Many To Many (Polymorphic)
+      > morphToMany 
+      > morphedByMany
+      > has
+      > whereHas
+      > doesntHave
+      > whereDoesntHave
+      > whereHasMorph
+      > whereDoesntHaveMorph
+      > withCount
+      > loadCount
+      > with
+      > without
+      > load
+      > push()
+      > saveMany 
+      > createMany  
+      > findOrNew
+      > firstOrNew
+      > firstOrCreate 
+      > updateOrCreate 
+      > associate
+      > dissociate 
+      > attach
+      > detach()
+      > sync
+      > syncWithoutDetaching
+      > toggle
+      > updateExistingPivot
+
+//! Model(Eloquent)
+    //- One to one
+    //-- One to Many
+    //-<>- Many to One
+    //--- Many to Many
+    //>- Morph One to One
+    //>-- Morph One to Many
+    //>-<>- Morph Many to One
+    //>--- Morph Many to Many
+
+  > Bill
+    -<>- Discount
+    -<>- Order
+    -- Payment
+  > Brand
+    -- Modele
+  > Cart
+    -<>- Currency
+    -<>- User
+    -- Cart_detail
+  > Cart_detail
+    -<>- Cart
+    -<>- ProductStore
+    -<>- Unit
+    -<>- User : inserted_by
+  > Category
+    -<>- User : inserted_by
+    -- SubCategory
+  > City
+    -<>- Country
+    -- District
+    -- Location
+    -- User
+  > Comment
+    >-<>- Company
+    >-<>- Post
+    >-<>- ProductStore
+    >-<>- Seller
+    >-<>- Store
+    -- SubComment
+    -<>- User : sender_id
+  > Commission
+    -<>- User : inserted_by
+    -- Store_commission
+  > Company
+    >-- Comment
+    >-- Follow
+    >-- Star
+    >-- Store
+    -<>- Location
+    -<>- User
+  > Condition
+    -- ProductStore
+  > Country
+    -<>- Currency
+    -- City
+    -- User
+  > Currency
+    -- Cart
+    -- Country
+    -- Price
+    -- Store
+  > Dayly
+    -<>- User : inserted_by
+    -- Timely
+  > Delivery
+    -<>- DeliveryMode
+    -<>- Location
+    -- Order
+  > DeliveryMode
+    -- Delivery
+  > Discount
+    -<>- ProductStore
+    -<>- User : inserted_by
+    -- Bill
+  > District
+    -<>- City
+    -- Location
+  > Follow
+    >-<>- Company
+    >-<>- Seller
+    >-<>- Store
+    -<>- User
+  > Language
+    -<>- User
+  > Location
+    -<>- City
+    -<>- District
+    -<>- User
+    -- Company
+    -- Delivery
+    -- Product_store
+    -- Provider
+    -- Store
+  > Mail
+    -<>- User
+    - Newsletter
+    - Provider
+    - Store
+  > Message
+    -<>- User : receiver_id
+    -<>- User : sender_id
+  > Modele
+    -<>- Brand
+    -<>- User : inserted_by
+    -- Product
+  > Newsletter
+    -<>- User
+    - Mail
+  > Order
+    -<>- Delivery
+    -<>- User
+    -- Bill
+    -- OrderDetails
+  > OrderDetails
+    -<>- Order
+    -<>- ProductStore
+    -<>- Tax
+    - TheReturn
+  > Payment
+    -<>- Bill
+    -<>- PaymentMethod
+  > PaymentMethod
+    -- Payment
+  > Phone
+    -<>- User
+    - Provider
+    - Store
+  > Post
+    >-- Comment
+    -<>- Store
+    -<>- User
+  > Price
+    -<>- Currency
+    -<>- ProductStore
+    -<>- Unit 
+    -<>- User : inserted_by
+  > Privilege
+    -- UserPrivilege
+  > Product
+    -<>- Modele
+    -<>- User : inserted_by
+    -- ProductStore
+  > ProductStore
+    >-- Comment
+    >-- Seen
+    >-- Star
+    -<>- Condition
+    -<>- Location
+    -<>- Product
+    -<>- Store
+    -<>- Tax
+    -<>- Unit
+    -<>- User
+    -<>- Warranty
+    -- CartDetail
+    -- Discount
+    -- OrderDetails
+    -- Price
+    -- Product_store_provider
+    -- Wishlist_details
+  > ProductStoreProvider
+    -<>- ProductStore
+    -<>- Provider
+    -<>- User : inserted_by
+  > Provider
+    -<>- Location
+    -<>- User
+    - Mail
+    - Phone
+    -- ProductStoreProvider
+  > Role 
+    -- RoleUser
+  > Role_User
+    -<>- Role
+    -<>- User
+  > Seen
+    >-<>- ProductSore
+    >-<>- Store
+    -<>- User
+  > Seller
+    >-- Comment
+    >-- Follow
+    >-- Star
+    - User
+  > SignInOut
+    -<>- User : signout_by
+    -<>- User : user_id
+  > Star
+    >-<>- Company
+    >-<>- ProductStore
+    >-<>- Seller
+    >-<>- Store
+    -<>- User
+  > Store
+    >-- Follow
+    >-- Comment
+    >-- Seen
+    >-- Star
+    >-<>- Company
+    >-<>- User : belong_to
+    - Mail
+    - Phone
+    -- Post
+    -- ProductStore
+    -- StoreCommission
+    -<>- Currency
+    -<>- Location
+    -<>- User : created_by
+    -<>- Warranty : default
+  > StoreCommission
+    -<>- Commission
+    -<>- Store
+    -<>- User : inserted_by
+  > SubCategory
+    -<>- Category
+    -<>- User : inserted_by
+  > SubComment
+    -<>- Comment
+    -<>- User : sender_id
+  > Tax
+    -<>- User : inserted_by
+    -- OrderDetails
+    -- ProductStore
+  > TheReturn 
+    -<>- User : inserted_by
+    - OrderDetails
+  > Timely
+    -<>- Dayly
+    -<>- User : inserted_by
+  > Unit
+    -<>- User : inserted_by
+    -- CartDetail
+    -- Price
+    -- ProductStore
+  > User
+    >-- Store
+    - Seller
+    -<>- City : live_at
+    -<>- Country : nationality
+    -- Cart
+    -- CartDetail
+    -- Category
+    -- Comment
+    -- Commission
+    -- Company
+    -- Dayly
+    -- Discount
+    -- Follow
+    -- Language
+    -- Location
+    -- Mail
+    -- Message
+    -- Modele
+    -- Newsletter
+    -- Order
+    -- Phone
+    -- Post
+    -- Price
+    -- Product
+    -- ProductStore
+    -- ProductStoreProvider
+    -- Provider
+    -- RoleUser
+    -- Seen
+    -- Signinout
+    -- Star
+    -- Store
+    -- StoreCommission
+    -- SubCategory
+    -- SubComment
+    -- Tax
+    -- TheReturn
+    -- Timely
+    -- Unit
+    -- UserPrivilege
+    -- Warning
+    -- Warranty
+    -- Wishlist
+    -- WishlistDetails
+  > UserPrivilege
+    -<> Privilege
+    -<>- User
+  > Warning
+    -<>- User : admin_id
+    -<>- User : user_id
+    -<>- WarningType
+  > WarningType
+    -- Warning
+  > Warranty
+    -<>- User : inserted_by
+    -- ProductStore
+    -- Store
+  > Wishlist
+    -<>- User
+    -- WishlistDetail
+  > WishlistDetails
+    -<>- ProductStore
+    -<>- User : inserted_by
+    -<>- Wishlist
+
+//!> Blade
+  @method('')
+  @csrf
+
+//! Maquettes
+  //* Les pages possibles
+    -> La page principale : -connected - not connected
+      > Nos partenaires et clients
+      > THE PERFECT GIFTS
+      > Tops posts
+      > Tops SALES OFF
+      > Les jours de reductions
+      > Popular shop
+      > Popular product
+      > Sell something
+      > Buy something
+      > Explore store around with a MAP
+      > Menu
+        > Logo
+        > Stores
+          > Store 1
+          > Store 2
+          > Store 3
+          > Store 4
+        > Categories
+          > category 1
+          > category 2
+          > category 3
+          > category 4
+
+          //* Examples
+          > Cosmetiques
+          > Latest
+          > FASHION SELECTION
+          > Electronics
+          > Fournitures
+        > Products 
+          > Top selling product
+          > Popular products
+          > Products catalogs
+        > New arrivals
+        > Top sellers
+          > Seller 1
+          > Seller 2
+          > Seller 3
+          > Seller 4
+        > Sale off
+          > Now sales off
+          > Special offers
+          > Hot deals
+          > Black friday
+          > Top sales off of the Day/Deals of the day
+          > Sales off around
+          > Summer sales off
+        > Search
+        > Cart
+        > Profile
+        
+      > MAPS
+      > Langue
       
-    > MAPS
-    > Langue
-    
-    > Partner
-    
-    > Produits par rapport à un algorithme
-      > Produit à succes
-      > Good vendeur
-      > Positions des boutiques
-      > Par top rated seller
-      > Populaires
-      > TOP PRODUCT
-      > HOT PRODUCT(Les plus visités du moment)
-      > NEW PRODUCT
-    
-  > La page de chaque produit
-    > Nom du produit
-    > Description
-    > Store
-    > Categorie
-    > Prix|Reductions
-    > Couleur
-    > Different images
-    > Quantités
-    > Compare button
-    > Send message to seller
-    > Etoiles du produit
-    > Message
-    > Share
-    > Product recommendation par rapport au produit
-    > Localisation du produit
-    > Suivre une store
-    > Paiement methodes
-  > La page de chaque boutique
-    > Logo principal
-    > Image de couverture
-    > Les produits en ventes sur la boutique
-    > Les sellers
-    > Les derniers posts
-    > Les promotions
-    > Les contacts
-    > Les mails de
-    > Follow button
-    > Menu
-      > Categories de produit vendu par le store
-    > Filtre
-  > La page d'ajout/modification de produit
-    [Admin,Seller]> Details du produit
-    [Seller]> Details de la vente
-    [Seller]> Information sur la livraison
-    [Seller]> Information de paiement
-  > La page de resultat de recherche
-    > Filtre
-    > Liste de produits
-    >
-  > La page d'admin globale
-    >
-  > La page d'admin du vendeur
-  > La page de login
-  > La page de creation de compte
-  > La page de changement de mot de passe
-  > Entrer un nouveau produit par un vendeur
-  > La page d'insertion des fournisseurs
-  > La page de catalogues de produit
-  //*> Slider
-  > Les lignes de controles en bas des images
-  > Auto sliding
-  > Les buttons de controls next et prev 
+      > Partner
+      
+      > Produits par rapport à un algorithme
+        > Produit à succes
+        > Good vendeur
+        > Positions des boutiques
+        > Par top rated seller
+        > Populaires
+        > TOP PRODUCT
+        > HOT PRODUCT(Les plus visités du moment)
+        > NEW PRODUCT
+    -> La page de chaque produit
+      -> Nom du produit
+      -> marque
+      -> In stock or not
+      -> Add to Wishlist icon
+      -> Buy Now
+      -> Add to Cart
+      -> Info sur les livraisons disponible
+      -> Description
+      -> Size
+      -> Store
+      -> Categorie
+      -> Prix|Reductions
+        > Prix par quantity
+        > Negociable ou non
+      -> Couleur
+      -> Different images
+      -> Quantités
+      -> Compare button
+      -> Send message to seller
+        > Proposer un prix si le produit est negociable
+      -> Etoiles du produit
+        > Etoiles detaillés
+      -> Share
+      > Product recommendation par rapport au produit
+      -> Localisation du produit
+      > Suivre une store
+      -> Paiement methodes
+      -> Avis Utilisateur
+        > Achat verified icon
+      -> Produits vues recemment
+      -> Related products
+      -> Nombre de vues
+    > La page de chaque boutique
+      > Logo principal
+      > Image de couverture
+      > Les produits en ventes sur la boutique
+      > Les sellers
+      > Les derniers posts
+      > Les promotions
+      > Les contacts
+      > Les mails de
+      > Follow button
+      > Menu
+        > Categories de produit vendu par le store
+      > Filtre
+    > La page d'ajout/modification de produit
+      [Admin,Seller]> Details du produit
+      [Seller]> Details de la vente
+      [Seller]> Information sur la livraison
+      [Seller]> Information de paiement
+    > La page de resultat de recherche
+      > Filtre
+      > Liste de produits
+      >
+    > La page d'admin globale
+      > Logo
+      > Hamburger icon
+      > Notification icon
+      > Profile icon
+      > Setting icon
+      > Search icon
+      ---------------------
+      > Dashboard
+      ----------------------
+      > Main ou general
+        -> Product
+        -> Category 
+        > Tax
+        > authentication
+        > Brands
+        > Shipping
+        > Provider
+        -> User
+          > Customer
+          > Seller
+          > Admin 
+        > Orders 
+        -> Store
+        > Posts 
+        > Mail
+        > Warning
+        > Contact
+        > Message
+        > Maps
+      ----------------------
+      > interface
+        > Pages
+        > layouts
+      ------------------------
+      > Addons
+        > Chart 
+        > Table 
+      -------------------------
+      > others
+      -------------------------
+      > Help
+      > Feedback
+      > documentation
+      > Setting
+
+      //> catalogs
+      //> Sales
+      //> Marketing
+      //> Share
+      //> Calendar
+      //> Sale off
+      //> Activity
+      //> Utilities
+    > La page d'admin du vendeur
+    -> La page de login
+      > FirstName
+      > LastName
+      > Email
+      > Password
+      > Gender
+      > Phone : Optionel
+      > Checkbox pour conditions d'utilisation
+    > Email confirmation page
+    -> La page de creation de compte
+      > Customer
+      > Admin
+    > La page de changement de mot de passe
+    > Entrer un nouveau produit par un vendeur
+    > La page d'insertion des fournisseurs
+    -> La page de catalogues de produit
+      > check and see on map
+      > Liste avec plus de details
+    > Page des post pour utilisateur connected
+  
+  //* Slider
+    > Les lignes de controles en bas des images
+    > Auto sliding
+    > Les buttons de controls next et prev 
     > Ces boutons ne s'affiche que si le curseur est proche d'eux
     > Il s'affiche par defaut sur des petits ecrans.
 
-//!> Maquettes ordered and css classes, id name
-  > Landing page - 
-    > Preloader : chargement avant que la page finit de se charger : avec javascript (Dev Eds dans mes videos)
-    > Header 
-      > Logo
-      > 
+  //* Maquettes ordered and css classes, id name
+    > Landing page - 
+      > Preloader : chargement avant que la page finit de se charger : avec javascript (Dev Eds dans mes videos)
+      > Header 
+        > Logo
+        > 
 
-> Translation
-  > Don't forget translating weight_unit in product migration
+  //* :Pied des pages
+    > Pied des pages (footer)
+      > Contact information
+      > Privacy policy
+      > Social media icons /Follows us
+        > Facebook
+        > Twitter
+        > Whatsapp
+        > Messenger
+      > Contact un admin
+      > Terms of service
+      > Copyright information
+      > newsletter
+      > Help
+      > Langue
+      > policy
+      > About us 
+      > Cart icons
 
-//* Links
-  > Advertissement
-    > Advertissement_type
-    > User : admin, seller or Customer or Store or Company
-  > Bill
-    > Order 
-    > Order > User
-  > Brand
-    > Modele
-    > Product
-    > User
-  > Cart
-    > User
-    > Cart_detail > Product_store
-    > currency
-  > Cart_detail
-    > Product_store
-    > Cart
-  > Category
-    > SubCategory
-    > Product
-    > User : Un seller peut ajouter une categorie si elle n'existe pas(ça pourrait nous aider à completer la liste)
-  > City
-    > Country
-    > District
-    > Location > User
-  > Comment
-    > User
-    > Post
-    > Product
-    > Store
-    > SubComment
-  > Commission
-    > Store
-    > User
-  > Company
-    > Store
-    > location
-    > User : inserted_by
-  > Condition
-    > Product
-  > Country
-    > City
-    > City > District
-    > Location > District or City > User
-    > Location > Company
-    > Location > Store
-    > Location > Provider
-    > Location > Delivery
-  > Currency
-    > User : default currency
-    > Cart
-    > Price
-    > Store : default currency
-    > Order
-  > Day
-    > Time
-    > Store
-  > Delivery
-    > Order
-    > Order > User
-    > Location
-    > DeliveryMode ou method 
-    > Order > OrderDetails > Product
-  > DeliveryMode
-    > Delivery
-  > Discount
-    > User : inserted_by
-    > Product_store
-    > Product_store > Store
-  > District
-    > Location 
-    > Location > User
-    > City
-    > City > Country
-  > Follow
-    > User : follower, seller
-    > Store
-  > Language
-    > User : Un user peut parler plusieurs langues
-  > Location
-    > District
-    > User
-    > City
-    > City > Country
-    > Store
-    > Company : Siege
-    > Delivery
-  > Mail
-    > User
-    > User > Order
-    > Store
-    > Company
-    > Provider
-  > Message
-    > User
-  > Modele
-    > Product
-    > Brand
-  > newsletter
-    > Mail
-    > Mail > User
-  > Order
-    > OrderDetails
-    > OrderDetails > Return
-    > OrderDetails > Product_store
-    > OrderState
-    > Bill
-    > Delivery
-    > User
-    > Payment
-  > OrderDetails
-    > Order
-    > Product_store
-    > Product_store > Tax
-    > Return
-  > Payment
-    > Bill 
-    > Payment_Method
-  > Payment_Method
-    > Payment
-  > Phone
-    > User
-    > Store
-    > Company
-    > Provider
-  > Post
-    > User
-    > Store
-  > Price
-    > User
-    > Product_store
-    > Unit
-  > Privilege
-    > User
-  > Product
-    > Color
-    > User : inserted_by
-    > Product_store
-    > Condition
-    > Categorie
-    > SubCategory
-    > Modele
-    > Brand
-    > Product_store > Store
-  > Product_store
-    > Store
-    > Provider
-    > User : inserted_by a seller
-    > Price : A product can have multiple price par rapport à la quantity nous permettant de donner un autre prix pour une quantity differentes
-    > Price > Unit
-    > Warranty : default one to set up
-    > OrderDetails > Order
-    > View 
-    > Cart_detail > Cart
-    > Tax
-  > Product_store_provider
-  > Provider
-    > Product_store
-    > User : inserted_by
-  > Return 
-    > OrderDetails
-  > Role 
-    > User
-  > Role_User
-  > SignInOut
-    > User
-  > Star
-    > Seller
-    > Product_store
-    > Store
-    > Customer
-  > Store
-    > User : inserted_by
-    > Commission
-    > Location
-    > Mail
-    > Company
-    > Product_store
-    > Star
-    > Follow
-    > Phone
-    > Currency
-    > Post
-  > Store_commission
-  > SubCategory
-    > Category
-    > User
-    > Product
-  > SubComment
-    > User
-    > Comment
-  > Tax
-    > Product_store : frais de taxe
-  > Time
-    > Day
-    > User : inserted_by : seller
-    > Day > Store
-  > Unit
-    > Price
-  > User
-  > View
-    > User : viewer
-    > Product_store
-    > Store
-  > Warranty
-    > User
-    > Company
-    > Store
-    > Product_store
-  > Wishlist
-  > Wishlist_details
+  //* :Navigation
+    > Navigation
+      > Boutiques
+      > Sign in/sign out
+      > Panier/car
+      > Search field
+        > Categories de recherche
+
+  //* Choosing color
+    > https://color.adobe.com/create
+    > materialpalette.com
+    > materialui.co
+    > material.io/resources/color
+    > coolors.co
+    > www.happyhues.co
+    >> Resulted coolors
+      > AMBER 
+      > ORANGE
+      > DEEP ORAANGE 
+      > RED
+      > GREY
+      > GREEN
+      > LIGHT GREEN
+
+  //* Choosing fonts 
+    > https://fonts.google.com/ 
+
+    >> Resulted fonts
+
+  //* Order
+    - Sign in / Sign up page
+    - Landing page
+    - Product page
+    - Store page
+  //todo Maquettes details
+    -> Header
+    -> Slide
+    -> Product div
+      > Image
+      > Nom du produit
+      > Prix et les reductions si possibles
+    -> Publicity
+  //todo Maquettes blanche
+    
+//! Utilities
+  > gradpad
+  > keyframes.app/editor
+  > es6 books
+  > paletton.com
+  > sass
+    > live sass compiler
+  > translator offline on pc
+
+//! Todos for hanouti 
+  > throttle middleware
+  > resolveRouteBinding in model
+  > Use of middleware
+  > Session table 
 
 //todo 
-  > impersonate
-  > laravel role and privileges
-  > Wes bos es6
+  > Read on CORS : Cross Origin Resource Sharing
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+  > FastCGI / Middleware
+  > preview on web server
+
+//! Librairies
+  > Swippe.js
+
+
+
+
+
+

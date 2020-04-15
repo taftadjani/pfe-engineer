@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products catalogs</title>
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="prod-catalog-wrapper">
+        <div class="prod-catalog-top">
+            <div class="pc-top-title" id='pc-top-title'>
+                <div class="pct-card-view pc-tt-active">
+                    <h2 class="pct-cv-title">Products Catalogs</h2>
+                </div>
+                <div class="pct-list-view">
+                    <h2 class="pct-lv-title">List</h2>
+                </div>
+                <div class="pct-map-view ">
+                    <h2 class="pctm-title">Map view</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod-catalog-bottom">
+            <div class="pcb-filter-title">
+                <h2 class="title">Filter</h2>
+            </div>
+            <div class="pcb-filter-top"></div>
+            <div class="pcb-filter-left"></div>
+            <div class="pcb-products-container">
+                <article class="product-container">
+                    <div class="img-container">
+                        <div src="" alt="" class="product-img">
+                        </div>
+                        <button class="cart-btn">
+                            <span class="add-shopping-cart material-icons">
+                            add_shopping_cart
+                            </span>
+                            <span class="cart-btn-txt">Add to cart</span>
+                        </button>
+                        <div class="percent-price-off">
+                            <span>-50%</span>
+                        </div>
+                        <div class="product-new">
+                            <span>NEW</span>
+                        </div>
+                    </div>
+                    <div class="product-details-container">
+                        <h3 class="product-title"><a href="#">Samsung galaxy</a></h3>
+                        <h2 class="product-price">1000 Dhs</h2>
+                        <div><span class="product-price product-price-off">3000 Dhs </span><span class="price-off-percent">(-10%)</span></div>
+                    </div>
+                </article>
+            </div>
+            <div class="pcb-pagination" id='pcb-pagination'>
+                <ul>
+                    <li class="pcbp-arrow">
+                        <span class="material-icons">
+                        keyboard_arrow_left
+                        </span>
+                    </li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li class="pagination-active">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li class="pagination-dots">
+                        <div class="pagination-dot"></div>
+                        <div class="pagination-dot"></div>
+                        <div class="pagination-dot"></div>
+                    </li>
+                    <li>25</li>
+                    <li class="pcbp-arrow">
+                        <span class="material-icons">
+                            keyboard_arrow_right
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

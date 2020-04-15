@@ -1,0 +1,351 @@
+<!--Styels-->
+       :root {
+    --color-principal: #FF6B15;
+    --bgcolor-principal: #F5F5F5;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-disabled: #A6A7AC;
+    --color-success: #388E3C;
+    --color-failure: #E91E63;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*    font-size: 1rem;*/
+}
+
+/*html*/
+html {
+    font-size: 16px;
+}
+
+/* Body */
+body {
+    /*    background-color: var(--color-black);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.container {
+    background-color: var(--color-principal);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 5rem;
+    /*Max width du header*/
+    /*    max-width: 1200px;*/
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.container a:hover,
+.container a:focus {
+    color: var(--color-black);
+}
+
+/*Logo*/
+.logo {
+    margin: 0.5rem 2rem;
+    font-family: Cunia;
+    font-size: 2rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.logo-deactivated {
+    /*Search box appears*/
+    display: none;
+    /*Transition*/
+    /*
+    transition: 3s ease;
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -ms-transition: 3s ease;
+    -o-transition: 3s ease;
+*/
+}
+
+/*Search fiels*/
+.search-box {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    height: 3rem;
+    margin: 1rem 1.5rem;
+}
+
+.search-box-active {
+    /*Search box appears*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Transition*/
+    /*
+    transition: 3s ease;
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -ms-transition: 3s ease;
+    -o-transition: 3s ease;
+*/
+}
+
+.search-box > i {
+    margin-right: 0.5rem;
+}
+
+.search-box form {
+    height: 100%;
+    width: inherit;
+    display: flex;
+    margin: auto 0.5rem;
+    border: none;
+}
+
+
+.search-box input {
+    padding: 0 1rem;
+    width: 100%;
+    /*    border-left: 1px solid var(--color-disabled);*/
+}
+
+.search-box form * {
+    border: none;
+}
+
+form .select-cat {
+    padding: 0.5rem;
+    border-radius: 30px 0 0 30px;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1rem;
+    /*    display: inline-block;*/
+    border-right: 1px solid var(--color-disabled);
+}
+
+.search-box .search-btn {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 30px 30px 0;
+    border-left: 1px solid var(--color-disabled);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-btn i {
+    padding: 0 0.5rem 0 1rem;
+    color: var(--color-principal);
+}
+
+.search-btn span {
+    padding: 0 1rem 0 0.5rem;
+    color: var(--color-principal);
+}
+
+.x-icon {
+    cursor: pointer;
+}
+
+/*Side setting*/
+.side-setting {
+    margin-right: 1rem;
+    height: auto;
+}
+
+.side-detting-deactivated {
+    /*Search box appears*/
+    display: none;
+    /*Transition*/
+    /*
+    transition: 3s ease ;
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -ms-transition: 3s ease;
+    -o-transition: 3s ease;
+*/
+}
+
+.side-setting ul {
+    /*background-color: #e91e63;*/
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-setting ul li {
+    margin: 0 0.5rem;
+}
+
+.h-img {
+    font-size: 1.5rem;
+    color: var(--color-black);
+}
+
+.icon-desc {
+    display: none;
+    margin: auto 0.5rem;
+    /*    background-color: red;*/
+}
+
+.icon-desc i {
+    display: none;
+    padding: 0 0.5rem;
+}
+
+.h-count {
+    align-self: auto
+}
+
+.count-up {
+    display: flex;
+    align-items: flex-start;
+}
+
+.count-up i {
+    padding: 0.5rem 0;
+}
+
+.count-up span {
+    font-size: 1.3rem;
+    /*    background-color: aqua;*/
+}
+
+/*@media screen and (min-width:768px) {}*/
+
+@media screen and (min-width:1000px) {
+    .search-box {
+        display: flex;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .search-box .x-icon {
+        display: none;
+    }
+
+    .search-btn i {
+        padding-right: 1rem;
+    }
+
+    .search-btn span {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .search-box {
+        display: flex;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .search-box .x-icon {
+        display: none;
+    }
+
+    .search-btn i {
+        padding-right: 1rem;
+    }
+
+    .search-btn span {
+        display: block;
+    }
+
+    .icon-desc {
+        display: block;
+    }
+
+    .li-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    form .select-cat {
+        padding: 0 1rem 0;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .icon-desc i {
+        display: inline-block;
+    }
+}
+<!--HTML-->
+
+       <header class="container">
+        <div class="logo">
+            <a href="#">HANOUTI</a>
+        </div>
+        <div class="search-box">
+            <!--This is a pro fontawesome icon-->
+            <!--<i class="fal fa-long-arrow-left"></i>-->
+            <!--Croix icons-->
+            <i class="x-icon h-img fas fa-times"></i>
+            <!--Search bar and button-->
+            <form action="#">
+                <!--Select Categories-->
+                <select name="" id="" class="select-cat">
+                    <option value="1">ssssssss</option>
+                    <option value="1" selected >1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                </select>
+                <!--Text field-->
+                <input type="text" name="text" placeholder="Type something to search">
+                <!--Buton for search-->
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </button>
+            </form>
+        </div>
+        <nav class="side-setting">
+            <ul>
+                <!--Search icon-->
+                <li class="search-icon">
+                    <a href="#">
+                        <i class="h-img fas fa-search"></i>
+                    </a>
+                </li>
+                <!--Cart + Number item it-->
+                <li class="cart">
+                    <a href="#" class="li-icon ">
+                        <div class="count-up">
+                            <i class="h-img fas fa-shopping-cart"></i>
+                            <span class="h-count">2</span>
+                        </div>
+                        <span class="icon-desc">Cart <i class="fas fa-chevron-down"></i></span>
+                    </a>
+                </li>
+                <!--Account + Number notification in it-->
+                <li class="user">
+                    <a href="#" class="li-icon ">
+                        <div class="count-up">
+                            <i class="h-img fas fa-user-alt"></i>
+                            <span class="h-count">2</span>
+                        </div>
+                        <span class="icon-desc">Account <i class="fas fa-chevron-down"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    

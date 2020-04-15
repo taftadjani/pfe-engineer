@@ -1,0 +1,8 @@
+//! Attacks terminologies
+  //* SQL injection attacks
+  //* SOAP injection attacks
+  //* cross-site scripting attacks
+  //* SMTP injection attacks
+
+//! Web app technologies
+  //* HTTP(Hypertext transfer protocol) protocol

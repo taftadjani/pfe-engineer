@@ -1,0 +1,82 @@
+.container {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.caroussel {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider .section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+
+.slider .section:nth-child(1) {
+    opacity: 1;
+    z-index: 1;
+    background-color: rgb(235, 0, 156);
+}
+
+.slider .section:nth-child(2) {
+    background-color: tomato;
+}
+
+.slider .section:nth-child(2) {
+    background-color: blueviolet;
+}
+
+.slider .section:nth-child(3) {
+    background-color: blue;
+}
+
+.slider .section:nth-child(4) {
+    background-color: rgb(28, 5, 49);
+}
+
+.slider .section:nth-child(5) {
+    background-color: rgb(16, 212, 130);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}

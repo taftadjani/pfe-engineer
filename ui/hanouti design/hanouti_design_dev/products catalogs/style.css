@@ -1,0 +1,488 @@
+:root {
+    /** Colors */
+    --color-primary: #FF8E3C;
+    --color-primary-80: #FF8E3CCC;
+    --color-primary-25: #FF8E3C40;
+    --color-txt-secondary: #FFFFFF;
+    --color-dark-primary: #3A3A3A;
+    --color-dark-primary-10: #3A3A3A1A;
+    --color-dark-primary-25: #3A3A3A40;
+    --color-dark-primary-50: #3A3A3A80;
+    --color-light-primary: #707070;
+    --color-light-secondary: #BDBDBD;
+    --color-blue-facebook: #3D5A96;
+    --color-pagination: #363636;
+    --bg-color-primary: #F1F1F1;
+    --bg-color-arrow: #3A3A3A7F;
+    /** Font family */
+    --ff-roboto: "Roboto";
+    --ff-poppins: "Poppins";
+    --ff-cunia: "Cunia";
+    /** Width */
+    --width-container: 95vw;
+    --width-search: 300px;
+    --max-width-container: 1500px;
+    /** Height */
+    --height-hero: 550px;
+    /** La hauteur et largeur des box contenants les nombres de notifs ou d'items dans le cart */
+    --size-nav-count: 1.2rem;
+    /** La hauteur et largeur des arrows gauche et droite  */
+    --size-hero-arrow: 30px;
+    /** La hauteur et largeur des parents arrows gauche et droite  */
+    --size-arrow-parent: 15vw;
+    /** La hauteur et largeur des selectors  */
+    --size-selectors: 10px;
+    /** La hauteur et largeur de l'image container  */
+    --size-img-container: 100%;
+    /** La hauteur et largeur de product-img */
+    --size-product-img: 100%;
+    /** Mesures var(--size-hero-arrow) */
+    --rem-2-rem: 2rem;
+    --fs-0p6875-rem: .6875rem;
+    --fs-08-rem: .8rem;
+    --fs-0p9375-rem: .9375rem;
+    --fs-2-rem: 2rem;
+    --fs-25-px: 25px;
+    --fs-1p125-rem: 1.125rem;
+    --fs-1p2-rem: 1.2rem;
+    --fs-1p25-rem: 1.25rem;
+    --fs-1p8-rem: 1.8rem;
+    /** letterspacing */
+    --ls-1p2-px: 1.2px;
+    --ls-1-px: 1px;
+    --ls-2-px: 2px;
+    --ls-3-px: 3px;
+    /** Transitions */
+    --transition-search: all 0.5s;
+    --transition-selectors: all 0.5s;
+    --transition-cart-btn: all 0.5s;
+    --transition-hero: all 1s;
+    --transition-pagination: all .5s;
+    --transition-hero-arrows: all .2s;
+    --transition-percent-price-off: all .2s;
+    --transition-product-new: all .2s;
+    --title-transition: all .2s;
+    /** Margin center */
+    --margin-center: 0 auto;
+    /** box shadow */
+    --box-shadow-main: 0 3px 2px -2px var(--color-dark-primary);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-poppins);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var( --bg-color-primary);
+}
+
+
+/** Start du product catalogs top */
+
+body .prod-catalog-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: var(--width-container);
+    max-width: var(--max-width-container);
+    margin: var(--margin-center);
+    /** To delete */
+    min-height: 200px;
+    /* background-color: #fff; */
+    margin-top: 2rem;
+}
+
+.prod-catalog-top .pc-top-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.pc-top-title .pct-card-view,
+.pc-top-title .pct-list-view,
+.pc-top-title .pct-map-view {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: var(--ls-3-px);
+    font-size: 1rem;
+    margin: 1rem 1.5rem;
+    padding: .5rem .8rem;
+    border: none;
+    outline: none;
+    border-top: 1px solid var(--bg-color-primary);
+    border-bottom: 1px solid var(--bg-color-primary);
+    color: var(--color-light-primary);
+    transition: var(--title-transition);
+    -webkit-transition: var(--title-transition);
+    -moz-transition: var(--title-transition);
+    -ms-transition: var(--title-transition);
+    -o-transition: var(--title-transition);
+}
+
+.pct-card-view h2,
+.pct-list-view h2,
+.pct-map-view h2 {
+    pointer-events: none;
+}
+
+.pc-top-title div.pc-tt-active {
+    cursor: auto;
+    letter-spacing: var(--ls-3-px);
+    margin: 1rem 1.5rem;
+    padding: .5rem .8rem;
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.pc-top-title .pct-map-view {
+    position: relative;
+}
+
+
+/** End du product catalogs top */
+
+
+/** Start du product catalog bottom */
+
+.prod-catalog-wrapper .prod-catalog-bottom {
+    display: grid;
+    grid-template-columns: minmax(250px, 15vw) auto;
+    gap: 20px;
+}
+
+.prod-catalog-bottom .pcb-filter-title {
+    background-color: blue;
+    min-height: 50px;
+}
+
+.prod-catalog-bottom .pcb-filter-top {
+    background-color: antiquewhite;
+}
+
+.prod-catalog-bottom .pcb-filter-left {
+    background-color: brown;
+    grid-row: 2 / span 2;
+}
+
+.prod-catalog-bottom .pcb-products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 1rem .5rem;
+    /* background-color: cadetblue; */
+}
+
+
+/** Start Products */
+
+.pcb-products-container .product-container {
+    background-color: var(--color-txt-secondary);
+    max-width: 260px;
+}
+
+.product-container .img-container {
+    background-color: red;
+    width: var( --size-img-container);
+    /* height: var( --size-img-container); */
+    min-height: 245px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container:hover .product-img {
+    opacity: .9;
+}
+
+.img-container .product-img {
+    min-height: 245px;
+    width: var(--size-product-img);
+    height: var(--size-product-img);
+}
+
+.img-container .cart-btn {
+    display: flex;
+}
+
+.img-container .cart-btn {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--color-txt-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-right: none;
+    transition: var(--transition-cart-btn);
+    -webkit-transition: var(--transition-cart-btn);
+    -moz-transition: var(--transition-cart-btn);
+    -ms-transition: var(--transition-cart-btn);
+    -o-transition: var(--transition-cart-btn);
+    transform: translate(101%, -50%);
+    -webkit-transform: translate(101%, -50%);
+    -moz-transform: translate(101%, -50%);
+    -ms-transform: translate(101%, -50%);
+    -o-transform: translate(101%, -50%);
+}
+
+.img-container:hover .cart-btn {
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+.img-container .cart-btn:hover {
+    background-color: var(--color-dark-primary);
+    font-weight: bold;
+    border: 1px solid var(--color-dark-primary);
+    border-right: none;
+}
+
+.cart-btn .add-shopping-cart {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+.cart-btn .cart-btn-txt {
+    font-size: var(--fs-08-rem);
+    letter-spacing: var(--ls-1p2-px);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/** Start percent price off label  */
+
+.img-container .percent-price-off {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: var(--fs-08-rem);
+    letter-spacing: var(--ls-2-px);
+    padding: .3rem .4rem;
+    background-color: var(--color-dark-primary-10);
+    color: var(--color-primary);
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    transition: var(--transition-percent-price-off);
+    -webkit-transition: var(--transition-percent-price-off);
+    -moz-transition: var(--transition-percent-price-off);
+    -ms-transition: var(--transition-percent-price-off);
+    -o-transition: var(--transition-percent-price-off);
+}
+
+.img-container:hover .percent-price-off {
+    transform: translate(101%, -50%);
+    -webkit-transform: translate(101%, -50%);
+    -moz-transform: translate(101%, -50%);
+    -ms-transform: translate(101%, -50%);
+    -o-transform: translate(101%, -50%);
+}
+
+
+/** End percent price off label */
+
+
+/** StartProduct new label  */
+
+.img-container .product-new {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    font-size: var(--fs-08-rem);
+    letter-spacing: var(--ls-2-px);
+    padding: .1rem .3rem;
+    background-color: var(--color-dark-primary-10);
+    color: var(--color-primary);
+    transition: var(--transition-product-new);
+    -webkit-transition: var(--transition-product-new);
+    -moz-transition: var(--transition-product-new);
+    -ms-transition: var(--transition-product-new);
+    -o-transition: var(--transition-product-new);
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+}
+
+.img-container:hover .product-new {
+    transform: translate(101%, -50%);
+    -webkit-transform: translate(101%, -50%);
+    -moz-transform: translate(101%, -50%);
+    -ms-transform: translate(101%, -50%);
+    -o-transform: translate(101%, -50%);
+}
+
+
+/** End Product new label */
+
+
+/** Start Product details */
+
+.product-container .product-details-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 .5rem;
+    margin-bottom: .5rem;
+}
+
+.product-details-container .product-title {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: var(--ls-2-px);
+    margin-top: .5rem;
+    /* background-color: red; */
+    /* text-align: center; */
+}
+
+.product-details-container .product-title a {
+    text-decoration: none;
+    color: var(--color-dark-primary);
+}
+
+.product-details-container .product-price {
+    font-size: var(--fs-1p125-rem);
+    font-family: var(--ff-roboto);
+    font-weight: 700;
+    margin-top: .1rem;
+    /* text-align: center; */
+}
+
+.product-details-container .product-price-off {
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-0p6875-rem);
+    font-weight: 300;
+    margin-top: .1rem;
+    color: var(--color-light-primary);
+    text-decoration: line-through;
+    /* text-align: center; */
+}
+
+.product-details-container .price-off-percent {
+    font-family: var(--ff-roboto);
+    margin-left: .5rem;
+    text-decoration: none;
+    font-size: var(--fs-0p9375-rem);
+    color: var(--color-primary);
+    font-weight: 600;
+    letter-spacing: var(--ls-1-px);
+}
+
+
+/** End Product details */
+
+
+/** End Products */
+
+
+/** Start of pagination */
+
+.prod-catalog-bottom .pcb-pagination {
+    min-height: 50px;
+    margin: 1rem 0 0 0;
+    /* background-color: darkgreen; */
+}
+
+.pcb-pagination ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pcb-pagination ul li {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-poppins);
+    font-size: 20px;
+    margin: .2rem;
+    width: 38px;
+    height: 35px;
+    transition: var(--transition-pagination);
+    -webkit-transition: var(--transition-pagination);
+    -moz-transition: var(--transition-pagination);
+    -ms-transition: var(--transition-pagination);
+    -o-transition: var(--transition-pagination);
+}
+
+.pcb-pagination ul li:hover,
+.pcb-pagination .pagination-dots {
+    text-decoration: underline;
+}
+
+.pcb-pagination .pcbp-arrow:hover {
+    text-decoration: none;
+}
+
+.pcb-pagination ul li.pagination-active {
+    color: var(--color-txt-secondary);
+    background-color: var(--color-pagination);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.pagination-dots.pagination-active {
+    background-color: var(--bg-color-primary) !important;
+}
+
+.pagination-dots .pagination-dot {
+    width: 3px;
+    height: 3px;
+    margin: 0.2rem;
+    background-color: var(--color-pagination);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.pcb-pagination ul li.pagination-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** End of pagination */
+
+
+/** End du product catalog bottom */
